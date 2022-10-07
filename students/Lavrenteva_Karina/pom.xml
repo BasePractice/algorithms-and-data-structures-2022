@@ -8,12 +8,12 @@
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>0000000</artifactId>
+    <artifactId>Lavrenteva_Karina</artifactId>
     <packaging>pom</packaging>
     <description>Практические работы студента Васи</description>
 
     <modules>
-        <module>0000000-p01</module>
-        <module>0000000-p02</module>
+        <module>Lavrenteva_Karina-p01</module>
+        <module>Lavrenteva_Karina-p02</module>
     </modules>
 </project>
