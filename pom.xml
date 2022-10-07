@@ -97,7 +97,7 @@
             <id>students</id>
             <modules>
                 <module>students/sample</module>
-                <module>students/0000000</module>
+                <module>students/Lavrenteva_Karina</module>
             </modules>
         </profile>
     </profiles>
