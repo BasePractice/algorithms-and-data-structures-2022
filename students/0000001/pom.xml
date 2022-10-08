@@ -8,12 +8,12 @@
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>0000000</artifactId>
+    <artifactId>0000001</artifactId>
     <packaging>pom</packaging>
-    <description>Практические работы студента Васи</description>
+    <description>Практические работы студента Пети</description>
 
     <modules>
-        <module>0000000-p01</module>
-        <module>0000000-p02</module>
+        <module>0000001-p01</module>
+        <module>0000001-p02</module>
     </modules>
 </project>
