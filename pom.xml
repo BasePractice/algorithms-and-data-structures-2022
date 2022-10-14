@@ -100,6 +100,7 @@
                         <phase>validate</phase>
                         <configuration>
                             <configLocation>checkstyle.xml</configLocation>
+                            <encoding>UTF-8</encoding>
                             <failsOnError>true</failsOnError>
                             <consoleOutput>true</consoleOutput>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
@@ -117,7 +118,9 @@
         <profile>
             <id>students</id>
             <modules>
-                <module>students/21K654</module>
+                <module>students/sample</module>
+                <module>students/0000000</module>
+                <module>students/0000001</module>
                 <module>students/21K0709</module>
             </modules>
         </profile>
