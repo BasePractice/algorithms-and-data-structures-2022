@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0712;
+package ru.mirea.practice.s21k0712;
 
 import java.util.Scanner;
 public final class Main {
@@ -14,9 +14,9 @@ public final class Main {
 
             }
             for (int i = 0; i < a.length; i++) {
-                System.out.println(a[i] + " ");
+                System.out.print(a[i] + " ");
             }
-            System.out.println("Сумма: " + sum);
+            System.out.println("\nСумма: " + sum);
             System.out.println("Ср арифм: " + sum / a.length);
             int j = 0;
             while (j < a.length) {
