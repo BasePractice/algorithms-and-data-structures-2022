@@ -10,7 +10,7 @@
     </parent>
     <artifactId>0000001</artifactId>
     <packaging>pom</packaging>
-    <description>Практическая работа Пети</description>
+    <description>Пример оформления практических заданий</description>
 
     <modules>
         <module>0000001-p01</module>

@@ -8,6 +8,6 @@
         <version>2022.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>sample-p01</artifactId>
+    <artifactId>sample-p02</artifactId>
     <description>Массивы</description>
 </project>
