@@ -1,3 +1,5 @@
 .idea
 target
 /.template
+.build_m64
+.build_w64

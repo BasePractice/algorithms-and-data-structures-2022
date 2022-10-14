@@ -12,25 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DisplayName("Сериализация/Десериализация")
 final class ObjectSerializerTest {
 
-    private static final class Student implements Serializable {
-        String name;
-        String group;
-        long position;
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Student student = (Student) o;
-            return position == student.position && name.equals(student.name) && group.equals(student.group);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(name, group, position);
-        }
-    }
-
     @DisplayName("Сериализация")
     @Test
     void serialize() throws IOException, ClassNotFoundException {
@@ -46,7 +27,30 @@ final class ObjectSerializerTest {
 
         Student[] students = new Student[]{student};
         serialize = ObjectSerializer.serialize(students);
-        Student[] students_d = ObjectSerializer.deserialize(serialize);
-        assertEquals(students[0], students_d[0]);
+        Student[] studentsDes = ObjectSerializer.deserialize(serialize);
+        assertEquals(students[0], studentsDes[0]);
+    }
+
+    private static final class Student implements Serializable {
+        String name;
+        String group;
+        long position;
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name, group, position);
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) {
+                return true;
+            }
+            if (o == null || getClass() != o.getClass()) {
+                return false;
+            }
+            Student student = (Student) o;
+            return position == student.position && name.equals(student.name) && group.equals(student.group);
+        }
     }
 }
