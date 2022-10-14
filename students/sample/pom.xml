@@ -8,13 +8,12 @@
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>21K654</artifactId>
+    <artifactId>sample</artifactId>
     <packaging>pom</packaging>
     <description>Пример оформления практических заданий</description>
 
     <modules>
-        <module>21K654-p01</module>
-        <module>21K654-p02</module>
-        <module>21K654-p03</module>
+        <module>sample-p01</module>
+        <module>sample-p02</module>
     </modules>
 </project>

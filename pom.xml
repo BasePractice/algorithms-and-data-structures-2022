@@ -97,6 +97,7 @@
             <id>students</id>
             <modules>
                 <module>students/21K654</module>
+                <module>students/21K0709</module>
             </modules>
         </profile>
     </profiles>
