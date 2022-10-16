@@ -10,3 +10,4 @@ public class Test_Author {
         Andrew.setEmail("Andrew@jji.ru");
     }
 }
+
