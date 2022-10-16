@@ -1,4 +1,4 @@
-package Practice_4_1.Work_4;
+package ru.mirea.practice.Work_4;
 
 import java.util.Arrays;
 

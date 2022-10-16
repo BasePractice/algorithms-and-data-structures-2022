@@ -1,4 +1,4 @@
-package Practice_6.Work_10;
+package ru.mirea.practice.Work_10;
 
 public interface Enter {
     public void setAmount(int Amount);

@@ -1,4 +1,4 @@
-package Practice_4_1.Work_7;
+package ru.mirea.practice.Work_7;
 
 public class Pupil {
     public static void main(String[] args) {

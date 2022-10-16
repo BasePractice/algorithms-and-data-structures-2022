@@ -1,3 +1,5 @@
+package ru.mirea.practice.Ex_1;
+
 public abstract class Shape {
     protected String color;
     protected boolean filled;

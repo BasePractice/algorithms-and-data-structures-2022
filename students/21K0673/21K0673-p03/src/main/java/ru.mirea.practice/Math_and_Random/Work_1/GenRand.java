@@ -1,4 +1,4 @@
-package Practice_3.Math_and_Random.Work_1;
+package ru.mirea.practice.Math_and_Random.Work_1;
 
 public class GenRand {
     public static void main(String[] args){

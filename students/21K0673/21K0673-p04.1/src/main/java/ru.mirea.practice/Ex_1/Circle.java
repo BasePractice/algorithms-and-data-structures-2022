@@ -1,3 +1,5 @@
+package ru.mirea.practice.Ex_1;
+
 public class Circle extends Shape {
     private double r;
     Circle(){}

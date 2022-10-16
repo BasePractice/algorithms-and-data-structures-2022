@@ -1,4 +1,4 @@
-package Practice_6.Work_1;
+package ru.mirea.practice.Work_1;
 
 public class MovableCircle extends MovablePoint{
     private int radius;

@@ -1,4 +1,4 @@
-package Practice_3.Formatting.Work_1;
+package ru.mirea.practice.Formatting.Work_1;
 
 import java.text.NumberFormat;
 import java.util.Currency;
@@ -80,26 +80,7 @@ public class Currency_converter {
             case 3 -> {
                 NumberFormat numberFormat3 = NumberFormat.getCurrencyInstance(Locale.CHINA);
                 System.out.print(numberFormat3.format(number) + " = ");
-                switch (b) {
-                    case 1 -> {
-                        NumberFormat numberFormat1 = NumberFormat.getCurrencyInstance(Locale.US);
-                        double number1 = number * 6.78;
-                        System.out.print(numberFormat1.format(number1));
-                    }
-                    case 2 -> {
-                        NumberFormat numberFormat2 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
-                        double number1 = number * 6.47;
-                        System.out.print(numberFormat2.format(number1));
-                    }
-                    case 3 -> {
-                        System.out.print(numberFormat3.format(number));
-                    }
-                    case 4 -> {
-                        NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance(Locale.UK);
-                        double number1 = number / 0.13373;
-                        System.out.print(numberFormat4.format(number1));
-                    }
-                }
+                System.out.print(numberFormat3.format(number));
             }
             case 4 -> {
                 NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance(Locale.UK);

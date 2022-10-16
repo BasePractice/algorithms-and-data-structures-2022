@@ -1,3 +1,5 @@
+package ru.mirea.practice.Ex_1;
+
 public class Rectangle extends Shape {
     private double length;
     private double width;

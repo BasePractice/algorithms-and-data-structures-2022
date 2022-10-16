@@ -1,3 +1,5 @@
+package ru.mirea.practice.Ex_1;
+
 public class Square extends Rectangle {
     private double side;
 

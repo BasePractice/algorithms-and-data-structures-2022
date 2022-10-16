@@ -1,4 +1,4 @@
-package Practice_4_1.Work_1;
+package ru.mirea.practice.Work_1;
 
 public class Tester {
     public static void main(String[] args) {

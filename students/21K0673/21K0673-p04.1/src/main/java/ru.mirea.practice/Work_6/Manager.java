@@ -1,4 +1,4 @@
-package Practice_4_1.Work_6;
+package ru.mirea.practice.Work_6;
 
 public class Manager extends Employer{
     private String firstName;

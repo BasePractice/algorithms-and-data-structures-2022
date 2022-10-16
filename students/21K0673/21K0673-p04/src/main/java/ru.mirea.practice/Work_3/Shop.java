@@ -1,4 +1,4 @@
-package Practice_4.Work_3;
+package ru.mirea.practice.Work_3;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Objects;

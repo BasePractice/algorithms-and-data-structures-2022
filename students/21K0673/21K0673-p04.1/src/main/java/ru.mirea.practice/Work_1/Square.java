@@ -1,4 +1,4 @@
-package Practice_4_1.Work_1;
+package ru.mirea.practice.Work_1;
 
 public class Square extends Shape{
     private double a;

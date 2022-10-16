@@ -1,4 +1,4 @@
-package Practice_4.Work_1;
+package ru.mirea.practice.Work_1;
 
 public enum Seasons {
     SUMMER(18.96){

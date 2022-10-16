@@ -1,6 +1,5 @@
-package Practice_4.Work_4;
+package ru.mirea.practice.Work_4;
 
-import Practice_4.Work_2.EnumAtelier;
 public class Computer {
     protected EnumComputer company_name;
     protected double cost;

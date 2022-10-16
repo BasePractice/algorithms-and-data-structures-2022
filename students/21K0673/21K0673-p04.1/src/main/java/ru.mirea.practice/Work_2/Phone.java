@@ -1,4 +1,4 @@
-package Practice_4_1.Work_2;
+package ru.mirea.practice.Work_2;
 
 public class Phone {
     private String number;

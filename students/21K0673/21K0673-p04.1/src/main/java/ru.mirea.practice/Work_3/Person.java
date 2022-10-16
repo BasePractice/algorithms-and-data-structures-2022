@@ -1,4 +1,4 @@
-package Practice_4_1.Work_3;
+package ru.mirea.practice.Work_3;
 
 public class Person {
     private String fullName;

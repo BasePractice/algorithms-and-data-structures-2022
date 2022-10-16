@@ -1,4 +1,4 @@
-package Practice_6.Work_3;
+package ru.mirea.practice.Work_3;
 
 public class Test implements Nameable{
     private String name;

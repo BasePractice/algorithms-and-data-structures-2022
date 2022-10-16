@@ -1,4 +1,4 @@
-package Practice_3.Math_and_Random.Work_2;
+package ru.mirea.practice.Math_and_Random.Work_2;
 
 public class Tester {
     private final int a;

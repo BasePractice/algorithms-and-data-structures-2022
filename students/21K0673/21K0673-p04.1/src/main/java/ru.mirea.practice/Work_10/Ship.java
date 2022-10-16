@@ -1,4 +1,4 @@
-package Practice_4_1.Work_10;
+package ru.mirea.practice.Work_10;
 
 public class Ship extends Vehicle{
     private double time;

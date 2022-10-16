@@ -1,4 +1,4 @@
-package Practice_3.Shells.Work_1;
+package ru.mirea.practice.Shells.Work_1;
 
 public class Shell_1 {
     public static void main(String[] args) {

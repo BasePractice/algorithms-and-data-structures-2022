@@ -1,3 +1,5 @@
+package ru.mirea.practice.Ex_1;
+
 public class Test {
     public static void main(String[] args) {
         Shape s1 = new Circle(5.5,"RED", false); //Неправильно указаны ковычки

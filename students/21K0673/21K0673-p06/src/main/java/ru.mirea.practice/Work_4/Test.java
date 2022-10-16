@@ -1,4 +1,4 @@
-package Practice_6.Work_4;
+package ru.mirea.practice.Work_4;
 
 public class Test implements Priceable {
     private int price;

@@ -1,4 +1,4 @@
-package Practice_3.Formatting.Work_3;
+package ru.mirea.practice.Formatting.Work_3;
 
 public class Report {
     Report(){}

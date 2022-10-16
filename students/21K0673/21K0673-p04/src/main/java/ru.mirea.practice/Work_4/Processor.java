@@ -1,4 +1,4 @@
-package Practice_4.Work_4;
+package ru.mirea.practice.Work_4;
 
 public class Processor extends Computer{
     int core;
