@@ -10,7 +10,6 @@
     <description>Алгоритмы и структуры данных в системах реального времени</description>
 
     <properties>
-        <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -82,7 +81,6 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.0</version>
                 <configuration>
-                    <encoding>UTF-8</encoding>
                     <target>${maven.compiler.target}</target>
                     <source>${maven.compiler.source}</source>
                 </configuration>
