@@ -8,6 +8,6 @@
         <version>2022.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>21K0673-p02</artifactId>
+    <artifactId>21K0673-p08</artifactId>
     <description>Второе задание</description>
 </project>
