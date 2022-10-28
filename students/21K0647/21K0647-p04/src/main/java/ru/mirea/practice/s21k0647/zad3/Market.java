@@ -111,14 +111,30 @@ public class Market {
 
     public static void podCatalog(String catalog) {
         switch (catalog) {
-            case "CLOTHES" -> Clothes.cloAll();
-            case "SHOES" -> Shoes.shoAll();
-            case "ACCESSORYS" -> Accessorys.accAll();
-            case "ELECTRONICS" -> Electronics.electroAll();
-            case "TOYS" -> Toys.toyAll();
-            case "SPORT" -> Sport.sportAll();
-            case "AUTO" -> Auto.autoAll();
-            default -> System.out.println("There is no such directory");
+            case "CLOTHES":
+                Clothes.cloAll();
+                break;
+            case "SHOES" :
+                Shoes.shoAll();
+                break;
+            case "ACCESSORYS" :
+                Accessorys.accAll();
+                break;
+            case "ELECTRONICS" :
+                Electronics.electroAll();
+                break;
+            case "TOYS" :
+                Toys.toyAll();
+                break;
+            case "SPORT" :
+                Sport.sportAll();
+                break;
+            case "AUTO" :
+                Auto.autoAll();
+                break;
+            default :
+                System.out.println("There is no such directory");
+                break;
         }
 
     }
