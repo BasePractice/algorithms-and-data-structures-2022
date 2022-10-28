@@ -3,7 +3,6 @@ package ru.mirea.practice.s21k0647.zad1;
 import java.util.Scanner;
 
 public class Tester {
-    Tester(){}
     public static void main(String[] args) {
         Season seasonFavourite = Season.SUMMER;
         System.out.println(seasonFavourite.getInfo() + "\n");
