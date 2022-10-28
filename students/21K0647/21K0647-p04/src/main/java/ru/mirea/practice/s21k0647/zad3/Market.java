@@ -3,6 +3,9 @@ package ru.mirea.practice.s21k0647.zad3;
 import java.util.Scanner;
 
 public class Market {
+    Market(){
+        int n = 0;
+    }
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)) {
             Users users = new Users();
@@ -16,7 +19,7 @@ public class Market {
                     System.out.println("Komand: avtoriz, inCatalog, add, buy ");
                     ss = sc.nextLine();
                 }
-                if (ss.equals("inCatalog") || ss.equals("add")) {
+                if ("inCatalog".equals(ss) || "add".equals(ss)) {
 
                     if ("add".equals(ss) != true) {
                         Catalog.catalogAll();
@@ -106,6 +109,7 @@ public class Market {
                     break;
                 default:
                     System.out.println("There is no such directory");
+                    break;
             }
 
             podCatalog(catalog);
