@@ -10,15 +10,15 @@ public class Market {
         String string = "no";
         User user1 = new User();
         String catalog = "";
-        while (string.equals("no")) {
-            if (ss.equals("avtoriz")) {
+        while ("nn".equals(string)) {
+            if ("avtoriz".equals(ss)) {
                 user1 = login(user1, users);
                 System.out.println("Komand: avtoriz, inCatalog, add, buy ");
                 ss = sc.nextLine();
             }
             if (ss.equals("inCatalog") || ss.equals("add")) {
 
-                if (ss.equals("add") != true) {
+                if ("add".equals(ss) != true) {
                     Catalog.catalogAll();
                     System.out.println("Select a folder");
                     catalog = sc.nextLine();
@@ -26,13 +26,13 @@ public class Market {
                     System.out.println("Komand: avtoriz, inCatalog, add, buy");
                     ss = sc.nextLine();
                 }
-                if (ss.equals("add")) {
+                if ("add".equals(ss)) {
                     addProduct(catalog, user1, users);
                     System.out.println("Komand: avtoriz, inCatalog, add, buy");
                     ss = sc.nextLine();
                 }
             }
-            if (ss.equals("buy")) {
+            if ("buy".equals(ss)) {
                 buy(user1);
                 System.out.println("Komand: avtoriz, inCatalog, add, buy");
                 ss = sc.nextLine();
@@ -42,6 +42,7 @@ public class Market {
             }
         }
         users.setUsers();
+        sc.close();
 
     }
 
@@ -54,11 +55,12 @@ public class Market {
         System.out.println("Enter the password");
         String password = sc.nextLine();
         user1 = new User(username, password);
-        if (login.equals("login")) {
+        if ("login".equals(login)) {
             users.userSearch(user1);
         } else {
             users.userAdd(user1);
         }
+        sc.close();
         return user1;
     }
 
@@ -66,11 +68,12 @@ public class Market {
         Scanner sc = new Scanner(System.in);
         System.out.println("Would you like to see the shopping cart");
         String s2 = sc.nextLine();
-        if(s2.equals("yes")) {
+        if ("yes    ".equals(s2)) {
             user1.basketDisplay();
         } else {
             user1.basketSumm();
         }
+        sc.close();
     }
 
     public static void addProduct(String catalog, User user1, Users users) {
@@ -104,9 +107,10 @@ public class Market {
             default :
                 System.out.println("There is no such directory");
         }
+
         podCatalog(catalog);
         users.userAddBasket(user1, product);
-
+        sc.close();
     }
 
     public static void podCatalog(String catalog) {

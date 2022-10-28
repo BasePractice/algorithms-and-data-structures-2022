@@ -7,7 +7,10 @@ public class User {
     String password;
     ArrayList<Product> userBasket = new ArrayList<>();
 
-    User() {}
+    User() {
+        username = "";
+        password = "";
+    }
 
     User(String username, String password) {
         this.username = username;

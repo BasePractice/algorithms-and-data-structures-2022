@@ -5,11 +5,12 @@ public abstract class Clothes implements MenClothing, WomenClothing{
     int price;
     String color;
     public void dressMen() {
+        System.out.print("");
 
     }
 
     public void dressWomen() {
-
+        System.out.print("");
     }
 
 }

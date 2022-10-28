@@ -5,7 +5,10 @@ public class Product {
     String name;
     int price;
 
-    Product() {}
+    Product() {
+    name = "";
+    price = 0;
+    }
 
     Product(String name, int price) {
         this.name = name;
