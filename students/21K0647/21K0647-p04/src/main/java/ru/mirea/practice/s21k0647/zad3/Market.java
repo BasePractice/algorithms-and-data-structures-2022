@@ -6,8 +6,9 @@ public final class Market {
     private Market() {
 
     }
+
     public static void main(String[] args) {
-        try(Scanner sc = new Scanner(System.in)) {
+        try (Scanner sc = new Scanner(System.in)) {
             Users users = new Users();
             String ss = "avtoriz";
             String string = "no";
@@ -49,14 +50,13 @@ public final class Market {
     }
 
     public static User login(User user1, Users users, Scanner sc) {
-
-        System.out.println("Registration or login");
-        String login = sc.nextLine();
         System.out.println("Enter the username");
         String username = sc.nextLine();
         System.out.println("Enter the password");
         String password = sc.nextLine();
         user1 = new User(username, password);
+        System.out.println("Registration or login");
+        String login = sc.nextLine();
         if ("login".equals(login)) {
             users.userSearch(user1);
         } else {

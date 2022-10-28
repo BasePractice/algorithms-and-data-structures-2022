@@ -6,10 +6,11 @@ public final class Tester {
     private Tester() {
 
     }
+
     public static void main(String[] args) {
         Season seasonFavourite = Season.SUMMER;
         System.out.println(seasonFavourite.getInfo() + "\n");
-        try(Scanner sourse = new Scanner(System.in)) {
+        try (Scanner sourse = new Scanner(System.in)) {
             Season s = Season.valueOf(sourse.next());
             switch (s) {
                 case WINTER:

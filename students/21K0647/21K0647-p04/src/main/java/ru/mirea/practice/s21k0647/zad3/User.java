@@ -16,6 +16,7 @@ public class User {
         this.username = username;
         this.password = password;
     }
+
     public void userBasketAdd(Product product) {
         userBasket.add(product);
     }
@@ -31,7 +32,7 @@ public class User {
 
     public String basketSumm() {
         int sum = 0;
-        for(Product x: userBasket) {
+        for (Product x: userBasket) {
             sum += x.price;
         }
         System.out.println("Summa " + sum);

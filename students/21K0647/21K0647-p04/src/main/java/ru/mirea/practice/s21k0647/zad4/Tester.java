@@ -4,6 +4,7 @@ public final class Tester {
     Tester() {
 
     }
+
     public static void main(String[] args) {
         Computer computer1 = new Computer(Stamp.HP, 55000,
                 new Memory(1024, 64, 12),

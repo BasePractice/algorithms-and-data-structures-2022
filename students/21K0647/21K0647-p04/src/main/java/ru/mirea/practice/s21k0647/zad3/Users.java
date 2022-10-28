@@ -2,7 +2,7 @@ package ru.mirea.practice.s21k0647.zad3;
 
 import java.util.ArrayList;
 
-public class Users{
+public class Users {
     ArrayList<User> users = new ArrayList<>();
 
     public void userAdd(User user) {

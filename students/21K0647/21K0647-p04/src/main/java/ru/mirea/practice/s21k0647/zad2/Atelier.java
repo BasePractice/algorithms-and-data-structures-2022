@@ -26,7 +26,7 @@ public final class Atelier {
     }
 
     public static void main(String[] args) {
-        ArrayList<Clothes> clothes= new ArrayList<>();
+        ArrayList<Clothes> clothes = new ArrayList<>();
         clothes.add(new TShirt(Size.S, 1500, "green"));
         clothes.add(new Pants(Size.M, 5000, "black"));
         clothes.add(new Tie(Size.L, 1000, "white"));

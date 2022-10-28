@@ -4,6 +4,7 @@ public class Processor {
     int numberOfCores;
     int taktFrequency;
     int heatDissipation;
+
     Processor(int numberOfCores, int taktFrequency, int heatDissipation) {
         this.heatDissipation = heatDissipation;
         this.taktFrequency = taktFrequency;

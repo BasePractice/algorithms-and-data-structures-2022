@@ -13,8 +13,8 @@ public enum Catalog {
         return name();
     }
 
-    public static void catalogAll(){
-        for(Catalog x: Catalog.values()){
+    public static void catalogAll() {
+        for (Catalog x: Catalog.values()) {
             System.out.println(x);
         }
     }

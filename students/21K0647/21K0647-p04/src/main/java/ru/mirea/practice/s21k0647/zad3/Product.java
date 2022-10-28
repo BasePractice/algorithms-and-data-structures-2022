@@ -6,8 +6,8 @@ public class Product {
     int price;
 
     Product() {
-    name = "";
-    price = 0;
+        name = "";
+        price = 0;
     }
 
     Product(String name, int price) {
