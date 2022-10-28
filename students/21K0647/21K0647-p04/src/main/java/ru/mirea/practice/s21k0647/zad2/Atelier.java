@@ -2,7 +2,10 @@ package ru.mirea.practice.s21k0647.zad2;
 
 import java.util.ArrayList;
 
-public class Atelier {
+public final class Atelier {
+    Atelier() {
+
+    }
 
     public static void dressMen(ArrayList<Clothes> a) {
         String info = "Dress Men: ";
