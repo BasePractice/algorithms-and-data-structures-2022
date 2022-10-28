@@ -15,6 +15,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <version.junit>1.9.1</version.junit>
         <version.jupiter>5.9.1</version.jupiter>
+        <version.pmd>6.50.0</version.pmd>
     </properties>
 
     <scm>
@@ -25,7 +26,13 @@
     </scm>
 
     <modules>
-        <module>p01</module>
+        <module>students/21K0637</module>
+        <module>students/21K0664</module>
+        <module>students/21K0709</module>
+        <module>students/21K0647</module>
+        <module>students/21K0673</module>
+        <module>students/21K0654</module>
+        <module>students/21K0618</module>
     </modules>
 
     <dependencies>
@@ -88,7 +95,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>2.12.0</version>
+                <version>2.13.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -111,23 +118,38 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.19.0</version>
+                <configuration>
+                    <printFailingErrors>true</printFailingErrors>
+                    <rulesets>
+                        <ruleset>rulesets/java/quickstart.xml</ruleset>
+                    </rulesets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-core</artifactId>
+                        <version>${version.pmd}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-java</artifactId>
+                        <version>${version.pmd}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>students</id>
-            <modules>
-                <module>students/sample</module>
-                <module>students/0000000</module>
-                <module>students/21K0637</module>
-                <module>students/0000001</module>
-                <module>students/21K0664</module>
-                <module>students/21K0709</module>
-                <module>students/21K0647</module>
-                <module>students/21K0673</module>
-                <module>students/21K0654</module>
-            </modules>
-        </profile>
-    </profiles>
 </project>

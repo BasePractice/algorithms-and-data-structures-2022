@@ -3,7 +3,7 @@ package ru.mirea.practice4.s21k0647;
 import java.util.ArrayList;
 
 public class Shop {
-    ArrayList<Computer> cC = new ArrayList<Computer>();
+    ArrayList<Computer> cC = new ArrayList<>();
 
     public void addComputer(Computer a) {
         cC.add(a);
@@ -22,7 +22,7 @@ public class Shop {
         String n = "Not found";
         for (Computer x : cC) {
             if (x.model.equals(model)) {
-                n =  "Model: " + x.model + "\tProcessor: " + x.processor + "\tMemory: " + x.memory + "\tBattery: " + x.battery;
+                n =  "Model: " + x.model + "\tProcessor: " + x.processor + "\tmemory: " + x.memory + "\tBattery: " + x.battery;
             }
         }
         return n;

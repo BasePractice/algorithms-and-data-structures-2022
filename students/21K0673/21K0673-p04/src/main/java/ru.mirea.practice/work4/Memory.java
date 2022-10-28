@@ -11,6 +11,6 @@ public class Memory extends Computer {
 
     @Override
     public String toString() {
-        return "Memory:{Capacity= " + capacity + '}';
+        return "memory:{Capacity= " + capacity + '}';
     }
 }

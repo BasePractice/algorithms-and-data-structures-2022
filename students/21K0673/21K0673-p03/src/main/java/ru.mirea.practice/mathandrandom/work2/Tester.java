@@ -20,7 +20,9 @@ public class Tester {
                     i = j;
                 }
             }
-            return this.arr[i];
+            // DUPLICATE: 21K0664
+            // FIXME: Что за логика?
+            // return this.arr[i];
         }
         return this.arr[0];
     }
@@ -32,7 +34,9 @@ public class Tester {
                     i = j;
                 }
             }
-            return this.arr[i];
+            // DUPLICATE: 21K0664
+            // FIXME: Что за логика?
+            // return this.arr[i];
         }
         return this.arr[0];
     }

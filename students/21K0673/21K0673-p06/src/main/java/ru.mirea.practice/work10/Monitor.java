@@ -13,6 +13,6 @@ public class Monitor extends Computer {
 
     @Override
     public String toString() {
-        return "Memory:{Framerate= " + framerate + "Size=" + size + '}';
+        return "memory:{Framerate= " + framerate + "Size=" + size + '}';
     }
 }

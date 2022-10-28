@@ -31,7 +31,7 @@ public class Tester {
             }
             if (i.equals("output")) {
                 for (Computer x : amarket.cC) {
-                    System.out.println("Name: " + x.model + "\tProcessor: " + x.processor + "\tMemory: " + x.memory + "\tBattery: " + x.battery);
+                    System.out.println("Name: " + x.model + "\tProcessor: " + x.processor + "\tmemory: " + x.memory + "\tBattery: " + x.battery);
                 }
                 System.out.println("Enter a request:");
                 i = source.next();

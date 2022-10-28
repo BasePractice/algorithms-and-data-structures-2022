@@ -11,7 +11,7 @@ public class Report {
         }
     }
 
-    public static void set_baza() {
+    public static void setBaza() {
         Scanner sc = new Scanner(System.in);
         Employee[] arr = new Employee[3];
         double s;
@@ -27,7 +27,7 @@ public class Report {
     }
 
     public static void main(String[] args) {
-        set_baza();
+        setBaza();
         Report.generateReport();
     }
 }
