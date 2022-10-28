@@ -4,8 +4,8 @@ import java.lang.*;
 
 class TestAuthor {
     public static void main (String[] args) {
-        Author Fred = new Author("Fred", "fred@email.dot", 'M');
-        System.out.println("Hahaha, LOL, so funny\n" + Fred);
+        Author fred = new Author("Fred", "fred@email.dot", 'M');
+        System.out.println("Hahaha, LOL, so funny\n" + fred);
     }
 }
 

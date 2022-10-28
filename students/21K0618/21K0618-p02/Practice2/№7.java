@@ -5,17 +5,17 @@ import java.util.Arrays;
 class BookTest {
     public static void main(String[] args) {
 
-        Book Knigga0 = new Book("Василий Петров", "Сборник задач по физике 7-9 класс", "Учебная литература", 343, 1968);
-        Book Knigga1 = new Book("Стэн Ли", "Человек-Паук: Выпуск 123", "Супергероика", 74, 2005);
-        Book Knigga2 = new Book("Уильям Шекспир", "Гамлет", "Трагедия", 128, 1600);
-        Book Knigga3 = new Book("Иосиф Сталин", "Мемуары", "Автобиография", 528, 1952);
-        Book[] Boki = {Knigga0, Knigga1, Knigga2, Knigga3};
-        ShelfOfBooks Polka = new ShelfOfBooks(Boki);
+        Book knigga0 = new Book("Василий Петров", "Сборник задач по физике 7-9 класс", "Учебная литература", 343, 1968);
+        Book knigga1 = new Book("Стэн Ли", "Человек-Паук: Выпуск 123", "Супергероика", 74, 2005);
+        Book knigga2 = new Book("Уильям Шекспир", "Гамлет", "Трагедия", 128, 1600);
+        Book knigga3 = new Book("Иосиф Сталин", "Мемуары", "Автобиография", 528, 1952);
+        Book[] boki = {knigga0, knigga1, knigga2, knigga3};
+        ShelfOfBooks polka = new ShelfOfBooks(boki);
 
-        System.out.println(Polka.eldest());
-        System.out.println(Polka + "\nОх какой бардак! Нужно поставить по возрасту.");
-        Polka.sort();
-        System.out.println(Polka + "\nВот так-то лучше B|");
+        System.out.println(polka.eldest());
+        System.out.println(polka + "\nОх какой бардак! Нужно поставить по возрасту.");
+        polka.sort();
+        System.out.println(polka + "\nВот так-то лучше B|");
     }
 
     static class Book {

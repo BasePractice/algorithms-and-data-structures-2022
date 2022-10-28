@@ -7,19 +7,19 @@ class TestBall {
         Scanner putin = new Scanner (System.in);
         double x, y;
         System.out.println("Введите координаты мяча \nx = ");
-        Ball Bal = new Ball();
+        Ball bal = new Ball();
         x = putin.nextDouble();
-        Bal.setX(x);
+        bal.setX(x);
         System.out.println("y = ");
         y = putin.nextDouble();
-        Bal.setY(y);
-        System.out.println("Текущее положение мяча: " + Bal);
+        bal.setY(y);
+        System.out.println("Текущее положение мяча: " + bal);
         System.out.println("Куда вы хотите сдвинуть мяч?\nПо x на ");
         x = putin.nextDouble();
         System.out.println("По y на ");
         y = putin.nextDouble();
-        Bal.move(x, y);
-        System.out.println("Новое положение мяча: " + Bal);
+        bal.move(x, y);
+        System.out.println("Новое положение мяча: " + bal);
     }
 }
 

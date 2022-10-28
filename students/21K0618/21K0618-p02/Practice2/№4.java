@@ -6,7 +6,7 @@ import java.util.ArrayList;
 class Shop {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
-        Shop Eldorado = new Shop();
+        Shop eldorado = new Shop();
         //Комбинация для входа в режим Администратора Sobaka@Kot^.^
         //Для выключения системы введите SystemGoToAutoSleepAndOff
         System.out.println("Добро пожаловать в Эльдорадо, первый компьютеризированный магазин электронной техники!");
@@ -21,11 +21,11 @@ class Shop {
                     System.out.println("\nВыберите нужную команду\n0. Выход из режима Администратора.\n1. Удаление товара из каталога\n2. Добавление товара в каталог.\n3. Просмотр каталога.");
                     V = scan.nextInt();
                     if (V == 1) {
-                        Eldorado.Autput();
+                        eldorado.Autput();
                         System.out.println("Какой элемент каталога вы хотите удалить?");
                         V = scan.nextInt();
-                        if (V < Eldorado.Katalog.size() && V > 0) {
-                            Eldorado.Katalog.remove(V);
+                        if (V < eldorado.Katalog.size() && V > 0) {
+                            eldorado.Katalog.remove(V);
                         }
                     } else if (V == 2) {
                         System.out.println("Введите название товара:");
@@ -35,9 +35,9 @@ class Shop {
                         System.out.println("Введите цену  рублях:");
                         NewPurch += " ";
                         NewPurch += scan.nextLine();
-                        Eldorado.Katalog.add(NewPurch);
+                        eldorado.Katalog.add(NewPurch);
                     } else if (V == 3) {
-                        Eldorado.Autput();
+                        eldorado.Autput();
                     }
                 }
             }
@@ -45,13 +45,13 @@ class Shop {
                 System.out.println("Ваш запрос:");
                 poisk = scan.nextLine();
                 System.out.println("Вот что мы нашли:");
-                for (int i = 1; i < Eldorado.Katalog.size(); i++) {
-                    if (Eldorado.Katalog.get(i).indexOf(poisk) != -1) {
-                        System.out.println(Eldorado.Katalog.get(i) + 'р');
+                for (int i = 1; i < eldorado.Katalog.size(); i++) {
+                    if (eldorado.Katalog.get(i).indexOf(poisk) != -1) {
+                        System.out.println(eldorado.Katalog.get(i) + 'р');
                     }
                 }
             } else if (poisk.equals("1")) {
-                Eldorado.Autput();
+                eldorado.Autput();
             }
         }
         System.out.println("Электронный магазин закрыт!");

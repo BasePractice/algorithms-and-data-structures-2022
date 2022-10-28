@@ -28,22 +28,22 @@ class DogKennel {
 
     public static void main(String[] args) {
 
-        Dog Gu4ka = new Dog("Жучка", 5);
-        Dog Bobik = new Dog("Бобик", 9);
-        Dog Krepish = new Dog("Крепыш", 15);
+        Dog gu4Ka = new Dog("Жучка", 5);
+        Dog bobik = new Dog("Бобик", 9);
+        Dog krepish = new Dog("Крепыш", 15);
 
-        System.out.println(Gu4ka);
-        System.out.println(Krepish + ". В человеческих годах это - " + Krepish.getHumanAge() + " лет!");
-        System.out.println("2021 год. " + Bobik);
-        Bobik.setAge(4);
-        System.out.println("2022 год. " + Bobik);
+        System.out.println(gu4Ka);
+        System.out.println(krepish + ". В человеческих годах это - " + krepish.getHumanAge() + " лет!");
+        System.out.println("2021 год. " + bobik);
+        bobik.setAge(4);
+        System.out.println("2022 год. " + bobik);
 
-        DogKennel Zavod4ica = new DogKennel();
-        Dog[] Doggies = {Gu4ka, Bobik, Krepish};
-        Zavod4ica.setDogs(Doggies);
-        Zavod4ica.addDog(new Dog("Руперт", 1));
+        DogKennel zavod4Ica = new DogKennel();
+        Dog[] Doggies = {gu4Ka, bobik, krepish};
+        zavod4Ica.setDogs(Doggies);
+        zavod4Ica.addDog(new Dog("Руперт", 1));
 
-        System.out.println("А недавно у нас появился новый пёс!" + Zavod4ica.Dogs[Zavod4ica.Dogs.length-1] + "- он совсем ещё щенок.");
+        System.out.println("А недавно у нас появился новый пёс!" + zavod4Ica.Dogs[zavod4Ica.Dogs.length-1] + "- он совсем ещё щенок.");
     }
 }
 

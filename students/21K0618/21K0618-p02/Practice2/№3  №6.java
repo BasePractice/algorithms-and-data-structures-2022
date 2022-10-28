@@ -19,9 +19,9 @@ class CircleTester {
 
             Circle sphera = new Circle(new Point(777, 777), 777);
 
-            Circle[] Krugi = new Circle[]{krug, shar, okrug, sphera};
+            Circle[] krugi = new Circle[]{krug, shar, okrug, sphera};
 
-            Tester_3_6 test = new Tester_3_6(Krugi);
+            Tester_3_6 test = new Tester_3_6(krugi);
             System.out.println("Координаты точки p: " + p);
             System.out.println("Размер массива Krugi: " + test.getL());
             System.out.println("Массив Krugi: " + test);

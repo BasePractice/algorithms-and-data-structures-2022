@@ -7,7 +7,7 @@ class Poker {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
-        String[][][] Deck = { {{"Червы"}, {"Туз ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "Валет ", "Дама ", "Король "}},
+        String[][][] deck = { {{"Червы"}, {"Туз ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "Валет ", "Дама ", "Король "}},
                 {{"Пики"}, {"Туз ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "Валет ", "Дама ", "Король "}},
                 {{"Крести"}, {"Туз ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "Валет ", "Дама ", "Король "}},
                 {{"Буби"}, {"Туз ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "Валет ", "Дама ", "Король "}}};
@@ -18,32 +18,32 @@ class Poker {
                     "\nВведите число игроков ещё раз");
             selecter = scan.nextInt();
         }
-        String[][] KAPTbI = new String[selecter][5];
+        String[][] kaptbI = new String[selecter][5];
         int type; int mastb;
-        for (selecter = 0; selecter < KAPTbI.length; selecter++) {
+        for (selecter = 0; selecter < kaptbI.length; selecter++) {
             for (int k = 0; k < 5; k++) {
                 type = rand.nextInt(0, 13);
                 mastb = rand.nextInt(0, 4);
-                while (Deck[mastb][0][0] == "")
+                while (deck[mastb][0][0] == "")
                 {
                     mastb = rand.nextInt(0, 4);
                 }
-                while (Deck[mastb][1][type] == "")
+                while (deck[mastb][1][type] == "")
                 {
                     type = rand.nextInt(0, 13);
                 }
-                KAPTbI[selecter][k] = Deck[mastb][1][type] + Deck[mastb][0][0];
-                Deck[mastb][1][type] = "";
-                if (Deck[mastb][1][0] == "" && Deck[mastb][1][1] == "" && Deck[mastb][1][2] == "" && Deck[mastb][1][3] == "" &&
-                        Deck[mastb][1][4] == "" && Deck[mastb][1][5] == "" &&  Deck[mastb][1][6] == "" && Deck[mastb][1][7] == "" &&
-                        Deck[mastb][1][8] == "" &&  Deck[mastb][1][9] == "" &&  Deck[mastb][1][10] == "" &&  Deck[mastb][1][11] == "" &&
-                        Deck[mastb][1][12] == "")
+                kaptbI[selecter][k] = deck[mastb][1][type] + deck[mastb][0][0];
+                deck[mastb][1][type] = "";
+                if (deck[mastb][1][0] == "" && deck[mastb][1][1] == "" && deck[mastb][1][2] == "" && deck[mastb][1][3] == "" &&
+                        deck[mastb][1][4] == "" && deck[mastb][1][5] == "" &&  deck[mastb][1][6] == "" && deck[mastb][1][7] == "" &&
+                        deck[mastb][1][8] == "" &&  deck[mastb][1][9] == "" &&  deck[mastb][1][10] == "" &&  deck[mastb][1][11] == "" &&
+                        deck[mastb][1][12] == "")
                 {
-                    Deck[mastb][0][0] = "";
+                    deck[mastb][0][0] = "";
                 }
             }
             System.out.println("\nИгрок №" + (selecter+1) + " получил карты:");
-            for (int k = 0; k < 5; k++) System.out.println(KAPTbI[selecter][k]);
+            for (int k = 0; k < 5; k++) System.out.println(kaptbI[selecter][k]);
         }
     }
 }
