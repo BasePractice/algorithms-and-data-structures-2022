@@ -1,12 +1,12 @@
 package ru.mirea.practice.shells.work2;
 
-public class Shell {
+abstract class Shell {
     public static void main(String[] args) {
 
         Boolean bo = Boolean.FALSE;
-
+        System.out.println(bo);
         Character ch = 'b';
-
+        System.out.println(ch);
         Byte by = (byte) 0b10;
 
         by.byteValue();

@@ -2,19 +2,17 @@ package ru.mirea.workfourone.task9;
 
 public class Bed extends Furniture {
 
-    private double price;
-
-    Bed() {
-    }
 
     Bed(double price) {
-        this.price = price;
+        super(price);
     }
 
+    @Override
     public void setPrice(double price) {
         this.price = price;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }

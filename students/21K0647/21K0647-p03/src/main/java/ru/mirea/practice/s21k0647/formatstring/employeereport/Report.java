@@ -10,7 +10,8 @@ public class Report {
     }
 
     public Formatter generateReport() {
-        Formatter formatter = new Formatter();
-        return formatter.format("|%15s %15s| \n|%15s %15.2f|","Name",  a.fullname, "Salary",  a.selary);
+        try (Formatter formatter = new Formatter()) {
+            return formatter.format("|%15s %15s| \n|%15s %15.2f|", "Name", a.fullname, "Salary", a.selary);
+        }
     }
 }

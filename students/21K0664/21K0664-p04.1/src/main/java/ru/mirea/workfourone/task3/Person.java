@@ -4,8 +4,6 @@ public class Person {
     private String fullName;
     private int age;
 
-    Person() {
-    }
 
     Person(String fullName, int age) {
         this.fullName = fullName;

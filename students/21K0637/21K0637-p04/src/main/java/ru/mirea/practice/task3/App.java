@@ -2,13 +2,15 @@ package ru.mirea.practice.task3;
 
 import java.util.Scanner;
 
-public class App {
+public abstract class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        User userIvan = new User("Ivan", "pswd");
-        if (!userIvan.checkUser(scanner)) {
-            System.out.println("Пользователь не найден");
-            return;
+        User userIvan;
+        try (Scanner scanner = new Scanner(System.in)) {
+            userIvan = new User("Ivan", "pswd");
+            if (!userIvan.checkUser(scanner)) {
+                System.out.println("Пользователь не найден");
+                return;
+            }
         }
 
 

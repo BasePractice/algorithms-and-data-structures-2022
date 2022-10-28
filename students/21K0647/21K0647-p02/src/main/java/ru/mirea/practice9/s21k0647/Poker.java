@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Poker {
+public final class Poker {
+    private Poker() {
+
+    }
+
     public static void main(String[] args) {
         ArrayList<Karta> koloda = new ArrayList<>();
 
@@ -57,28 +61,29 @@ public class Poker {
             koloda.add(c);
         }
 
-        Scanner sourse = new Scanner(System.in);
-        int n = sourse.nextInt();
-        if (n > 10) {
-            System.out.println("Sorry! There are too many of you. (");
-        } else {
-            String[] nman = new String[n];
-            Random random = new Random();
+        try (Scanner sourse = new Scanner(System.in)) {
+            int n = sourse.nextInt();
+            if (n > 10) {
+                System.out.println("Sorry! There are too many of you. (");
+            } else {
+                String[] nman = new String[n];
+                Random random = new Random();
 
-            for (int j = 0; j < n; ++j) {
-                nman[j] = "";
-                for (int i = 0; i < 5; ++i) {
-                    Karta x = koloda.get(random.nextInt(koloda.size()));
-                    nman[j] += x.weight;
-                    nman[j] += x.mast;
-                    nman[j] += "\t";
-                    koloda.remove(x);
+                for (int j = 0; j < n; ++j) {
+                    nman[j] = "";
+                    for (int i = 0; i < 5; ++i) {
+                        Karta x = koloda.get(random.nextInt(koloda.size()));
+                        nman[j] += x.weight;
+                        nman[j] += x.mast;
+                        nman[j] += "\t";
+                        koloda.remove(x);
+                    }
                 }
-            }
-            int i = 1;
-            for (String x : nman) {
-                System.out.println(i + " Player\n" + x + "\n");
-                i++;
+                int i = 1;
+                for (String x : nman) {
+                    System.out.println(i + " Player\n" + x + "\n");
+                    i++;
+                }
             }
         }
     }

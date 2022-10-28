@@ -1,8 +1,12 @@
 package ru.mirea.practice.s21k0647.zadshells.zad1;
 
-public class Shells {
+public final class Shells {
+    private Shells() {
+
+    }
+
     public static void main(String[] args) {
-        Double x = new Double(5);
+        Double x = Double.valueOf(5);
         Double y = x.valueOf("3");
         String s = "55.5";
         Double a = Double.parseDouble(s);

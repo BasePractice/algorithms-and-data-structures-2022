@@ -1,6 +1,6 @@
 package ru.mirea.practice.work2;
 
-public class TestBall {
+abstract class TestBall {
     public static void main(String[] args) {
         Ball a = new Ball(34, 56);
 

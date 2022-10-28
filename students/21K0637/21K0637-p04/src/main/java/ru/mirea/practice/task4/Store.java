@@ -3,7 +3,7 @@ package ru.mirea.practice.task4;
 import ru.mirea.practice.task4.memory.Memory;
 import ru.mirea.practice.task4.memory.Type;
 
-public class Store {
+public abstract class Store {
     public static void main(String[] args) {
         Memory ssd512 = new Memory(512, Type.SSD);
         Memory ssd1024 = new Memory(1024, Type.SSD_M2);

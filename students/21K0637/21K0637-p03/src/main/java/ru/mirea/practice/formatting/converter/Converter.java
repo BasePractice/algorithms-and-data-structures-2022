@@ -4,14 +4,17 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Converter {
+public abstract class Converter {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int inCurrency;
+        float amount;
+        try (Scanner sc = new Scanner(System.in)) {
 
-        System.out.println("Введите валюту:\n1-$\n2-€\n3-¥\n4-£");
-        int inCurrency = sc.nextInt();
-        System.out.println("Введите сумму");
-        float amount = sc.nextInt();
+            System.out.println("Введите валюту:\n1-$\n2-€\n3-¥\n4-£");
+            inCurrency = sc.nextInt();
+            System.out.println("Введите сумму");
+            amount = sc.nextInt();
+        }
 
         switch (inCurrency) {
             case 1:

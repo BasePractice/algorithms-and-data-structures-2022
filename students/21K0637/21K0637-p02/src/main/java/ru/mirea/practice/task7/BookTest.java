@@ -1,6 +1,6 @@
 package ru.mirea.practice.task7;
 
-public class BookTest {
+public abstract class BookTest {
     public static void main(String[] args) {
         Book[] books = {
             new Book("Джордж Оруэлл", "1984", 2018),

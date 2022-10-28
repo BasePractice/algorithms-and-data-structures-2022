@@ -1,6 +1,6 @@
 package ru.mirea.practice.works6to9;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
         Printable[] printable = new Book[2];
         printable[0] = new Book();

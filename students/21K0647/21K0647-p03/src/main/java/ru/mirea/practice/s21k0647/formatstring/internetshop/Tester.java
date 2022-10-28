@@ -3,12 +3,17 @@ package ru.mirea.practice.s21k0647.formatstring.internetshop;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+
+    }
+
     public static void main(String[] args) {
-        ArrayList<Product> c = new ArrayList<>();
+        List<Product> c = new ArrayList<>();
         Product a1 = new Product("Product1", 123);
         c.add(a1);
         Product a2 = new Product("Product2", 56);
@@ -24,43 +29,44 @@ public class Tester {
             System.out.println(x.name + "\t" + x.price);
         }
 
-        Scanner source = new Scanner(System.in);
-        System.out.println("Add product to cart?");
-        String s = source.nextLine();
-        ArrayList<Product> basket = new ArrayList<>();
-        float sumBasket = 0;
-        while (s.equals("yes")) {
-            String s1 = source.next();
-            for (Product x: c) {
-                if (s1.equals(x.name)) {
-                    basket.add(x);
-                    sumBasket += x.price;
-                }
-            }
+        try (Scanner source = new Scanner(System.in)) {
             System.out.println("Add product to cart?");
-            s = source.next();
-        }
+            String s = source.nextLine();
+            List<Product> basket = new ArrayList<>();
+            float sumBasket = 0;
+            while ("yes".equals(s)) {
+                String s1 = source.next();
+                for (Product x : c) {
+                    if (s1.equals(x.name)) {
+                        basket.add(x);
+                        sumBasket += x.price;
+                    }
+                }
+                System.out.println("Add product to cart?");
+                s = source.next();
+            }
 
-        Locale.setDefault(new Locale("ru", "RU"));
-        NumberFormat format = NumberFormat.getCurrencyInstance();
-        System.out.println("Amount in rubles: " + format.format(sumBasket));
-        System.out.println("Convert to another currency?");
-        String conv = source.next();
-        if (conv.equals("yes")) {
-            System.out.print("Enter the currency language code: ");
-            String kodlang = source.next();
-            System.out.print("Enter the country code of the currency: ");
-            String kodLand = source.next();
-            System.out.print("Enter the course");
-            double course = source.nextDouble();
-            System.out.println(converter(kodlang, kodLand, course, sumBasket));
+            Locale.setDefault(new Locale("ru", "RU"));
+            NumberFormat format = NumberFormat.getCurrencyInstance();
+            System.out.println("Amount in rubles: " + format.format(sumBasket));
+            System.out.println("Convert to another currency?");
+            String conv = source.next();
+            if ("yes".equals(conv)) {
+                System.out.print("Enter the currency language code: ");
+                String kodlang = source.next();
+                System.out.print("Enter the country code of the currency: ");
+                String kodLand = source.next();
+                System.out.print("Enter the course");
+                double course = source.nextDouble();
+                System.out.println(converter(kodlang, kodLand, course, sumBasket));
+            }
         }
     }
 
     public static String converter(String kodLang, String kodLand, Double course, float sumBasket) {
         Locale sumFormat2 = new Locale(kodLang, kodLand);
         NumberFormat sumformat2 = NumberFormat.getCurrencyInstance(sumFormat2);
-        return ("Amount in " + sumFormat2.getISO3Country() + " " + sumformat2.format(course * sumBasket));
+        return "Amount in " + sumFormat2.getISO3Country() + " " + sumformat2.format(course * sumBasket);
 
     }
 

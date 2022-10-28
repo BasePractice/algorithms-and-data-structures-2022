@@ -2,7 +2,7 @@ package ru.mirea.practice.task3;
 
 import java.util.Random;
 
-public class CheckIncreasingSequence {
+public abstract class CheckIncreasingSequence {
     public static void main(String[] args) {
         Random rand = new Random();
         int[] array = new int[4];

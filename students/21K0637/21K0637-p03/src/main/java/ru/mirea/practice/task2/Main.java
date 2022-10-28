@@ -1,6 +1,6 @@
 package ru.mirea.practice.task2;
 
-public class Main {
+public abstract class Main {
     public static void main(String[] args) {
         Tester tester = new Tester();
         tester.allCircles();

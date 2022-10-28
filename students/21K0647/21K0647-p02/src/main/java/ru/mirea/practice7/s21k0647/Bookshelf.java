@@ -1,10 +1,11 @@
 package ru.mirea.practice7.s21k0647;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Bookshelf {
     int n;
-    ArrayList<Book> bB = new ArrayList<>();
+    List<Book> bB = new ArrayList<>();
 
     public Bookshelf(int n) {
         this.n = n;

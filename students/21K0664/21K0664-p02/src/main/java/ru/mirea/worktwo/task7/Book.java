@@ -11,7 +11,6 @@ public class Book {
         this.year = year;
     }
 
-    Book() {}
 
     public String getAuthor() {
         return this.author;
@@ -37,6 +36,7 @@ public class Book {
         this.year = year;
     }
 
+    @Override
     public String toString() {
         return "{Название: " + name + ", Автор: " + author + ", Год издания: " + year + "}";
     }

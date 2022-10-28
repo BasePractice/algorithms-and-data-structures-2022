@@ -6,8 +6,7 @@ public class Processor extends Computer {
     double frequency;
 
     public Processor(EnumComputer companyName, double cost, int core, int flow, double frequency) {
-        this.companyName = companyName;
-        this.cost = cost;
+        super(companyName, cost);
         this.core = core;
         this.flow = flow;
         this.frequency = frequency;

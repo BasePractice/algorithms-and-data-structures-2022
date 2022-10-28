@@ -6,8 +6,6 @@ public class Student extends Pupil {
 
     public int course;
 
-    Student() {
-    }
 
     Student(String name, int age, int course) {
         this.age = age;

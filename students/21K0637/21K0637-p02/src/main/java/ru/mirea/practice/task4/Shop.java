@@ -1,9 +1,10 @@
 package ru.mirea.practice.task4;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Shop {
-    private ArrayList<Computer> catalog = new ArrayList<>();
+    private List<Computer> catalog = new ArrayList<>();
 
     public void addComputer(Computer computer) {
         catalog.add(computer);
@@ -18,8 +19,7 @@ public class Shop {
             System.out.println("Каталог пуст");
         } else {
             int count = 0;
-            for (int i = 0; i < catalog.size(); i++) {
-                Computer comp = catalog.get(i);
+            for (Computer comp : catalog) {
                 if (comp.equals(computer)) {
                     count += 1;
                     System.out.println(computer.getBrand() + " " + computer.getModel() + " в наличии");

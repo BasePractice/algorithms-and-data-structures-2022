@@ -1,9 +1,6 @@
 package ru.mirea.practice.work8;
 
 public class Sort {
-    Sort() {
-    }
-
     public String[] sort(String[] a, int amount) {
         String buff;
         int i = 0;

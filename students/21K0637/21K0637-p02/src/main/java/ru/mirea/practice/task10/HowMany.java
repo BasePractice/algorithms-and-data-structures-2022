@@ -2,7 +2,7 @@ package ru.mirea.practice.task10;
 
 import java.util.Scanner;
 
-public class HowMany {
+public abstract class HowMany {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {

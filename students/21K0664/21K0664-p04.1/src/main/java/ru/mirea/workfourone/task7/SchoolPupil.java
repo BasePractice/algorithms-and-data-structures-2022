@@ -4,9 +4,6 @@ public class SchoolPupil extends Pupil {
     public String name;
     public int age;
 
-    SchoolPupil() {
-    }
-
     SchoolPupil(String name, int age) {
         this.age = age;
         this.name = name;

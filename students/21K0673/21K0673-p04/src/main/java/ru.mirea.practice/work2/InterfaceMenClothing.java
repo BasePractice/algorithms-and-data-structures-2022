@@ -1,7 +1,8 @@
 package ru.mirea.practice.work2;
 
-public interface InterfaceMenClothing {
-    public void dressMan();
+interface InterfaceMenClothing {
+    void dressMan();
 
-    public String toString();
+    @Override
+    String toString();
 }

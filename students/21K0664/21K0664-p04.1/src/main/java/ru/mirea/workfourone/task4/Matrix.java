@@ -7,8 +7,6 @@ public class Matrix {
     private int columns;
     private int lines;
 
-    Matrix() {
-    }
 
     Matrix(int columns, int lines, double[][] arr) {
         this.lines = lines;
@@ -49,7 +47,7 @@ public class Matrix {
         Matrix c = new Matrix(this.lines, this.columns, a);
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
-                c.getArr()[i][j] = (this.arr[i][j] + b.getArr()[i][j]);
+                c.getArr()[i][j] = this.arr[i][j] + b.getArr()[i][j];
             }
         }
         return c;
@@ -71,16 +69,12 @@ public class Matrix {
         return c;
     }
 
+    @Override
     public String toString() {
         System.out.println("Матрица:");
-        for (int i = 0; i < this.lines; i++) {
-            for (int j = 0; j < this.columns; j++) {
-                // FIXME: Что за логика?
-                // return Arrays.deepToString(this.arr);
-            }
+        for (double[] d : arr) {
+            System.out.println(Arrays.toString(d));
         }
         return "";
     }
-
-
 }

@@ -2,7 +2,7 @@ package ru.mirea.practice.formatting.report;
 
 import java.util.Date;
 
-public class Report {
+public abstract class Report {
     public static void generateReport(Employee[] array) {
         System.out.printf("Отчет на %tF %n", new Date());
         for (Employee employee : array) {

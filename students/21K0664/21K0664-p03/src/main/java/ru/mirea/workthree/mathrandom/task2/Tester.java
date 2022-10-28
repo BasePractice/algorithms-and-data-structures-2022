@@ -9,40 +9,32 @@ public class Tester {
         this.arr = new Circle[a];
     }
 
-    public void setCircle(Circle k,int z) {
+    public void setCircle(Circle k, int z) {
         this.arr[z] = k;
     }
 
-    public Circle getmostBig() {
-        for (int i = 0; i < this.a - 1;) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() < this.arr[j].getR()) {
-                    i = j;
-                }
+    public double getbig() {
+        double max = 0;
+        for (Circle circle : arr) {
+            if (circle.getR() > max) {
+                max = circle.getR();
             }
-            // DUPLICATE: 21K0673
-            // FIXME: Что за логика?
-            // return this.arr[i];
         }
-        return this.arr[0];
+        return max;
     }
 
-    public Circle getmostSmall() {
-        for (int i = 0; i < this.a - 1;) {
-            for (int j = 1; j < this.a; j++) {
-                if (this.arr[i].getR() > this.arr[j].getR()) {
-                    i = j;
-                }
+    public double getsmall() {
+        double min = arr[0].getR();
+        for (Circle circle : arr) {
+            if (circle.getR() < min) {
+                min = circle.getR();
             }
-            // DUPLICATE: 21K0673
-            // FIXME: Что за логика?
-            // return this.arr[i];
         }
-        return this.arr[0];
+        return min;
     }
 
     public void sort() {
-        for (int i = 0; i < this.a - 1;i++) {
+        for (int i = 0; i < this.a - 1; i++) {
             for (int j = 1; j < this.a; j++) {
                 if (this.arr[i].getR() > this.arr[j].getR()) {
                     Circle buff = this.arr[j];
@@ -53,30 +45,12 @@ public class Tester {
         }
     }
 
+    @Override
     public String toString() {
         System.out.println("\n");
-        for (int i = 0; i < this.a;i++) {
+        for (int i = 0; i < this.a; i++) {
             System.out.println("{" + this.arr[i].toString() + "}");
         }
         return " ";
-    }
-
-    public static void main(String[] args) {
-        Point point = new Point(35,24);
-        Circle a = new Circle(point,Math.random());
-        Circle b = new Circle(point,Math.random());
-        Circle c = new Circle(point,Math.random());
-
-        Tester arr = new Tester(3);
-        arr.setCircle(a,0);
-        arr.setCircle(b,1);
-        arr.setCircle(c,2);
-
-        System.out.println(arr.getmostBig());
-        System.out.println(arr.getmostSmall());
-
-        arr.sort();
-
-        System.out.println(arr.toString());
     }
 }

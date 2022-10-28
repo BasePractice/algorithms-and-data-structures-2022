@@ -6,7 +6,6 @@ class MovablePoint implements Movable {
     protected int xspeed;
     protected int yspeed;
 
-    MovablePoint() {}
 
     MovablePoint(int x, int y, int xspeed, int yspeed) {
         this.x = x;
@@ -15,18 +14,22 @@ class MovablePoint implements Movable {
         this.yspeed = yspeed;
     }
 
+    @Override
     public void moveUp() {
         y += yspeed;
     }
 
+    @Override
     public void moveDown() {
         y -= yspeed;
     }
 
+    @Override
     public void moveRight() {
         x += xspeed;
     }
 
+    @Override
     public void moveLeft() {
         x -= xspeed;
     }
@@ -48,6 +51,7 @@ class MovablePoint implements Movable {
         this.y = y;
     }
 
+    @Override
     public String toString() {
         return "Point(" + x + ", " + y + ')';
     }

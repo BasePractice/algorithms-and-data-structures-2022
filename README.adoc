@@ -10,4 +10,6 @@ image:https://github.com/BasePractice/algorithms-and-data-structures-2022/action
 
 1. link:students/sample/README.adoc[Пример]
 
-2. link:students/???????[XXXXXX]
+2. link:students/0000000/README.adoc[0000000]
+
+3. link:students/0000001/README.adoc[0000001]

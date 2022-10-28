@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task7;
 
-public class Tester {
+abstract class Tester {
     public static void main(String[] args) {
         Pupil[] pupil = new Pupil[2];
         pupil[0] = new SchoolPupil("Ivan", 12);

@@ -1,6 +1,6 @@
 package ru.mirea.practice.task2;
 
-public class TestBall {
+public abstract class TestBall {
     public static void main(String[] args) {
         Ball ball = new Ball(10, 5);
         for (int i = 0; i < 5; i++) {

@@ -1,10 +1,12 @@
 package ru.mirea.practice.task2;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Random;
 
 public class Tester {
-    private final ArrayList<Circle> array = new ArrayList<>();
+    private final List<Circle> array = new ArrayList<>();
 
     public Tester() {
         Random rand = new Random();
@@ -43,7 +45,7 @@ public class Tester {
     }
 
     public void toSort() {
-        array.sort((o1, o2) -> (o1.getRadius() - o2.getRadius()));
+        array.sort(Comparator.comparingInt(Circle::getRadius));
     }
 
     public void allCircles() {

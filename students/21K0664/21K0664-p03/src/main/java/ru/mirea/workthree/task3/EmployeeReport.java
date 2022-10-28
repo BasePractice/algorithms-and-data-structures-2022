@@ -1,6 +1,6 @@
 package ru.mirea.workthree.task3;
 
-public class EmployeeReport {
+abstract class EmployeeReport {
     public static void main(String[] args) {
         Employee[] a = new Employee[3];
         a[0] = new Employee("Петров Иван Сергеевич", 34567.567);

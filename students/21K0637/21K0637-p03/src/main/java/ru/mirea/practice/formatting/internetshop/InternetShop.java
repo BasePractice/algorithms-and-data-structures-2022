@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class InternetShop {
+public abstract class InternetShop {
     static Product[] catalog = {new Product("Молоко", 89),
         new Product("Печенье", 58),
         new Product("Шоколад", 99),
@@ -19,11 +19,14 @@ public class InternetShop {
         }
 
         System.out.println("Выберете товар: ");
-        Scanner sc = new Scanner(System.in);
-        int value = sc.nextInt() + 1;
+        int value;
+        int c;
+        try (Scanner sc = new Scanner(System.in)) {
+            value = sc.nextInt() + 1;
 
-        System.out.println("Выберете валюту: \n1.$\n2.€\n3.¥\n4.£");
-        int c = sc.nextInt();
+            System.out.println("Выберете валюту: \n1.$\n2.€\n3.¥\n4.£");
+            c = sc.nextInt();
+        }
 
         switch (c) {
             case 1:

@@ -2,7 +2,7 @@ package ru.mirea.practice.task9;
 
 import java.util.Scanner;
 
-public class Poker {
+public abstract class Poker {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {

@@ -1,9 +1,10 @@
 package ru.mirea.practice.task3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Basket {
-    private static final ArrayList<Product> products = new ArrayList<>();
+    private static final List<Product> products = new ArrayList<>();
 
     public void addProduct(Product product) {
         products.add(product);

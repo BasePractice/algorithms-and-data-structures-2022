@@ -1,11 +1,10 @@
 package ru.mirea.worknine.task2;
 
-public class Student  {
+public class Student {
     public String name;
     public int idnumber;
     public int gpa;
 
-    Student() {}
 
     public int getIdnumber() {
         return idnumber;

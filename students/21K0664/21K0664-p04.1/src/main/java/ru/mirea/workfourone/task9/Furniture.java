@@ -2,10 +2,7 @@ package ru.mirea.workfourone.task9;
 
 public abstract class Furniture {
 
-    private double price;
-
-    Furniture() {
-    }
+    protected double price;
 
     Furniture(double price) {
         this.price = price;

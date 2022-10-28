@@ -1,6 +1,6 @@
 package ru.mirea.practice.work7;
 
-public class BookTest {
+abstract class BookTest {
     public static void main(String[] args) {
         Book a = new Book("Лев Николаевич Толстой", "Война и Мир", 1865);
         System.out.println(a);

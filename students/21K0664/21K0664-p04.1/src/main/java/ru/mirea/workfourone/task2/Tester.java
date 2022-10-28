@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task2;
 
-public class Tester {
+abstract class Tester {
     public static void main(String[] args) {
         Phone a = new Phone("89034562341", "IPhone 2", 124.5);
         Phone b = new Phone("89389427563", "IPhone 13", 511.4);

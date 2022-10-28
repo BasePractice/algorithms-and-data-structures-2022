@@ -1,6 +1,6 @@
 package ru.mirea.practice.task2;
 
-public class Example2 {
+public abstract class Example2 {
     public static void main(String[] args) {
         Clothes[] clothes = {
             new TShirt(Size.XS, "белый"),

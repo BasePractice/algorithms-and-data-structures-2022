@@ -1,8 +1,8 @@
 package ru.mirea.worktwo.task4;
 
 public class Shop {
-    private final int space = 10;
-    private final int[] computer = new int[space];
+    private int space = 10;
+    private int[] computer = new int[space];
     private int amount;
 
     Shop(int amount) {
@@ -15,7 +15,6 @@ public class Shop {
         }
     }
 
-    Shop() {}
 
     public double getAmount() {
         return this.amount;
@@ -51,6 +50,7 @@ public class Shop {
         System.out.println("Компьютер " + a + " есть на складе");
     }
 
+    @Override
     public String toString() {
         return "{" + "В магазине: " + amount + " компьютеров}";
     }

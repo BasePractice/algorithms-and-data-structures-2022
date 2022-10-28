@@ -4,8 +4,7 @@ public class Memory extends Computer {
     double capacity;
 
     public Memory(EnumComputer companyName, double cost, double capacity) {
-        this.companyName = companyName;
-        this.cost = cost;
+        super(companyName, cost);
         this.capacity = capacity;
     }
 

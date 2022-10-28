@@ -1,13 +1,16 @@
 package ru.mirea.practice5.s21k0647;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Dogkennel {
+public final class Dogkennel {
+    private Dogkennel() {
+
+    }
+
     public static void main(String[] args) {
-        Scanner source = new Scanner(System.in);
         Dog a1 = new Dog("Jerry", 10);
-        ArrayList<Dog> kennel = new ArrayList<Dog>();
+        List<Dog> kennel = new ArrayList<>();
         kennel.add(a1);
         Dog a2 = new Dog("Pat", 4);
         kennel.add(a2);

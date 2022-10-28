@@ -21,6 +21,51 @@ public class Computer {
         this.existence = true;
     }
 
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public EnumComputer getCompanyName() {
+        return companyName;
+    }
+
+    public Monitor getMonitor() {
+        return monitor;
+    }
+
+    public Memory getMemory() {
+        return memory;
+    }
+
+    public Processor getProcessor() {
+        return processor;
+    }
+
+    public void setCompanyName(EnumComputer companyName) {
+        this.companyName = companyName;
+    }
+
+    public void setExistence(boolean existence) {
+        this.existence = existence;
+    }
+
+    public void setMemory(Memory memory) {
+        this.memory = memory;
+    }
+
+    public void setMonitor(Monitor monitor) {
+        this.monitor = monitor;
+    }
+
+    public void setProcessor(Processor processor) {
+        this.processor = processor;
+    }
+
+
     public boolean getExistence() {
         return existence;
     }

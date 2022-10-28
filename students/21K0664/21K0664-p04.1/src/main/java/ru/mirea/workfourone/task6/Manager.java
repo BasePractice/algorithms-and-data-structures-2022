@@ -6,16 +6,15 @@ public class Manager extends Employer {
     private double income;
     private double averageSum;
 
-    Manager() {
-    }
 
     Manager(String firstName, String lastName, double income, double averageSum) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.income = income;
+        super(firstName, lastName, income);
         this.averageSum = averageSum;
+
     }
 
+
+    @Override
     public double getIncome() {
         return this.income + this.averageSum;
     }
@@ -29,10 +28,12 @@ public class Manager extends Employer {
         return averageSum;
     }
 
+    @Override
     public String getFirstName() {
         return firstName;
     }
 
+    @Override
     public String getLastName() {
         return lastName;
     }
@@ -41,14 +42,18 @@ public class Manager extends Employer {
         this.averageSum = averageSum;
     }
 
+    @Override
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    @Override
 
     public void setIncome(double income) {
         this.income = income;
     }
 
+    @Override
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }

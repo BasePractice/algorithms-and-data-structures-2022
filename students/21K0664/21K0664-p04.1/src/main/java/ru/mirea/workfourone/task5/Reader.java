@@ -4,20 +4,9 @@ import java.util.Arrays;
 
 public class Reader {
     private String fullName;
-    private int readerTicketNumber;
-    private String faculty;
-    private String dateBirth;
-    private String telephoneNumber;
 
-    Reader() {
-    }
-
-    Reader(String fullName, int readerTicketNumber, String faculty, String dateBirth, String telephoneNumber) {
+    Reader(String fullName) {
         this.fullName = fullName;
-        this.readerTicketNumber = readerTicketNumber;
-        this.faculty = faculty;
-        this.dateBirth = dateBirth;
-        this.telephoneNumber = telephoneNumber;
     }
 
     public void takeBook(int amountOfBooks) {

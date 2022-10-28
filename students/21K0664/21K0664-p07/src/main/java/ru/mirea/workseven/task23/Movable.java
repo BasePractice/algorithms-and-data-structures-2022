@@ -1,11 +1,11 @@
 package ru.mirea.workseven.task23;
 
 interface Movable {
-    public void moveUp();
+    void moveUp();
 
-    public void moveDown();
+    void moveDown();
 
-    public void moveRight();
+    void moveRight();
 
-    public void moveLeft();
+    void moveLeft();
 }

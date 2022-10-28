@@ -5,9 +5,7 @@ public class Computer {
     protected String performance;
     protected int valuable;
 
-    Computer() {}
-
-    public Computer(int price, String performance, int valuable) {
+    Computer(int price, String performance, int valuable) {
         this.performance = performance;
         this.valuable = valuable;
         this.price = price;
@@ -39,6 +37,7 @@ public class Computer {
         this.valuable = valuable;
     }
 
+    @Override
     public String toString() {
         return "price=" + price + ", performance='" + performance + ", valuable=" + valuable;
     }

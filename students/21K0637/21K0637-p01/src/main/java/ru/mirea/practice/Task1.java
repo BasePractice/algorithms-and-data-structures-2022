@@ -1,3 +1,4 @@
+
 package ru.mirea.practice;
 
 import java.util.Scanner;

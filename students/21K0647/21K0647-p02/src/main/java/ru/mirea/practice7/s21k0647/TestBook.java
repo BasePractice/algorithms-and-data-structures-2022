@@ -1,6 +1,10 @@
 package ru.mirea.practice7.s21k0647;
 
-public class TestBook {
+public final class TestBook {
+    private TestBook() {
+
+    }
+
     public static void main(String[] args) {
         Book b1 = new Book("Tolstoy", "Anna Karenina", 1873);
         Book b2 = new Book("Hemenguei", "for whom the bell tolls", 1940);

@@ -3,9 +3,6 @@ package ru.mirea.practice.ex1;
 public class Circle extends Shape {
     private double r;
 
-    Circle() {
-    }
-
     @Override
     public String getColor() {
         return this.color;
@@ -26,14 +23,9 @@ public class Circle extends Shape {
         this.filled = filled;
     }
 
-    Circle(double r) {
-        this.r = r;
-    }
-
     Circle(double r, String color, boolean filled) {
+        super(color, filled);
         this.r = r;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getRadius() {

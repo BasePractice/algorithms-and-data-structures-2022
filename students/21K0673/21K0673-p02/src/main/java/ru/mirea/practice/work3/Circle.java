@@ -30,6 +30,7 @@ public class Circle {
         this.r = r;
     }
 
+    @Override
     public String toString() {
         return "{" + "Радиус = " + r + ", Координаты центра окружности: " + center + "}";
     }

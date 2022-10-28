@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647;
 
-public class Punkt3 {
+public final class Punkt3 {
+    private Punkt3() {
+
+    }
+
     public static void main(String[] args) {
         int []array = {3, 12, 1, 7};
         double a = 0;

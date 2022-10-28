@@ -4,9 +4,7 @@ class Proccesor extends Computer {
     private int sumCore;
 
     public Proccesor(int price, String performance, int valuable) {
-        this.performance = performance;
-        this.valuable = valuable;
-        this.price = price;
+        super(price, performance, valuable);
     }
 
     public int getSumCore() {

@@ -6,8 +6,6 @@ public class Student {
     public int gpa;
 
 
-    Student() {}
-
     public int getIdnumber() {
         return idnumber;
     }

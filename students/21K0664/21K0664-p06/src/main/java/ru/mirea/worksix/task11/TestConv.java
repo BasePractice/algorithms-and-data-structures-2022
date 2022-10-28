@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class TestConv implements Convertable {
     //Задание 6.11
+    @Override
     public void convert(double temperature, String name) {
         if (Objects.equals(name, "Celsia")) {
             double temperatureK = temperature + 273;

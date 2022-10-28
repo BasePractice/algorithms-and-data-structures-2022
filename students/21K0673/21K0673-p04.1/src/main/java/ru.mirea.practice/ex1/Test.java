@@ -1,6 +1,6 @@
 package ru.mirea.practice.ex1;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
         Shape s1 = new Circle(5.5, "RED", false);
         System.out.println(s1);
@@ -25,7 +25,7 @@ public class Test {
         System.out.println(r1.getArea());
         System.out.println(r1.getColor());
         System.out.println(r1.getLength());
-        Shape s4 = new Square(6.6);
+        Shape s4 = new Square(6.6, "RED", true);
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());

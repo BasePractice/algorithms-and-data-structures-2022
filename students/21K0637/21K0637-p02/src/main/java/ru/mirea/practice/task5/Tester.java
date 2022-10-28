@@ -1,6 +1,6 @@
 package ru.mirea.practice.task5;
 
-public class Tester {
+public abstract class Tester {
     public static void main(String[] args) {
         DogKennel dogKennel = new DogKennel();
         Dog sharik = new Dog("sharik", 18);

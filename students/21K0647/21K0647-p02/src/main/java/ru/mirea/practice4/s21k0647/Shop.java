@@ -1,9 +1,10 @@
 package ru.mirea.practice4.s21k0647;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Shop {
-    ArrayList<Computer> cC = new ArrayList<>();
+    List<Computer> cC = new ArrayList<>();
 
     public void addComputer(Computer a) {
         cC.add(a);

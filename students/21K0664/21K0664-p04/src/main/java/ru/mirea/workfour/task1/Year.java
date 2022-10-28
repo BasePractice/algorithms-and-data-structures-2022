@@ -11,8 +11,9 @@ public enum Year {
     },
     SPRING(12);
 
-    private final int temp;
-    private Year(int temp) {
+    final int temp;
+
+    Year(int temp) {
         this.temp = temp;
     }
 

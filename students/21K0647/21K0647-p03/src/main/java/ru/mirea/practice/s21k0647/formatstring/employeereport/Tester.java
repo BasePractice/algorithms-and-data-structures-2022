@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647.formatstring.employeereport;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+
+    }
+
     public static void main(String[] args) {
         Employee[] employees = new Employee[3];
         employees[0] = new Employee("Bob Bild", 3000);

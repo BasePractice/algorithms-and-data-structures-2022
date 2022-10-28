@@ -1,6 +1,6 @@
 package ru.mirea.practice.work5;
 
-public class Kennelfordogs {
+abstract class Kennelfordogs {
     public static void main(String[] args) {
         Dog[] a = new Dog[10];
         Dog c = new Dog(3, "Шарик");

@@ -5,7 +5,6 @@ public class Ball {
     double x = 0.0;
     double y = 0.0;
 
-    public Ball() {}
 
     public Ball(double x, double y) {
         this.x = x;

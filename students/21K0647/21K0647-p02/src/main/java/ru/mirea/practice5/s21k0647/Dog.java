@@ -29,6 +29,7 @@ public class Dog {
         return alt * 7;
     }
 
+    @Override
     public String toString() {
         return "Name: " + nickname + "\tAlt: " + alt;
     }

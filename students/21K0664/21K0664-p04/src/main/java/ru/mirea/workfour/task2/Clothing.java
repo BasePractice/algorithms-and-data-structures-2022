@@ -5,9 +5,8 @@ class Clothing implements MenClothing, WomenClothing {
     protected int price;
     protected String color;
 
-    Clothing() {}
 
-    public Clothing(ClothSize clothSizes, int price, String color) {
+    Clothing(ClothSize clothSizes, int price, String color) {
         this.clothSizes = clothSizes;
         this.price = price;
         this.color = color;
@@ -46,9 +45,13 @@ class Clothing implements MenClothing, WomenClothing {
         return "clothSizes=" + clothSizes + ", price=" + price + ", color='" + color;
     }
 
+    @Override
     public void dressMan() {
+        System.out.println("Man is dressed");
     }
 
+    @Override
     public void dressWoman() {
+        System.out.println("Wiman is dressed");
     }
 }

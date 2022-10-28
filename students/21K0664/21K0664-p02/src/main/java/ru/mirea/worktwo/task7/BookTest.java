@@ -1,6 +1,6 @@
 package ru.mirea.worktwo.task7;
 
-public class BookTest {
+abstract class BookTest {
     public static void main(String[] args) {
         Book a = new Book("Лев Николаевич Толстой", "Война и Мир", 1865);
         System.out.println(a.toString());
@@ -10,11 +10,11 @@ public class BookTest {
         BookShelf c = new BookShelf(2);
         c.setShelf(a,0);
         c.setShelf(b,1);
-        System.out.println(c.toString());
+        System.out.println(c);
         System.out.println(c.getAmount());
         System.out.println(c.getFirstYear());
         System.out.println(c.getLastYear());
         c.sort();
-        System.out.println(c.toString());
+        System.out.println(c);
     }
 }

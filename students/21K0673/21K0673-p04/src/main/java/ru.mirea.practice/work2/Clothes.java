@@ -5,9 +5,6 @@ public class Clothes {
     protected double cost;
     protected String colour;
 
-    Clothes() {
-    }
-
     public Clothes(EnumAtelier clothingSize, double cost, String colour) {
         this.clothingSize = clothingSize;
         this.colour = colour;

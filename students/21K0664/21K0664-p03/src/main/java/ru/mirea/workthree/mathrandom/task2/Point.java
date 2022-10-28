@@ -9,8 +9,6 @@ public class Point {
         this.y = y;
     }
 
-    Point() {}
-
     public double getX() {
         return this.x;
     }
@@ -27,11 +25,12 @@ public class Point {
         this.y = y;
     }
 
-    public void setXY(double x,double y) {
+    public void setXY(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
+    @Override
     public String toString() {
         return "{" + "X: " + x + ", Y: " + y + "}";
     }

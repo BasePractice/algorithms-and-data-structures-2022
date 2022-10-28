@@ -1,6 +1,6 @@
 package ru.mirea.worktwo.task5;
 
-public class Dog {
+class Dog {
     private String name;
     private int age;
 
@@ -29,19 +29,9 @@ public class Dog {
         this.age = age;
     }
 
+    @Override
     public String toString() {
-        return "Task5.Dog's name is " + this.name + " and he is " + this.age + "years old. If he will be a human he will be " + this.age * 7;
+        return "Dog's name is " + this.name + " and he is " + this.age + "years old. \nIf he will be a human he will be " + this.age * 7;
     }
 
-    public static class KennelDog {
-        public static void main(String[] args) {
-            Dog[] a = new Dog[10];
-            Dog c = new Dog("Спайк", 5);
-            System.out.println(c.toString());
-            c.getin();
-            a[0] = c;
-            Dog[] b = new Dog[11];
-            System.arraycopy(a, 0, b, 0, 10);
-        }
-    }
 }

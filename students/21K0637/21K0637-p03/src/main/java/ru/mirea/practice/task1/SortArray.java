@@ -3,7 +3,7 @@ package ru.mirea.practice.task1;
 import java.util.Arrays;
 import java.util.Random;
 
-public class SortArray {
+public abstract class SortArray {
     public static void main(String[] args) {
         Random rand = new Random();
         int[] array = new int[10];

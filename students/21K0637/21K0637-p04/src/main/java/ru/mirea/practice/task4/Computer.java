@@ -27,6 +27,10 @@ public class Computer {
         return brand + " {" + memory + processor + monitor + '}';
     }
 
+    public Type getType() {
+        return type;
+    }
+
     public enum Brand {
         Acer,
         DELL,

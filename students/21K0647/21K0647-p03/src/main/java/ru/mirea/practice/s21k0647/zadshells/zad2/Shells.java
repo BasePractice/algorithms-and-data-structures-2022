@@ -1,6 +1,10 @@
 package ru.mirea.practice.s21k0647.zadshells.zad2;
 
-public class Shells {
+public final class Shells {
+    private Shells() {
+
+    }
+
     public static void main(String[] args) {
         String[][] array = new String[13][10];
         array[0][1] = "Boolean";
@@ -68,7 +72,7 @@ public class Shells {
         System.out.println(repeated);
         for (int i = 1; i < 13; ++i) {
             for (int j = 0; j < 10; ++j) {
-                if (j != 0 && array[i][j] != "*") {
+                if (j != 0 && "*".equals(array[i][j]) == false) {
                     array[i][j] = "";
                 }
                 if (j == 0) {

@@ -1,6 +1,6 @@
 package ru.mirea.practice.shells.task1;
 
-public class Task5 {
+public abstract class Task5 {
     public static void main(String[] args) {
         Double value = Double.valueOf(5.43);
         System.out.println(value);

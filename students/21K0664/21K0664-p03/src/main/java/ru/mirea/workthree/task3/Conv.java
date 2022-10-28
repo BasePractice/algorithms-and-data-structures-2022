@@ -35,6 +35,7 @@ public class Conv {
         this.euro = euro;
     }
 
+    @Override
     public String toString() {
         return "dollars= ";
     }

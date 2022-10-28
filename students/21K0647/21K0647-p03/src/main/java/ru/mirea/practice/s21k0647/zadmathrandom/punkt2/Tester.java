@@ -1,8 +1,11 @@
 package ru.mirea.practice.s21k0647.zadmathrandom.punkt2;
 
-import java.util.Scanner;
 
-public class Tester {
+public final class Tester {
+    private Tester() {
+
+    }
+
     public static String minP(Circle[] c) {
         double m = 100000;
         Circle cmin = new Circle();
@@ -40,7 +43,6 @@ public class Tester {
     }
 
     public static void main(String[] args) {
-        Scanner source = new Scanner(System.in);
         int n = 3;
         Circle[] c = new Circle[n];
         for (int i = 0; i < n; i++) {

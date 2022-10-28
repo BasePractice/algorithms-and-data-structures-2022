@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task4 {
+public abstract class Task4 {
     public static void main(String[] args) {
         Random rand = new Random();
-        Scanner sc = new Scanner(System.in);
         int n;
-        while (true) {
-            if (sc.hasNextInt()) {
-                n = sc.nextInt();
-                break;
-            } else {
-                System.out.println("Ввод не корректен");
-                sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            while (true) {
+                if (sc.hasNextInt()) {
+                    n = sc.nextInt();
+                    break;
+                } else {
+                    System.out.println("Ввод не корректен");
+                }
             }
         }
 
