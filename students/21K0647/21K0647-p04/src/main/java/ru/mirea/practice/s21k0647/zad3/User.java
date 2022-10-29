@@ -1,11 +1,12 @@
 package ru.mirea.practice.s21k0647.zad3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class User {
     String username;
     String password;
-    ArrayList<Product> userBasket = new ArrayList<>();
+    List<Product> userBasket = new ArrayList<>();
 
     User() {
         username = "";

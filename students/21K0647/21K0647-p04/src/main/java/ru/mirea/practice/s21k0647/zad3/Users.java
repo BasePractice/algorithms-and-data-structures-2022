@@ -1,9 +1,10 @@
 package ru.mirea.practice.s21k0647.zad3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Users {
-    ArrayList<User> users = new ArrayList<>();
+    List<User> users = new ArrayList<>();
 
     public void userAdd(User user) {
         users.add(user);
