@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Atelier {
+    private Atelier() {}
+
     public static void dressMen(List<Clothes> a) {
         String info = "Dress Men: ";
         System.out.println(info);
