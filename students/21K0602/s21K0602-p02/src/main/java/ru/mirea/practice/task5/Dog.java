@@ -1,43 +1,44 @@
 package ru.mirea.practice.task5;
 
 public class Dog {
-    private String Name;
-    private int Age;
+    private String name;
+    private int age;
 
-    public Dog(){
-        Age=0;
-        Name="None";
-    }
-    public Dog(int age,String name){
-        Age=age;
-        Name=name;
+    public Dog() {
+        age = 0;
+        name = "None";
     }
 
-    public static int DogtoHumanAge(int DogAge){
-        return DogAge*7;
+    public Dog(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public static int DogtoHumanAge(int DogAge) {
+        return DogAge * 7;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public int getAge() {
-        return Age;
+        return age;
     }
 
     public void setAge(int age) {
-        Age = age;
+        this.age = age;
     }
 
     @Override
     public String toString() {
         return "Dog{" +
-                "Name='" + Name + '\'' +
-                ", Age=" + Age +
+                "Name='" + name + '\'' +
+                ", Age=" + age +
                 '}';
     }
 }

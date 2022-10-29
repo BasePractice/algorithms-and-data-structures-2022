@@ -2,43 +2,43 @@ package ru.mirea.practice.task4;
 
 import java.util.Objects;
 
-public class Computer  {
+public class Computer {
 
-    private String Name;
-    private String Color;
-    private String GraphicCard;
-    private String MemoryCard;
+    private String name;
+    private String color;
+    private String graphicCard;
+    private String memoryCard;
 
     public void setColor(String color) {
-        Color = color;
+        this.color = color;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public String getGraphicCard() {
-        return GraphicCard;
+        return graphicCard;
     }
 
     public void setGraphicCard(String graphicCard) {
-        GraphicCard = graphicCard;
+        graphicCard = graphicCard;
     }
 
     public String getMemoryCard() {
-        return MemoryCard;
+        return memoryCard;
     }
 
     public void setMemoryCard(String memoryCard) {
-        MemoryCard = memoryCard;
+        memoryCard = memoryCard;
     }
 
     @Override
@@ -46,13 +46,11 @@ public class Computer  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Computer computer = (Computer) o;
-        return Objects.equals(Name, computer.Name) && Objects.equals(Color, computer.Color) && Objects.equals(GraphicCard, computer.GraphicCard) && Objects.equals(MemoryCard, computer.MemoryCard);
+        return Objects.equals(name, computer.name) && Objects.equals(color, computer.color) && Objects.equals(graphicCard, computer.graphicCard) && Objects.equals(memoryCard, computer.memoryCard);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash( Name, Color, GraphicCard, MemoryCard);
+        return Objects.hash(name, color, graphicCard, memoryCard);
     }
-
-
 }

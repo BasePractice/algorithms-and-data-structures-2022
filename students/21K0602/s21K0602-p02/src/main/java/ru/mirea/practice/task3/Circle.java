@@ -4,24 +4,30 @@ public class Circle {
 
     private Point point;
     private double radius;
+
     {
-       point=new Point();
-       radius=0;
+        point = new Point();
+        radius = 0;
     }
-    public Circle(){}
-    public Circle(double x,double y, double radius){
+
+    public Circle() {
+    }
+
+    public Circle(double x, double y, double radius) {
         point.setX(x);
         point.setY(y);
-        this.radius=radius;
+        this.radius = radius;
     }
 
     public void setPoint(Point point) {
         this.point = point;
     }
-    public void setX(double x){
+
+    public void setX(double x) {
         point.setX(x);
     }
-    public void setY(double y){
+
+    public void setY(double y) {
         point.setY(y);
     }
 
@@ -32,7 +38,7 @@ public class Circle {
     @Override
     public String toString() {
         return "Circle{" +
-                 point.toString() +
+                point.toString() +
                 ", radius=" + radius +
                 '}';
     }

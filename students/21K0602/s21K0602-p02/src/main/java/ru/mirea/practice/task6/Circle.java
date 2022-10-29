@@ -2,25 +2,26 @@ package ru.mirea.practice.task6;
 
 import java.util.Objects;
 
-public class Circle implements Comparable<Circle>{
-    private double S;
-    private double Length;
+public class Circle implements Comparable<Circle> {
+    private double s;
+    private double length;
     private double radius;
 
-    public Circle(){
+    public Circle() {
         setRadius(0);
     }
+
     public Circle(double radius) {
 
         setRadius(radius);
     }
 
     public double getS() {
-        return S;
+        return s;
     }
 
     public double getLength() {
-        return Length;
+        return length;
     }
 
     public double getRadius() {
@@ -28,12 +29,12 @@ public class Circle implements Comparable<Circle>{
     }
 
     public void setRadius(double radius) {
-        if(radius<0){
-            radius=Math.abs(radius);
+        if (radius < 0) {
+            radius = Math.abs(radius);
         }
         this.radius = radius;
-        S=Math.PI*Math.pow(this.radius,2);
-        Length=2*Math.PI*this.radius;
+        s = Math.PI * Math.pow(this.radius, 2);
+        length = 2 * Math.PI * this.radius;
     }
 
     @Override
@@ -51,6 +52,6 @@ public class Circle implements Comparable<Circle>{
 
     @Override
     public int compareTo(Circle o) {
-        return Double.compare( o.radius,this.radius);
+        return Double.compare(o.radius, this.radius);
     }
 }

@@ -1,51 +1,49 @@
 package ru.mirea.practice.task7;
 
 public class Book implements Comparable<Book> {
-    private final String Name;
-    private final int Date;
-    private final String Author;
+    private final String name;
+    private final int date;
+    private final String author;
 
-    Book(){
-        Name=null;
-        Date=0;
-        Author=null;
+    Book() {
+        name = null;
+        date = 0;
+        author = null;
     }
 
     public Book(String name, int date, String author) {
-        Name = name;
-        Date = date;
-        Author = author;
+        this.name = name;
+        this.date = date;
+        this.author = author;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
 
-
     public int getDate() {
-        return Date;
+        return date;
     }
 
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
-
 
 
     @Override
     public String toString() {
         return "Book{" +
-                "Name='" + Name + '\'' +
-                ", Date=" + Date +
-                ", Author='" + Author + '\'' +
+                "Name='" + name + '\'' +
+                ", Date=" + date +
+                ", Author='" + author + '\'' +
                 '}';
     }
 
     @Override
     public int compareTo(Book o) {
-        return o.Date>=Date? -1:0;
+        return o.date >= date ? -1 : 0;
     }
 
     public void setName() {

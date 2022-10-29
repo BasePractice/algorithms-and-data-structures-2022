@@ -5,15 +5,18 @@ import static java.lang.Math.abs;
 public class Ball {
     private double x;
     private double y;
+
     {
-        x=0.0;
-        y=0.0;
+        x = 0.0;
+        y = 0.0;
     }
-    public Ball(double x, double y){
-        this.x=x;
-        this.y=y;
+
+    public Ball(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-    public Ball(){
+
+    public Ball() {
 
     }
 
@@ -33,47 +36,44 @@ public class Ball {
         this.y = y;
     }
 
-    public void setXY(double x,double y){
-        this.x=x;
-        this.y=y;
+    public void setXY(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-    public void move(double xDisp, double yDisp){
-        while(x!=xDisp || y!=yDisp){
-            if(x>xDisp){
+
+    public void move(double xDisp, double yDisp) {
+        while (x != xDisp || y != yDisp) {
+            if (x > xDisp) {
                 x--;
-            }
-            else if (x<xDisp){
+            } else if (x < xDisp) {
                 x++;
             }
 
-            if(y>yDisp){
+            if (y > yDisp) {
                 y--;
-            }
-            else if(y<yDisp){
+            } else if (y < yDisp) {
                 y++;
             }
 
-            if(abs(x-xDisp)<1 ){
-                if(x>xDisp){
-                    x-=abs(x-xDisp);
-                }
-                else{
-                    x+=abs(x-xDisp);
+            if (abs(x - xDisp) < 1) {
+                if (x > xDisp) {
+                    x -= abs(x - xDisp);
+                } else {
+                    x += abs(x - xDisp);
                 }
 
             }
-            if(abs(y-yDisp)<1 ){
-                if(y>yDisp){
-                    y-=abs(y-yDisp);
-                }
-                else{
-                    y+=abs(y-yDisp);
+            if (abs(y - yDisp) < 1) {
+                if (y > yDisp) {
+                    y -= abs(y - yDisp);
+                } else {
+                    y += abs(y - yDisp);
                 }
 
             }
 
 
-            System.out.println("x= "+x+ " y="+y+" to xDip= "+xDisp+" to yDip= "+yDisp);
+            System.out.println("x= " + x + " y=" + y + " to xDip= " + xDisp + " to yDip= " + yDisp);
         }
     }
 

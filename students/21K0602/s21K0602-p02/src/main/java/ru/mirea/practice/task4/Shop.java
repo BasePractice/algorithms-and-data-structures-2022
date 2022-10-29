@@ -7,115 +7,101 @@ import java.util.Scanner;
 
 public class Shop implements Completion {
 
-    private int ShopServices=-1;
 
+    private final Hashtable<Computer, Integer> computerList;
 
-    private Hashtable<Computer,Integer> ComputerList;
-
-    public Shop(){
-        ComputerList=new Hashtable<Computer, Integer>(1);
+    public Shop() {
+        computerList = new Hashtable<>(1);
     }
+
     @Override
     public void add(Scanner in) {
-      //  Scanner ina=new Scanner(System.in);
-
-
         System.out.println("Enter number of the Computer you want to add");
-        Integer Count= in.nextInt();
-        Computer NewComputer=new Computer();
+        Integer Count = in.nextInt();
+        Computer newComputer = new Computer();
         System.out.println("Enter Name: ");
-        NewComputer.setName(in.next());
+        newComputer.setName(in.next());
         System.out.println("Enter Color: ");
-        NewComputer.setColor(in.next());
+        newComputer.setColor(in.next());
         System.out.println("Enter GraphicCard: ");
-        NewComputer.setGraphicCard(in.next());
+        newComputer.setGraphicCard(in.next());
         System.out.println("Enter MemoryCard: ");
-        NewComputer.setMemoryCard(in.next());
-        ComputerList.put(NewComputer,Count);
-
-
-
+        newComputer.setMemoryCard(in.next());
+        computerList.put(newComputer, Count);
 
 
     }
 
-    public void SearchComputer(String Name){
-        for (HashMap.Entry<Computer, Integer> entry : ComputerList.entrySet()) {
-            if(entry.getKey().getName().equals(Name)){
-                System.out.println("Computer Name " +entry.getKey().getName() +"  Count: " + entry.getValue());
+    public void SearchComputer(String Name) {
+        for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
+            if (entry.getKey().getName().equals(Name)) {
+                System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
 
             }
         }
     }
 
-    public void DeleteComputer(String Name){
-        for (HashMap.Entry<Computer, Integer> entry : ComputerList.entrySet()) {
-            if(entry.getKey().getName().equals(Name)){
-                System.out.println("Computer Name " +entry.getKey().getName() +"  Count: " + entry.getValue());
-                ComputerList.remove(entry.getKey());
+    public void DeleteComputer(String Name) {
+        for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
+            if (entry.getKey().getName().equals(Name)) {
+                System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
+                computerList.remove(entry.getKey());
             }
         }
     }
-    public  void ShowComputers(){
-        for (HashMap.Entry<Computer, Integer> entry : ComputerList.entrySet()) {
-            System.out.println("Computer Name " +entry.getKey().getName() +"  Count: " + entry.getValue());
+
+    public void showComputers() {
+        for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
+            System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
         }
     }
 
-    public void ShopWork(){
+    public void shopWork() {
 
         System.out.println("HEllo, Customer!");
 
 
         int answer;
-        boolean bool_flag=true;
+        boolean bool_flag = true;
         Scanner in = new Scanner(System.in);
-        while(bool_flag) {
+        while (bool_flag) {
 
             System.out.println(
-                    "What do you want to do?\n" +
-                            "0. Leave\n"+
-                            "1.Search Computer\n" +
-                            "2.Delete/Buy Computer\n" +
-                            "3.Add Computer\n" +
-                            "4.Show Computers");
+                    """
+                            What do you want to do?
+                            0. Leave
+                            1.Search Computer
+                            2.Delete/Buy Computer
+                            3.Add Computer
+                            4.Show Computers""");
             try {
-                answer=in.nextInt();
-                switch(answer) {
-                    case 0:
+                answer = in.nextInt();
+                switch (answer) {
+                    case 0 -> {
                         System.out.println("Buy!");
-                        bool_flag=false;
-
-                        break;
-
-                    case 1:
+                        bool_flag = false;
+                    }
+                    case 1 -> {
                         System.out.println("Seaarching Computer");
                         SearchComputer(in.next());
-
-                        break;
-
-                    case 2:
+                    }
+                    case 2 -> {
                         System.out.println("Enter Name Computer  to Delete:");
                         DeleteComputer(in.next());
-
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         System.out.println("Adding Computer");
                         add(in);
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         System.out.println("Computer list:");
-                        ShowComputers();
-                        break;
-                    default:
-                        System.out.println("No such command in the program");
-                        break;
+                        showComputers();
+                    }
+                    default -> System.out.println("No such command in the program");
                 }
-            }
-            catch(InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("No sucsh command in the programm");
             }
-
 
 
         }

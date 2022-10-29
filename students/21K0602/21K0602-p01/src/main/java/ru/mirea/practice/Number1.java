@@ -9,7 +9,7 @@ public class Number1 {
 
 
 
-    public void InitMassive(int length){
+    public void initMassive(int length){
         sum=0;
         massive=new int[length];
         Scanner in=new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Number1 {
         System.out.println("Sum= "+sum+"\n"+"Average= "+average);
 
     }
-    public void MinMax(int length){
+    public void minMax(int length){
         massive=new int[length];
         Scanner in=new Scanner(System.in);
         sum=0;
@@ -40,20 +40,20 @@ public class Number1 {
         }
         System.out.println("Sum= "+ sum+"\n Max= "+max+"\n Min= "+min);
     }
-    public  void PrintArgs(String[] args){
+    public  void printArgs(String[] args){
         for (int i = 0; i < args.length; i++) {
             System.out.println("Argument " + i + ": " + args[i]);
         }
     }
 
-    public void PrintHarmonicSeries(int n){
+    public void printHarmonicSeries(int n){
         for(int i=1;i<=n;i++){
             System.out.print("1/"+i+" ,");
         }
         System.out.println(" ");
     }
 
-    public int Factocial(int n){
+    public int factocialFunction(int n){
         int factorial=1;
         for(int i=1;i<=n;i++){
             factorial*=i;

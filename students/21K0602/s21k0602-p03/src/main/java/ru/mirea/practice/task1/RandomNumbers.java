@@ -2,7 +2,7 @@ package ru.mirea.practice.task1;
 import java.util.Random;
 public class RandomNumbers {
 
-    public Integer[] RandomArray(int size){
+    public Integer[] randomArray(int size){
         Integer[]  array=new Integer[size];
         Random rd=new Random();
         for(int i=0;i<size;i++){
@@ -10,21 +10,21 @@ public class RandomNumbers {
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
-        bubble_sort(array);
+        bubbleSort(array);
         for(int i=0;i<size;i++){
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
         return  array;
     }
-    public Integer[] MathRandomArray(int size){
+    public Integer[] mathRandomArray(int size){
         Integer[]  array=new Integer[size];
         for(int i=0;i<size;i++){
             array[i]=(int)(Math.random()*25);
             System.out.print(array[i]+" ");
         }
         System.out.println(" ");
-        bubble_sort(array);
+        bubbleSort(array);
         for(int i=0;i<size;i++){
             System.out.print(array[i]+" ");
         }
@@ -33,7 +33,7 @@ public class RandomNumbers {
     }
 
 
-    public static void bubble_sort(Integer[] array) {
+    public static void bubbleSort(Integer[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
 

@@ -5,13 +5,10 @@ public class Author {
     private String email;
     private char gender;
 
-    public Author(){
-
-    }
-    public Author(String name, String email, char gender){
-        this.name=name;
-        this.email=email;
-        this.gender=gender;
+    public Author(String name, String email, char gender) {
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
     }
 
     public void setName(String name) {
@@ -39,13 +36,11 @@ public class Author {
     }
 
 
-
     @Override
     public String toString() {
-        return "Author{" +
+        return "Author:  " +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", gender=" + gender +
-                '}';
+                ", gender=" + gender;
     }
 }
