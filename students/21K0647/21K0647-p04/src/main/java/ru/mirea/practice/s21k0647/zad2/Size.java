@@ -11,7 +11,7 @@ public enum Size {
     M(38),
     L(40);
 
-    int euroSize(int euroSize){
+    int euroSize(int euroSize) {
         return euroSize;
     }
 
