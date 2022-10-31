@@ -14,7 +14,7 @@ public class Dog {
         this.name = name;
     }
 
-    public static int DogtoHumanAge(int DogAge) {
+    public static int dogtoHumanAge(int DogAge) {
         return DogAge * 7;
     }
 
@@ -36,9 +36,12 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "Name='" + name + '\'' +
-                ", Age=" + age +
-                '}';
+        return "Dog{"
+                + "Name='"
+                + name
+                + '\''
+                + ", Age="
+                + age
+                + '}';
     }
 }

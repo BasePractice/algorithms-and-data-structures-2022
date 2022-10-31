@@ -16,7 +16,7 @@ public class BookShelf {
     public Book getMaxDateBook() {
         Book maxBook = new Book();
         for (Book book : BookShelf) {
-            if (maxBook.getDate() < book.getDate()) {
+            if(maxBook.getDate() < book.getDate()) {
                 maxBook = book;
             }
         }
@@ -27,7 +27,7 @@ public class BookShelf {
         Book minBook = new Book(null, Integer.MAX_VALUE, null);
 
         for (Book book : BookShelf) {
-            if (minBook.getDate() > book.getDate()) {
+            if(minBook.getDate() > book.getDate()) {
                 minBook = book;
             }
         }
@@ -40,7 +40,7 @@ public class BookShelf {
             Book value = BookShelf.get(left);
             int i = left - 1;
             for (; i >= 0; i--) {
-                if (value.compareTo(BookShelf.get(i)) < 0) {
+                if(value.compareTo(BookShelf.get(i)) < 0) {
 
                     BookShelf.set(i + 1, BookShelf.get(i));
                 } else {

@@ -6,5 +6,7 @@ public class Main {
 
         dogs.add();
         dogs.showDogs();
+
+        Dog.dogtoHumanAge(7);
     }
 }
