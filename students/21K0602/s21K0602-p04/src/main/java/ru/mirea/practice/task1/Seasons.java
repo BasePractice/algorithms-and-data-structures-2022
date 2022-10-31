@@ -3,7 +3,7 @@ package ru.mirea.practice.task1;
 public enum Seasons {
     Winter(-17),
     Spring(11),
-    Summer(22),
+    Summer(21),
     Autumn(9);
     private final int AverageTemperature;
 
