@@ -8,10 +8,16 @@
         <version>2022.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ru.mirea.practice</groupId>
 
     <artifactId>s21K0602-p01</artifactId>
-    <version>2022.1</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
