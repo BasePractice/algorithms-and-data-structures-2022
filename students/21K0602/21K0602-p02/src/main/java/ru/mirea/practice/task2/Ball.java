@@ -17,7 +17,6 @@ public class Ball {
     }
 
     public Ball() {
-
     }
 
     public double getX() {
