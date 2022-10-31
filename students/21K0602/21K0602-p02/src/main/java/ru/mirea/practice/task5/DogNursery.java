@@ -13,8 +13,8 @@ public class DogNursery {
     public void add() {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number of dogs to add");
-        int DogCount = in.nextInt();
-        for (int i = 0; i < DogCount; i++) {
+        int dogCount = in.nextInt();
+        for (int i = 0; i < dogCount; i++) {
             dogs.add(new Dog(in.nextInt(), in.next()));
         }
         in.close();
