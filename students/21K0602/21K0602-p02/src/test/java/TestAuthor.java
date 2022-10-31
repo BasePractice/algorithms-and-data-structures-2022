@@ -13,32 +13,32 @@ public class TestAuthor {
     }
 
     @Test
-    public void TestName() {
+    public void testName() {
         Assertions.assertEquals("name", author.getName());
     }
 
     @Test
-    public void TestEmail() {
+    public void testEmail() {
         Assertions.assertEquals("_@gmail.com", author.getEmail());
     }
 
     @Test
-    public void TestGender() {
+    public void testGender() {
         Assertions.assertEquals('m', author.getGender());
     }
 
     @Test
-    public void TestNameNotNull() {
+    public void testNameNotNull() {
         Assertions.assertNotNull(author.getName());
     }
 
     @Test
-    public void TestEmailNotNull() {
+    public void testEmailNotNull() {
         Assertions.assertNotNull(author.getEmail());
     }
 
     @Test
-    public void TestGenderNotNull() {
+    public void testGenderNotNull() {
         Assertions.assertNotNull(author.getGender());
     }
 

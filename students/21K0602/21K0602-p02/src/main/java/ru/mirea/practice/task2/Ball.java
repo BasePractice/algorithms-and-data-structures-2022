@@ -42,28 +42,28 @@ public class Ball {
 
     public void move(double xDisp, double yDisp) {
         while (x != xDisp || y != yDisp) {
-            if (x > xDisp) {
+            if(x > xDisp) {
                 x--;
-            } else if (x < xDisp) {
+            } else if(x < xDisp) {
                 x++;
             }
 
-            if (y > yDisp) {
+            if(y > yDisp) {
                 y--;
-            } else if (y < yDisp) {
+            } else if(y < yDisp) {
                 y++;
             }
 
-            if (abs(x - xDisp) < 1) {
-                if (x > xDisp) {
+            if(abs(x - xDisp) < 1) {
+                if(x > xDisp) {
                     x -= abs(x - xDisp);
                 } else {
                     x += abs(x - xDisp);
                 }
 
             }
-            if (abs(y - yDisp) < 1) {
-                if (y > yDisp) {
+            if(abs(y - yDisp) < 1) {
+                if(y > yDisp) {
                     y -= abs(y - yDisp);
                 } else {
                     y += abs(y - yDisp);
@@ -78,9 +78,11 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Ball{"
+                + "x="
+                + x
+                + ", y="
+                + y
+                + '}';
     }
 }

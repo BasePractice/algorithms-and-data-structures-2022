@@ -3,19 +3,19 @@ package ru.mirea.practice.task7;
 import java.util.ArrayList;
 
 public class BookShelf {
-    private final ArrayList<Book> BookShelf;
+    private final ArrayList<Book> bookShelf;
 
     public BookShelf() {
-        BookShelf = new ArrayList<>(0);
+        bookShelf = new ArrayList<>(0);
     }
 
     public void addBook(Book book) {
-        BookShelf.add(book);
+        bookShelf.add(book);
     }
 
     public Book getMaxDateBook() {
         Book maxBook = new Book();
-        for (Book book : BookShelf) {
+        for (Book book : bookShelf) {
             if(maxBook.getDate() < book.getDate()) {
                 maxBook = book;
             }
@@ -26,7 +26,7 @@ public class BookShelf {
     public Book getMinDateBook() {
         Book minBook = new Book(null, Integer.MAX_VALUE, null);
 
-        for (Book book : BookShelf) {
+        for (Book book : bookShelf) {
             if(minBook.getDate() > book.getDate()) {
                 minBook = book;
             }
@@ -36,22 +36,22 @@ public class BookShelf {
 
     public void sortBookShelf() {
 
-        for (int left = 0; left < BookShelf.size(); left++) {
-            Book value = BookShelf.get(left);
+        for (int left = 0; left < bookShelf.size(); left++) {
+            Book value = bookShelf.get(left);
             int i = left - 1;
             for (; i >= 0; i--) {
-                if(value.compareTo(BookShelf.get(i)) < 0) {
+                if(value.compareTo(bookShelf.get(i)) < 0) {
 
-                    BookShelf.set(i + 1, BookShelf.get(i));
+                    bookShelf.set(i + 1, bookShelf.get(i));
                 } else {
                     break;
                 }
             }
-            BookShelf.set(i + 1, value);
+            bookShelf.set(i + 1, value);
 
 
         }
-        System.out.println(BookShelf);
+        System.out.println(bookShelf);
     }
 
 

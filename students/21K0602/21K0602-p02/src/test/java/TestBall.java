@@ -11,7 +11,7 @@ public class TestBall {
     }
 
     @RepeatedTest(5)
-    public void TestSetXY() {
+    public void testSetXY() {
         double x = Math.random();
         double y = Math.random();
         ball.setX(x);
@@ -23,7 +23,7 @@ public class TestBall {
 
     @AfterEach
     @Test
-    public void TestToString() {
+    public void testToString() {
         Assertions.assertNotNull(ball.toString());
     }
 

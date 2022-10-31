@@ -14,8 +14,8 @@ public class Dog {
         this.name = name;
     }
 
-    public static int dogtoHumanAge(int DogAge) {
-        return DogAge * 7;
+    public static int dogtoHumanAge(int dogAge) {
+        return dogAge * 7;
     }
 
     public String getName() {
