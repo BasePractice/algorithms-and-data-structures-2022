@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>2022.1</version>
     <modules>
-        <module>s21K0602-p01</module>
+
         <module>s21K0602-p02</module>
         <module>s21k0602-p03</module>
         <module>s21K0602-p04</module>
