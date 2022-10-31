@@ -25,7 +25,9 @@ public class Number1 {
         massive = new int[length];
         Scanner in = new Scanner(System.in);
         sum = 0;
-        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE, i = 0;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int i = 0;
         while (i < length) {
             massive[i] = in.nextInt();
             sum += massive[i];
