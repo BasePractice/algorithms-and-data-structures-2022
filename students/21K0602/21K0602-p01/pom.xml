@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <version>2022.1</version>
     <parent>
-        <artifactId>sample</artifactId>
+        <artifactId>21K0602</artifactId>
         <groupId>ru.mirea.practice</groupId>
         <version>2022.1</version>
         <relativePath>../pom.xml</relativePath>
