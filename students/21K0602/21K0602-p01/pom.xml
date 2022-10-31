@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>s21K0602-p01</artifactId>
+    <artifactId>21K0602-p01</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
