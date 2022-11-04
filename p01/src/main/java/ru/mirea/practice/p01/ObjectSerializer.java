@@ -9,6 +9,9 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public final class ObjectSerializer {
+    private ObjectSerializer() {
+    }
+
     public static <T extends Serializable> byte[] serialize(T object) throws IOException {
         try (ByteArrayOutputStream bytes = new ByteArrayOutputStream(); ObjectOutputStream stream = new ObjectOutputStream(bytes)) {
             stream.writeObject(object);
