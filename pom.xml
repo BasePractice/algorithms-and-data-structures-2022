@@ -26,6 +26,7 @@
 
     <modules>
         <module>p01</module>
+        <module>students/21K0602</module>
     </modules>
 
     <dependencies>
