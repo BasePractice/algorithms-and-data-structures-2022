@@ -1,9 +1,10 @@
 package ru.mirea.practice.task7;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BookShelf {
-    private final ArrayList<Book> bookShelf;
+    private final List<Book> bookShelf;
 
     public BookShelf() {
         bookShelf = new ArrayList<>(0);

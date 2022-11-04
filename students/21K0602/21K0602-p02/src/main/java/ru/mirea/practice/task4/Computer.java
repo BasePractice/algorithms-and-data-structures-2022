@@ -43,8 +43,8 @@ public class Computer {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
         Computer computer = (Computer) o;
         return Objects.equals(name, computer.name) && Objects.equals(color, computer.color) && Objects.equals(graphicCard, computer.graphicCard) && Objects.equals(memoryCard, computer.memoryCard);
     }
