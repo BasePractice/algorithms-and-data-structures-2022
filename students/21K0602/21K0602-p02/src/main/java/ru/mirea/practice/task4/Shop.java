@@ -36,7 +36,6 @@ public class Shop implements Completion {
         for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
             if (entry.getKey().getName().equals(Name)) {
                 System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
-
             }
         }
     }
