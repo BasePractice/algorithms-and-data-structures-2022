@@ -34,7 +34,7 @@ public class Shop implements Completion {
 
     public void SearchComputer(String Name) {
         for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
-            if (entry.getKey().getName().equals(Name)) {
+            if(entry.getKey().getName().equals(Name)) {
                 System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
             }
         }
@@ -42,7 +42,7 @@ public class Shop implements Completion {
 
     public void DeleteComputer(String Name) {
         for (HashMap.Entry<Computer, Integer> entry : computerList.entrySet()) {
-            if (entry.getKey().getName().equals(Name)) {
+            if(entry.getKey().getName().equals(Name)) {
                 System.out.println("Computer Name " + entry.getKey().getName() + "  Count: " + entry.getValue());
                 computerList.remove(entry.getKey());
             }
@@ -65,14 +65,12 @@ public class Shop implements Completion {
         Scanner in = new Scanner(System.in);
         while (bool_flag) {
 
-            System.out.println(
-                    """
-                            What do you want to do?
-                            0. Leave
-                            1.Search Computer
-                            2.Delete/Buy Computer
-                            3.Add Computer
-                            4.Show Computers""");
+            System.out.println("What do you want to do?\n"
+                    + "0. Leave \n"
+                    + "1.Search Computer \n "
+                    + "2.Delete/Buy Computer\n "
+                    + "3.Add Computer \n"
+                    + "4.Show Computers\n");
             try {
                 answer = in.nextInt();
                 switch (answer) {
