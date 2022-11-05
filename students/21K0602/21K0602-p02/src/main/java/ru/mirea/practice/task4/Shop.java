@@ -74,27 +74,29 @@ public class Shop implements Completion {
             try {
                 answer = in.nextInt();
                 switch (answer) {
-                    case 0 -> {
+                    case 0: {
                         System.out.println("Buy!");
                         bool_flag = false;
                     }
-                    case 1 -> {
+                    case 1: {
                         System.out.println("Seaarching Computer");
                         SearchComputer(in.next());
                     }
-                    case 2 -> {
+                    case 2: {
                         System.out.println("Enter Name Computer  to Delete:");
                         DeleteComputer(in.next());
                     }
-                    case 3 -> {
+                    case 3: {
                         System.out.println("Adding Computer");
                         add(in);
                     }
-                    case 4 -> {
+                    case 4: {
                         System.out.println("Computer list:");
                         showComputers();
                     }
-                    default -> System.out.println("No such command in the program");
+                    default: {
+                        System.out.println("No such command in the program");
+                    }
                 }
             } catch (InputMismatchException e) {
                 System.out.println("No sucsh command in the programm");
