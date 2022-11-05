@@ -29,9 +29,7 @@ public class Circle implements Comparable<Circle> {
     }
 
     public void setRadius(double radius) {
-        if(radius < 0){
-            radius = Math.abs(radius);
-        }
+        if(radius < 0){radius = Math.abs(radius);}
         this.radius = radius;
         s = Math.PI * Math.pow(this.radius, 2);
         length = 2 * Math.PI * this.radius;
@@ -39,12 +37,8 @@ public class Circle implements Comparable<Circle> {
 
     @Override
     public boolean equals(Object o) {
-        if(this == o){
-            return true;
-        }
-        if(o == null || getClass() != o.getClass()){
-            return false;
-        }
+        if(this == o){return true;}
+        if(o == null || getClass() != o.getClass()){return false;}
         Circle circle = (Circle) o;
         return radius == circle.radius;
     }
