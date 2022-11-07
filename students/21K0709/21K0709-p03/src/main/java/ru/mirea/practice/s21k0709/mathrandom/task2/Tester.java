@@ -50,9 +50,9 @@ public abstract class Tester {
             Circle[] mas = new Circle[j];
             Random rand = new Random();
             for (int i = 0; i < mas.length; i++) {
-                float x = 1 + rand.nextFloat(10);
-                float y = 1 + rand.nextFloat(10);
-                float r = 1 + rand.nextFloat(10);
+                float x = 1 + rand.nextInt(10);
+                float y = 1 + rand.nextInt(10);
+                float r = 1 + rand.nextInt(10);
                 double l;
                 l = 2 * Math.PI * r;
                 System.out.print(x + " " + y + " " + r + " " + l);
