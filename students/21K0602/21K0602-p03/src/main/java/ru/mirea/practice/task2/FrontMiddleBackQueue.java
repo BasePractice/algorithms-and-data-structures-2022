@@ -47,7 +47,7 @@ public class FrontMiddleBackQueue<T> {
     }
 
     public T popFront() {
-        if (queue1.isEmpty()) {
+        if(queue1.isEmpty()) {
             System.out.println("Underflow!!");
             System.exit(0);
         }
@@ -62,7 +62,7 @@ public class FrontMiddleBackQueue<T> {
         while (!queue1.isEmpty()) {
             queue2.add(queue1.peek());
             queue1.poll();
-            if (queue1.size() == 1) {
+            if(queue1.size() == 1) {
                 back = queue1.poll();
             }
         }
@@ -87,7 +87,7 @@ public class FrontMiddleBackQueue<T> {
 
             queue1.add(queue2.peek());
             queue2.poll();
-            if (queue2.size() == size + 1) {
+            if(queue2.size() == size + 1) {
                 data = queue2.poll();
             }
         }
@@ -107,7 +107,7 @@ public class FrontMiddleBackQueue<T> {
 
             queue1.add(queue2.peek());
             queue2.poll();
-            if (queue2.size() == size + 1) {
+            if(queue2.size() == size + 1) {
                 data = queue2.peek();
             }
         }
@@ -115,7 +115,7 @@ public class FrontMiddleBackQueue<T> {
     }
 
     public T peekFront() {
-        if (queue1.isEmpty()) {
+        if(queue1.isEmpty()) {
             System.out.println("Underflow!!");
             System.exit(0);
         }
@@ -128,7 +128,7 @@ public class FrontMiddleBackQueue<T> {
         while (!queue1.isEmpty()) {
             queue2.add(queue1.peek());
             queue1.poll();
-            if (queue1.size() == 1) {
+            if(queue1.size() == 1) {
                 back = queue1.peek();
             }
         }

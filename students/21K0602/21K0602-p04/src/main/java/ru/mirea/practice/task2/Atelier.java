@@ -11,7 +11,7 @@ public class Atelier {
 
     public void dressMan() {
         for (Clothes clothe : clothes) {
-            if (clothe instanceof ManClothing manClothing) {
+            if(clothe instanceof ManClothing manClothing) {
                 manClothing.dressMen();
             }
         }
@@ -19,7 +19,7 @@ public class Atelier {
 
     public void dressWomen() {
         for (Clothes clothe : clothes) {
-            if (clothe instanceof WomenClothing womenClothing) {
+            if(clothe instanceof WomenClothing womenClothing) {
                 womenClothing.dressWomen();
             }
         }

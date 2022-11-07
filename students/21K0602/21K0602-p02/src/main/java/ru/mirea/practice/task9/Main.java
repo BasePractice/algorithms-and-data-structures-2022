@@ -22,7 +22,8 @@ public class Main {
                 players = sc.nextInt();
                 if (cardsPerPlayer * players <= n) {
                     break;
-                } else {
+                }
+                else {
                     if (players == 0) {
                         System.out.println("Game over.");
                         break;
@@ -35,7 +36,8 @@ public class Main {
                         System.out.println("Too many players");
                     }
                 }
-            } else {
+            }
+            else {
                 System.out.println("Its not number or its too big");
 
             }

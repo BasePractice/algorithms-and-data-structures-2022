@@ -1,38 +1,24 @@
 package ru.mirea.practice.task1;
 
 public enum Seasons {
-    Winter(-17),
-    Spring(11),
-    Summer(21),
-    Autumn(9);
-    private final int AverageTemperature;
+    Winter("Cold season",-17),
+    Spring("Warm season", 11),
+    Summer("Hot season", 21),
+    Autumn("Rainy season", 9);
+    private final int averageTemperature;
+    private final String information;
 
-    Seasons(int averageTemperature) {
-        AverageTemperature = averageTemperature;
+
+    Seasons(String info, int temperature) {
+        this.information = info;
+        this.averageTemperature = temperature;
     }
 
-    public double getAverageTemperature() {
-        return AverageTemperature;
+    public String getInfo() {
+        return name() + "\t" +  information + "\t" + averageTemperature;
     }
 
-
-    public String getInformation() {
-        return switch (this) {
-            case Winter -> ("I love winter");
-            case Spring -> ("I love Spring");
-            case Summer -> ("I love Summer");
-            case Autumn -> ("I love Autumn");
-        };
-    }
-
-    public String getDescription() {
-
-        return switch (this) {
-            case Winter -> "Cold season";
-            case Spring -> "Warm season";
-            case Summer -> "Hot Summer";
-            case Autumn -> "Rainy Season";
-        };
-
+    String getDescription() {
+        return "";
     }
 }

@@ -4,13 +4,10 @@ public class Runner {
     public static void main(String[] args) {
         Seasons season = Seasons.Autumn;
 
-        season.getInformation();
-        System.out.println(season + " " + season.getInformation() + " Average temperature " + season.getAverageTemperature() + " "
-                + season.getDescription());
+        season.getInfo();
 
         for (Seasons seasons : Seasons.values()) {
-            System.out.println(seasons + " " + seasons.getInformation() + " Average temperature " + seasons.getAverageTemperature() + " "
-                    + seasons.getDescription());
+            System.out.println(seasons.getInfo());
         }
     }
 }

@@ -166,7 +166,8 @@ public class Shop {
                 System.out.println("You get " + entry);
             }
 
-        } else {
+        }
+        else {
             System.out.println("You didn't buy anything");
         }
 

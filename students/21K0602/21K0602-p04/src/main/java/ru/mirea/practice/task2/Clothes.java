@@ -1,25 +1,25 @@
 package ru.mirea.practice.task2;
 
 public abstract class Clothes {
-    private final Sizes Size;
-    private final String Color;
-    private final int Cost;
+    private final Sizes size;
+    private final String color;
+    private final int cost;
 
     public Clothes(Sizes size, String color, int cost) {
-        Size = size;
-        Color = color;
-        Cost = cost;
+        this.size = size;
+        this.color = color;
+        this.cost = cost;
     }
 
     public Sizes getSize() {
-        return Size;
+        return size;
     }
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public int getCost() {
-        return Cost;
+        return cost;
     }
 }

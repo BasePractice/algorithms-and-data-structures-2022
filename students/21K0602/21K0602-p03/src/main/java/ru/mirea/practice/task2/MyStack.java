@@ -10,8 +10,6 @@ public class MyStack<T> {
     public MyStack() {
         queue1 = new LinkedList<T>();
         queue2 = new LinkedList<T>();
-
-
     }
 
     public void push(T data) {
@@ -27,7 +25,7 @@ public class MyStack<T> {
     }
 
     public T pop() {
-        if (queue1.isEmpty()) {
+        if(queue1.isEmpty()) {
             System.out.println("Underflow!!");
             System.exit(0);
         }
@@ -39,7 +37,7 @@ public class MyStack<T> {
 
 
     public T top() {
-        if (queue1.isEmpty()) {
+        if(queue1.isEmpty()) {
             System.out.println("Underflow!!");
             System.exit(0);
         }
@@ -55,7 +53,7 @@ public class MyStack<T> {
     public Integer search(T element) {
         Integer index = (Integer) 0;
         while (!queue1.isEmpty()) {
-            if (!queue1.peek().equals(element)) {
+            if(!queue1.peek().equals(element)) {
                 index++;
                 queue2.add(queue1.peek());
                 queue1.poll();

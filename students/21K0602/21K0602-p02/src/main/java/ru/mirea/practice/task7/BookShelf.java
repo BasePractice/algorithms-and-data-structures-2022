@@ -44,7 +44,8 @@ public class BookShelf {
                 if(value.compareTo(bookShelf.get(i)) < 0) {
 
                     bookShelf.set(i + 1, bookShelf.get(i));
-                } else {
+                }
+                else {
                     break;
                 }
             }
