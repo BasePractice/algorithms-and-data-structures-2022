@@ -9,5 +9,5 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>21K0709-p03</artifactId>
-    <description>MathRandom</description>
+    <description>Практическая работа 3</description>
 </project>
