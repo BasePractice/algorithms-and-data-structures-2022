@@ -10,16 +10,22 @@ public class Atelier {
 
     public void dressMan() {
         for (Clothes clothe : clothes) {
-            if (clothe instanceof ManClothing manClothing) {
-                manClothing.dressMen();
+            try {
+                ManClothing clothing = (ManClothing) clothe;
+                clothing.dressMen();
+            } catch (ClassCastException e) {
+                System.out.println(clothe.getClass() + "is not for man");
             }
         }
     }
 
     public void dressWomen() {
         for (Clothes clothe : clothes) {
-            if (clothe instanceof WomenClothing womenClothing) {
-                womenClothing.dressWomen();
+            try {
+                WomenClothing clothing = (WomenClothing) clothe;
+                clothing.dressWomen();
+            } catch (ClassCastException e) {
+                System.out.println(clothe.getClass() + "is not for woman");
             }
         }
     }

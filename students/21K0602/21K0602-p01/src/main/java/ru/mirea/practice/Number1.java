@@ -13,7 +13,6 @@ public abstract class Number1 {
             for (int i = 0; i < length; i++) {
                 massive[i] = in.nextInt();
                 sum += massive[i];
-
             }
 
             double average = sum / (double) length;

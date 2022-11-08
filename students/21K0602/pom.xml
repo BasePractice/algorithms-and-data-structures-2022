@@ -13,7 +13,7 @@
     <groupId>ru.mirea.practice</groupId>
     <artifactId>21K0602</artifactId>
     <packaging>pom</packaging>
-    <description>Практические работы Давыдов ДЕнис КВБО-03-21</description>
+    <description>Практические работы Давыдов Денис КВБО-03-21</description>
     <version>2022.1</version>
 
     <modules>
