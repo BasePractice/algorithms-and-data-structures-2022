@@ -1,6 +1,5 @@
 package ru.mirea.practice.task1;
 
-
 abstract class Program1 {
     public static void main(String[] args) {
         int sum = 0;
