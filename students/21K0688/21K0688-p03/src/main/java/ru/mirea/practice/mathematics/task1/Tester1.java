@@ -8,7 +8,7 @@ abstract class Tester1 {
         double[] secondArr = new double[5];
         Random t = new Random();
         for (int i = 0; i < firstArr.length; i++) {
-            firstArr[i] = t.nextDouble(10);
+            firstArr[i] = t.nextDouble();
             System.out.printf("%.2f ", firstArr[i]);
         }
         System.out.print("\n");
