@@ -41,7 +41,7 @@ public class Matrix {
         return mas;
     }
 
-    public int[][] multiMatrix(int [][] mas, double x) {
+    public int[][] multiMatrix(int [][] mas, int x) {
         for (int i = 0; i < this.getStr(); i++) {  //идём по строкам
             for (int j = 0; j < this.getStl(); j++) { //идём по столбцам
                 mas[i][j] *= x;
