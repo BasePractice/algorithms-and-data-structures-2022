@@ -27,6 +27,7 @@
     </scm>
 
     <modules>
+        <module>students/21K0703</module>
         <module>students/0000000</module>
         <module>students/0000001</module>
         <module>students/21K0602</module>
