@@ -4,13 +4,14 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class Converter {
-    String s;
+    double s;
     String from;
     String inlang;
     String inland;
-    String course;
 
-    Converter(String s, String from, String inlang, String inland, String cource) {
+    double course;
+
+    Converter(double s, String from, String inlang, String inland, double cource) {
         this.s = s;
         this.from = from;
         this.inlang = inlang;
@@ -19,10 +20,9 @@ public class Converter {
     }
 
     public String formated() {
-        double coef = Double.parseDouble(s);
+        double coef = s;
         Locale.setDefault(new Locale(inlang, inland));
-        double n1 = Double.parseDouble(course);
-        coef = coef * n1;
+        coef = coef * course;
         NumberFormat numberFormat1 = NumberFormat.getCurrencyInstance();
         return numberFormat1.format(coef);
     }

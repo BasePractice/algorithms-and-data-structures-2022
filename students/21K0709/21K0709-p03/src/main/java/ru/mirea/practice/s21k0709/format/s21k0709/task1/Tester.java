@@ -10,7 +10,7 @@ public abstract class Tester {
         System.out.println("In land code");
         System.out.println("Exchange rate from currency to currency");
         try (Scanner sc = new Scanner(System.in)) {
-            Converter app = new Converter(sc.nextLine(), sc.nextLine(), sc.nextLine(), sc.nextLine(), sc.nextLine());
+            Converter app = new Converter(sc.nextDouble(), sc.next(), sc.next(), sc.next(), sc.nextDouble());
             app.formated();
             System.out.print(app.toString());
         }

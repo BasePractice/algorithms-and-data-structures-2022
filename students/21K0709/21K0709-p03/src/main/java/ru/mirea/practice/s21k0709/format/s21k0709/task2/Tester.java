@@ -6,12 +6,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public abstract class Tester {
-    public static String converter(String kodLang, String kodLand, Double course, float sumBasket) {
-        Locale sumFormat2 = new Locale(kodLang, kodLand); //определяем локализацию
-        NumberFormat sumformat2 = NumberFormat.getCurrencyInstance(sumFormat2); //определяем форматировщик
-        return "Amount in " + sumFormat2.getISO3Country() + " " + sumformat2.format(course * sumBasket);
-    }
-
     public static void main(String[] args) {
         ArrayList<Shop> c = new ArrayList<>();
         Shop a1 = new Shop("product1", 123);
@@ -24,9 +18,11 @@ public abstract class Tester {
         c.add(a4);
         Shop a5 = new Shop("product5", 976);
         c.add(a5);
-        for (Shop x : c) {
+
+        for (Shop x: c) {
             System.out.println(x.name + "\t" + x.price);
         }
+
         try (Scanner source = new Scanner(System.in)) {
             System.out.println("Add product to cart?");
             String s = source.nextLine();
@@ -43,6 +39,7 @@ public abstract class Tester {
                 System.out.println("Add product to cart?");
                 s = source.next();
             }
+
             Locale.setDefault(new Locale("ru", "RU"));
             NumberFormat format = NumberFormat.getCurrencyInstance();
             System.out.println("Amount in rubles: " + format.format(sumBasket));
@@ -50,12 +47,13 @@ public abstract class Tester {
             String conv = source.next();
             if ("yes".equals(conv)) {
                 System.out.print("Enter the currency language code: ");
-                String kodlang = source.next();
+                String kodLang = source.next();
                 System.out.print("Enter the country code of the currency: ");
                 String kodLand = source.next();
                 System.out.print("Enter the course");
                 double course = source.nextDouble();
-                System.out.println(converter(kodlang, kodLand, course, sumBasket));
+                Converter converter = new Converter(kodLang, kodLand, course);
+                System.out.println(converter.converter(kodLang, kodLand, course, sumBasket));
             }
         }
     }
