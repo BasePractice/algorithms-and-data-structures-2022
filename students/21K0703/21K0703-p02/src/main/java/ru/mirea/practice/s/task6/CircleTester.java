@@ -1,6 +1,6 @@
-package ru.mirea.practice.s21K0703.lab2.t6;
+package ru.mirea.practice.s.task6;
 
-public class TestCircle {
+public abstract class CircleTester {
     public static void main(String[] args) {
         Circle circle1 = new Circle(10, 4, 6);
         Circle circle2 = new Circle(4, 6, 1);
@@ -21,6 +21,7 @@ public class TestCircle {
                 break;
             default:
                 System.out.println("Окружности равны");
+                break;
         }
     }
 }

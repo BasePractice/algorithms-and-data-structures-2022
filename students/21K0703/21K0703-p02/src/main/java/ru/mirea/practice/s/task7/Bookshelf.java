@@ -1,12 +1,12 @@
-package ru.mirea.practice.s21K0703.lab2.t7;
+package ru.mirea.practice.s.task7;
 
 import java.util.Arrays;
 
-public class BookShelf {
+public class Bookshelf {
     private Book[] arr;
     private int num;
 
-    public BookShelf(Book[] arr) {
+    public Bookshelf(Book[] arr) {
         this.num = arr.length;
         this.arr = arr;
     }

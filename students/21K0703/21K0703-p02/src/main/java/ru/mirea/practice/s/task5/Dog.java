@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0703.lab2.t5;
+package ru.mirea.practice.s.task5;
 
 public class Dog {
     private String nickname;
@@ -26,7 +26,7 @@ public class Dog {
     }
 
     public int ageToHuman() {
-        return (this.age * 7);
+        return this.age * 7;
     }
 
     @Override

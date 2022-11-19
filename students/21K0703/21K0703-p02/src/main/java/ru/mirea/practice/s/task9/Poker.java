@@ -1,15 +1,15 @@
-package ru.mirea.practice.s21K0703.lab2.t9;
+package ru.mirea.practice.s.task9;
 
 import java.util.Scanner;
 
-public class Poker {
+public abstract class Poker {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int m = 5;
         int players;
 
-        String[] suits = {"Пик", "Бубен", "Черви", "Крести"};
+        String[] suits = {"Пик", "Бубен", "Черв", "Крест"};
         String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Валет", "Королева", "Король", "Туз"};
 
         int n = 54; // количество карт

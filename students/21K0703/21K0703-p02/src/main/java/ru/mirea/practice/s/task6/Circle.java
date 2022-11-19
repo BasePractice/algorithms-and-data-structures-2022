@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0703.lab2.t6;
+package ru.mirea.practice.s.task6;
 
 public class Circle {
     static final double PI = 3.14;

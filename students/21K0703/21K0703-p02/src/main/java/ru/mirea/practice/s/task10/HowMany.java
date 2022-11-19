@@ -1,8 +1,8 @@
-package ru.mirea.practice.s21K0703.lab2.t10;
+package ru.mirea.practice.s.task10;
 
 import java.util.Scanner;
 
-public class Counter {
+public abstract class HowMany {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package ru.mirea.practice.s21K0703.lab2.t8;
+package ru.mirea.practice.s.task8;
 
 import java.util.Scanner;
 
-public class Main {
+public abstract class Main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
