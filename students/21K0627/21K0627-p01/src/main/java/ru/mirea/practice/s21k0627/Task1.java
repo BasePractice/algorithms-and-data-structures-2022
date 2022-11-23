@@ -1,6 +1,6 @@
 package ru.mirea.practice.s21k0627;
 
-public class Task1 {
+abstract class Task1 {
     public static void main(String[] args) {
         int[] arr = new int[9];
         int sum = 0;
