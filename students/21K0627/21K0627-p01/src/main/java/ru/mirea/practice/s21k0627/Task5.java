@@ -1,4 +1,4 @@
-package ru.mirea.practice.s21K0627;
+package ru.mirea.practice.s21k0627;
 
 import java.util.Scanner;
 
