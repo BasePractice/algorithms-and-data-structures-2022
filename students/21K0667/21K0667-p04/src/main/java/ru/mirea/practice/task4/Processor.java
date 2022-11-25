@@ -41,4 +41,5 @@ public class Processor {
         this.threads = threads;
         this.cores = cores;
     }
+
 }

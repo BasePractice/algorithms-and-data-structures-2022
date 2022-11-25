@@ -30,4 +30,5 @@ public class Monitor {
         this.refreshRate = refreshRate;
         this.resolution = resolution;
     }
+
 }
