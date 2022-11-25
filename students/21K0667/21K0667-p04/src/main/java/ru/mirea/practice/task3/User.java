@@ -35,8 +35,6 @@ public class User {
                 System.out.println("Неверный логин или пароль");
                 return false;
             }
-
-
         }
     }
 }

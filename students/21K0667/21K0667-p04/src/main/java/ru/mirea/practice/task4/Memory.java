@@ -30,4 +30,5 @@ public class Memory {
     public void setHddCapacity(int hddCapacity) {
         this.hddCapacity = hddCapacity;
     }
+
 }
