@@ -10,6 +10,7 @@
     </parent>
     <artifactId>21K0667</artifactId>
     <packaging>pom</packaging>
+
     <description>Практическая работа Мирошников Михаил</description>
     <modules>
         <module>21K0667-p01</module>

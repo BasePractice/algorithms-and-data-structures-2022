@@ -1,6 +1,6 @@
 package ru.mirea.practice.task1;
 
-abstract class Tester {
+abstract class Test {
     public static void main(String[] args) {
         Season myFavoriteSeason = Season.WINTER;
         Season.favorite(myFavoriteSeason);

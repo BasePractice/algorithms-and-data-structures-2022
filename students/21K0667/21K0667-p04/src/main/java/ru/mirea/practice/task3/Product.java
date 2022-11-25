@@ -29,4 +29,5 @@ public class Product {
     public String toString() {
         return name + " Стоимость = " + price;
     }
+
 }
