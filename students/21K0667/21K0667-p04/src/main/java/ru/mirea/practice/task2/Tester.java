@@ -12,4 +12,5 @@ abstract class Tester {
         System.out.print("\n");
         test.dressWoman(arr);
     }
+
 }

@@ -20,4 +20,5 @@ public class Computer {
                 + ", Монитор" + monitor
                 + ", Бренд:" + brand;
     }
+
 }

@@ -47,5 +47,4 @@ public enum Season {
                 break;
         }
     }
-
 }
