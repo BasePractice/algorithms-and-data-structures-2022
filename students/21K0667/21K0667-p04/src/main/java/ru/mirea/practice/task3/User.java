@@ -22,13 +22,14 @@ public class User {
     public String getPassword() {
         return password;
     }
-    public boolean authentication(){
-        try (Scanner in = new Scanner(System.in)){
+
+    public boolean authentication() {
+        try (Scanner in = new Scanner(System.in)) {
             System.out.println("Введите ваш логин: ");
             String inLogin = in.nextLine();
             System.out.println("Введите ваш пароль: ");
             String inPassword = in.nextLine();
-            if (inLogin.equals(login) && inPassword.equals(password)){
+            if (inLogin.equals(login) && inPassword.equals(password)) {
                 System.out.println("Добро пожаловать!");
                 return true;
             } else {

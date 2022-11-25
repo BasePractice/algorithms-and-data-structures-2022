@@ -22,6 +22,7 @@ abstract class Clothes {
     public String getColor() {
         return color;
     }
+
     public String toString() {
         return "Размер: " + getSize().name() + " Цена: " + getPrice() + " Цвет: " + color;
     }

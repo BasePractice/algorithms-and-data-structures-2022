@@ -1,6 +1,6 @@
 package ru.mirea.practice.task2;
 
-public class TShirt extends Clothes implements MenClothing, WomenClothing  {
+public class TShirt extends Clothes implements MenClothing, WomenClothing {
 
     public TShirt(Sizes size, int price, String color) {
         super(size, price, color);
@@ -8,6 +8,6 @@ public class TShirt extends Clothes implements MenClothing, WomenClothing  {
 
     @Override
     public void dressMan() {
-       System.out.println("Одеть футболку на мужчину");
+        System.out.println("Одеть футболку на мужчину");
     }
 }

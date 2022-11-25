@@ -9,6 +9,7 @@ public enum Catalog {
         public Product[] getCatalog() {
             return catalog;
         }
+
         public void getDescription() {
             for (Product product : catalog) {
                 System.out.println(product.toString());
@@ -16,27 +17,29 @@ public enum Catalog {
         }
     },
     BREAD() {
-        final Product[] catalog = { new Product("Белый хлеб", 50),
+        final Product[] catalog = {new Product("Белый хлеб", 50),
                 new Product("Черный хлеб", 70),
                 new Product("С отрубями", 90)};
 
         public Product[] getCatalog() {
             return catalog;
         }
+
         public void getDescription() {
             for (Product product : catalog) {
                 System.out.println(product.toString());
             }
         }
     },
-    FISH(){
-        final Product[] catalog = { new Product("Семга", 1300),
+    FISH() {
+        final Product[] catalog = {new Product("Семга", 1300),
                 new Product("Осетр", 1100),
                 new Product("Минтай", 300)};
 
         public Product[] getCatalog() {
             return catalog;
         }
+
         public void getDescription() {
             for (Product product : catalog) {
                 System.out.println(product.toString());
@@ -46,6 +49,7 @@ public enum Catalog {
     };
 
     public abstract void getDescription();
+
     public abstract Product[] getCatalog();
 
 }

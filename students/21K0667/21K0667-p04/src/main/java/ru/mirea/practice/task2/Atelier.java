@@ -18,5 +18,4 @@ public class Atelier implements MenClothing, WomenClothing {
             }
         }
     }
-
 }

@@ -9,5 +9,4 @@ abstract class Tester {
             System.out.println(season.toString());
         }
     }
-
 }
