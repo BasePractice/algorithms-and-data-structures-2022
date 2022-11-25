@@ -9,7 +9,6 @@ public class Circle {
         this.r = r;
     }
 
-    Circle() {}
 
     public double getR() {
         return this.r;
@@ -32,6 +31,7 @@ public class Circle {
         this.r = r;
     }
 
+    @Override
     public String toString() {
         return "{" + "Радиус = " + r + ", Координаты центра окружности: " + center + "}";
     }

@@ -7,9 +7,6 @@ public class Matrix {
     private int columns;
     private int lines;
 
-    Matrix() {
-    }
-
     Matrix(int columns, int lines, double[][] arr) {
         this.lines = lines;
         this.columns = columns;
@@ -49,7 +46,7 @@ public class Matrix {
         Matrix c = new Matrix(this.lines, this.columns, a);
         for (int i = 0; i < this.lines; i++) {
             for (int j = 0; j < this.columns; j++) {
-                c.getArr()[i][j] = (this.arr[i][j] + b.getArr()[i][j]);
+                c.getArr()[i][j] = this.arr[i][j] + b.getArr()[i][j];
             }
         }
         return c;
@@ -71,25 +68,9 @@ public class Matrix {
         return c;
     }
 
+    @Override
     public String toString() {
         System.out.println("Матрица:");
-        for (int i = 0; i < this.lines; i++) {
-            for (int j = 0; j < this.columns; j++) {
-                // DUPLICATE: 21K0664
-                // FIXME: Не понятна логика
-                // return Arrays.deepToString(this.arr);
-            }
-        }
-        return "";
-    }
-
-    public static void main(String[] args) {
-        double[][] c = {{1, 2}, {3, 4}, {5, 6}};
-        int n = 3;
-        Matrix a = new Matrix(c);
-        Matrix b = new Matrix(c);
-        System.out.println(a.sum(b).toString());
-        System.out.println(a.mulByN(n).toString());
-        System.out.println(a.toString());
+        return Arrays.deepToString(this.arr);
     }
 }

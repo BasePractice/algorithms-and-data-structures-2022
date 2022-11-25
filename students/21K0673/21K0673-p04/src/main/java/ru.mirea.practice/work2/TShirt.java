@@ -5,8 +5,6 @@ public class TShirt extends Clothes {
     InterfaceWomenClothing womenClothing;
 
     public TShirt(EnumAtelier clothingSize, double cost, String colour) {
-        this.clothingSize = clothingSize;
-        this.colour = colour;
-        this.cost = cost;
+        super(clothingSize, cost, colour);
     }
 }

@@ -1,26 +1,34 @@
 package ru.mirea.workfourone.task8;
 
-public abstract class Shape {
+public class Shape {
     protected String color;
     protected boolean filled;
 
-    Shape() {
-    }
 
     Shape(String color, boolean filled) {
+        this.color = color;
+        this.filled = filled;
     }
 
-    public abstract String getColor();
+    public String getColor() {
+        return color;
+    }
 
-    public abstract void setColor(String color);
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-    public abstract boolean isFilled();
+    public boolean isFilled() {
+        return filled;
+    }
 
-    public abstract void setFilled(boolean filled);
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
 
-    public abstract double getArea();
 
-    public abstract double getPerimeter();
-
-    public abstract String toString();
+    @Override
+    public String toString() {
+        return "Shape{" + "color='" + color + '\'' + ", filled=" + filled + '}';
+    }
 }

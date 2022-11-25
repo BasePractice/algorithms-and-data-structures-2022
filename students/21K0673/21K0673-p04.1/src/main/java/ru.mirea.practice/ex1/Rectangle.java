@@ -4,7 +4,16 @@ public class Rectangle extends Shape {
     private double length;
     private double width;
 
-    Rectangle() {
+    public Rectangle(String color, boolean filled, double side) {
+        super(color, filled);
+        this.length = side;
+        this.width = side;
+    }
+
+    Rectangle(double length, double width, String color, boolean filled) {
+        super(color, filled);
+        this.length = length;
+        this.width = width;
     }
 
     @Override
@@ -24,18 +33,6 @@ public class Rectangle extends Shape {
 
     @Override
     public void setFilled(boolean filled) {
-        this.filled = filled;
-    }
-
-    Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-    }
-
-    Rectangle(double length, double width, String color, boolean filled) {
-        this.length = length;
-        this.width = width;
-        this.color = color;
         this.filled = filled;
     }
 

@@ -9,8 +9,6 @@ public class Student {
 
     private int gpa;
 
-    Student() {}
-
     Student(String name, String surname, String specialization, int course, int group, int gpa) {
         this.name = name;
         this.surname = surname;

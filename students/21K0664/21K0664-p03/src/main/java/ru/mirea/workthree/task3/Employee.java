@@ -9,8 +9,6 @@ public class Employee {
         this.salary = salary;
     }
 
-    Employee() {}
-
     public double getsalary() {
         return this.salary;
     }
@@ -27,11 +25,12 @@ public class Employee {
         this.fullname = fullname;
     }
 
-    public void setAll(String fullname,double salary) {
+    public void setAll(String fullname, double salary) {
         this.fullname = fullname;
         this.salary = salary;
     }
 
+    @Override
     public String toString() {
         return "{Полное имя: " + fullname + "Зарплата = " + salary + "}";
     }

@@ -1,9 +1,9 @@
 package ru.mirea.workseven.task56;
 
 public interface Stroka {
-    public int countingQuantity();
+    int countingQuantity();
 
-    public String oddString();
+    String oddString();
 
-    public String invert();
+    String invert();
 }

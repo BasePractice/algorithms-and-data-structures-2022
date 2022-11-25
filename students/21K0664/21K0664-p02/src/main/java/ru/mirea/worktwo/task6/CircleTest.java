@@ -1,6 +1,6 @@
 package ru.mirea.worktwo.task6;
 
-public class CircleTest {
+abstract class CircleTest {
     public static void main(String[] args) {
         Point b = new Point(35,24);
         Circle a = new Circle(b,56);

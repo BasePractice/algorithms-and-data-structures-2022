@@ -3,17 +3,8 @@ package ru.mirea.practice.ex1;
 public class Square extends Rectangle {
     private double side;
 
-    Square() {
-    }
-
-    Square(double side) {
-        this.side = side;
-    }
-
     Square(double side, String color, boolean filled) {
-        this.side = side;
-        this.color = color;
-        this.filled = filled;
+        super(color, filled, side);
     }
 
     public double getSide() {
@@ -26,14 +17,15 @@ public class Square extends Rectangle {
 
     @Override
     public void setWidth(double width) {
-        super.setWidth(width);
+        setWidth(width);
     }
 
     @Override
     public void setLength(double length) {
-        super.setLength(length);
+        setLength(length);
     }
 
+    @Override
     public String toString() {
         return "Rectangle:{Side = " + side + ", Area = " + (side * side) + ", Perimeter = " + (side * 4) + "}";
     }

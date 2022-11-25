@@ -4,12 +4,13 @@ public class Person {
     private String fullName;
     private int age;
 
-    Person() {
-    }
-
     Person(String fullName, int age) {
         this.fullName = fullName;
         this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void move() {
@@ -18,10 +19,5 @@ public class Person {
 
     public void talk() {
         System.out.println(fullName + " говорит");
-    }
-
-    public static void main(String[] args) {
-        Person a = new Person();
-        Person b = new Person("Сергей Семёнович Шульц", 35);
     }
 }

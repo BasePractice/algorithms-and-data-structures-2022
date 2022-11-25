@@ -3,17 +3,9 @@ package ru.mirea.practice.work8;
 public abstract class Circle extends Shape {
     private double r;
 
-    Circle() {
-    }
-
-    Circle(double r) {
-        this.r = r;
-    }
-
     Circle(double r, String color, boolean filled) {
+        super(color, filled);
         this.r = r;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getRadius() {

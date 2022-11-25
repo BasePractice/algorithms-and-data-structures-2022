@@ -2,14 +2,12 @@ package ru.mirea.worktwo.task7;
 
 public class BookShelf {
     int amount;
-    Book[]arr;
+    Book[] arr;
 
     BookShelf(int amount) {
         this.amount = amount;
         this.arr = new Book[amount];
     }
-
-    BookShelf() {}
 
     public int getAmount() {
         return this.amount;
@@ -20,8 +18,8 @@ public class BookShelf {
     }
 
     public int getFirstYear() {
-        for (int i = 0; ;) {
-            for (int j = 1; ;) {
+        for (int i = 0; ; ) {
+            for (int j = 1; ; ) {
                 if (arr[i].getYear() > arr[j].getYear()) {
                     i = j;
                     if (j == amount - 1) {
@@ -39,7 +37,7 @@ public class BookShelf {
 
     public int getLastYear() {
         for (int i = 0; ; ) {
-            for (int j = 1; ;) {
+            for (int j = 1; ; ) {
                 if (arr[i].getYear() < arr[j].getYear()) {
                     i = j;
                     if (j == amount - 1) {
@@ -56,8 +54,8 @@ public class BookShelf {
     }
 
     public void sort() {
-        for (int i = 0; i < amount - 1;) {
-            for (int j = 1; j < amount;) {
+        for (int i = 0; i < amount - 1; ) {
+            for (int j = 1; j < amount; ) {
                 if (arr[i].getYear() > arr[j].getYear()) {
                     Book c = arr[j];
                     arr[j] = arr[i];
@@ -74,12 +72,13 @@ public class BookShelf {
         this.amount = amount;
     }
 
-    public void setShelf(Book b,int number) {
+    public void setShelf(Book b, int number) {
         this.arr[number] = b;
     }
 
+    @Override
     public String toString() {
-        for (int k = 0;k < this.amount; k++) {
+        for (int k = 0; k < this.amount; k++) {
             System.out.println(arr[k] + "\n");
         }
         return "";

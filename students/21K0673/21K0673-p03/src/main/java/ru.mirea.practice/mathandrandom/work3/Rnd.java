@@ -1,6 +1,6 @@
 package ru.mirea.practice.mathandrandom.work3;
 
-public class Rnd {
+abstract class Rnd {
     private static int rnd(int min, int max) {
         max -= min;
         return (int) (Math.random() * ++max) + min;

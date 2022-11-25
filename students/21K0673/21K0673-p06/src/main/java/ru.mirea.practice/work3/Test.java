@@ -11,9 +11,4 @@ public class Test implements Nameable {
     public String getName() {
         return this.name;
     }
-
-    public static void main(String[] args) {
-        Test test = new Test("hovmdslvk");
-        System.out.println(test.getName());
-    }
 }

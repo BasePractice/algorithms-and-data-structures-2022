@@ -55,6 +55,7 @@ public class Circle {
         }
     }
 
+    @Override
     public String toString() {
         return "{" + "Радиус = " + r + ", Координаты центра окружности: " + center + "}";
     }

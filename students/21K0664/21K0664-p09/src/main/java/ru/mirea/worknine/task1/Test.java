@@ -34,7 +34,8 @@ public class Test {
         this.a = new Student[n];
     }
 
-    public void set(Student k,int n) {
+
+    public void set(Student k, int n) {
         this.a[n] = k;
     }
 
@@ -54,14 +55,14 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Student a = new Student("Ivan", 25,99);
-        Student b = new Student("Max", 15,100);
-        Student c = new Student("Anna", 24,42);
+        Student a = new Student("Ivan", 25, 99);
+        Student b = new Student("Max", 15, 100);
+        Student c = new Student("Anna", 24, 42);
 
         Test array = new Test(3);
-        array.set(a,0);
-        array.set(b,1);
-        array.set(c,2);
+        array.set(a, 0);
+        array.set(b, 1);
+        array.set(c, 2);
 
         System.out.println(array);
 

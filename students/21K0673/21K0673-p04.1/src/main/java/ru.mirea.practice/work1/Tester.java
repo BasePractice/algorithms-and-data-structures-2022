@@ -1,6 +1,6 @@
 package ru.mirea.practice.work1;
 
-public class Tester {
+abstract class Tester {
     public static void main(String[] args) {
         Circle circle = new Circle(4.5);
         Rectangle rectangle = new Rectangle(3.8, 8.9);

@@ -5,20 +5,12 @@ public class Phone {
     private String model;
     private double weight;
 
-    Phone() {
-    }
-
     Phone(String number, String model, double weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
-        Phone a = new Phone(number, model);
     }
 
-    Phone(String number, String model) {
-        this.number = number;
-        this.model = model;
-    }
 
     public String receiveCall(String name) {
         return "Звонит " + name;
@@ -36,6 +28,7 @@ public class Phone {
         return number;
     }
 
+    @Override
     public String toString() {
         return "Phone:{Number: " + number + ", Model: " + model + ", Weight: " + weight + "}";
     }

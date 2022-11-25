@@ -1,12 +1,16 @@
 package ru.mirea.practice.work2;
 
-public class Atelier extends Clothes {
-    public void dressWomen(Clothes[] clothes) {
+abstract class Atelier extends Clothes {
+    public Atelier(EnumAtelier clothingSize, double cost, String colour) {
+        super(clothingSize, cost, colour);
+    }
 
+    public void dressWomen(Clothes[] clothes) {
+        System.out.println("a");
     }
 
     public void dressMan(Clothes[] clothes) {
-
+        System.out.println("a");
     }
 
     public static void main(String[] args) {

@@ -15,6 +15,7 @@ public class ProcessStrings implements Stroka {
         this.str = str;
     }
 
+    @Override
     public int countingQuantity() {
         int count = 0;
         for (int i = 0; i < this.str.length(); i++) {
@@ -23,10 +24,12 @@ public class ProcessStrings implements Stroka {
         return count;
     }
 
+    @Override
     public String invert() {
         return new StringBuffer(this.str).reverse().toString();
     }
 
+    @Override
     public String oddString() {
         char[] c = str.toCharArray();
         StringBuilder result = new StringBuilder();
@@ -38,6 +41,7 @@ public class ProcessStrings implements Stroka {
         return c[0] + result.toString();
     }
 
+    @Override
     public String toString() {
         return str;
     }

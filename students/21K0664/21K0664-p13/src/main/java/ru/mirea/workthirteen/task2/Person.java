@@ -6,8 +6,6 @@ public class Person {
     private String patronymic;
     private int age;
 
-    Person() {
-    }
 
     Person(String name, String surname, String patronymic, int age) {
         this.name = name;

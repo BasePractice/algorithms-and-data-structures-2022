@@ -16,17 +16,17 @@ public class Shop implements Enter {
         }
     }
 
-    Shop() {
-    }
 
     public double getAmount() {
         return this.amount;
     }
 
+    @Override
     public void setAmount(int amount) {
         this.amount = amount;
     }
 
+    @Override
     public void addComputer(int a) {
         if ((this.amount + a) > 10) {
             this.amount = 10;
@@ -34,6 +34,7 @@ public class Shop implements Enter {
         this.amount += a;
     }
 
+    @Override
     public void delComputer(int a) {
         if ((this.amount - a) < 0) {
             this.amount = 0;
@@ -41,6 +42,7 @@ public class Shop implements Enter {
         this.amount -= a;
     }
 
+    @Override
     public void findComputer(int a) {
         if (a < 0 || a > 10) {
             System.out.println("Error");
@@ -50,6 +52,7 @@ public class Shop implements Enter {
         System.out.println("Компьютер " + a + " есть на складе");
     }
 
+    @Override
     public String toString() {
         return "{" + "В магазине: " + amount + " компьютеров}";
     }

@@ -3,8 +3,6 @@ package ru.mirea.workseven.task78;
 public class Magazines implements Printable {
     private String name;
 
-    Magazines() {
-    }
 
     public Magazines(String name) {
         this.name = name;
@@ -18,10 +16,12 @@ public class Magazines implements Printable {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return "Magazines{" + "name='" + name + '\'' + '}';
     }
 
+    @Override
     public void print() {
         System.out.println(this.name);
     }

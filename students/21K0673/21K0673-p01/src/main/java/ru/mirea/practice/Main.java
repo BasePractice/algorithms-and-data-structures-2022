@@ -1,8 +1,9 @@
 package ru.mirea.practice;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+abstract class Main {
     public static int abs(int a) {
         if (a > 0) {
             return a;
@@ -27,56 +28,63 @@ public class Main {
 
         int[] a = new int[6];
         System.out.println("Введите число");
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i <= 5; i++) {
-            a[i] = sc.nextInt();
-        }
-
-        int sum = 0;
-        int k = 0;
-        do {
-            sum += a[k];
-            k++;
-        } while (k <= 5);
-
-        System.out.println("\n");
-        System.out.println(sum);
-
-        k = 0;
-        int j = 1;
-        int max;
-        while (a[k] < a[j]) {
-            if (j == 5) {
-                k++;
-                j = k + 1;
-            } else {
-                j++;
+        Scanner scanner = new Scanner(System.in);
+        try {
+            for (int i = 0; i <= 5; i++) {
+                a[i] = scanner.nextInt();
             }
 
+            int sum = 0;
+            int k = 0;
+            do {
+                sum += a[k];
+                k++;
+            } while (k <= 5);
+
+            System.out.println("\n");
+            System.out.println(sum);
+
+            k = 0;
+            int j = 1;
+            int max;
+            while (a[k] < a[j]) {
+                if (j == 5) {
+                    k++;
+                    j = k + 1;
+                } else {
+                    j++;
+                }
+
+            }
+            max = a[j];
+            System.out.println("\n");
+            System.out.println(max);
+
+            for (int i = 0; i <= 5; i++) {
+                System.out.println(a[i]);
+            }
+            int b = 0;
+            for (int i = 0; i <= 5; i++) {
+                b += a[i];
+            }
+            b /= 6;
+            System.out.println(b);
+
+            double o;
+
+            for (double i = 1; i <= 10; i++) {
+                o = 1 / i;
+                System.out.println(o);
+            }
+
+            System.out.println(abs(-7));
+
+            System.out.println(mod(3));
+        } catch (InputMismatchException e) {
+            System.out.println("Error");
+            scanner.nextInt();
+        } finally {
+            scanner.close();
         }
-        max = a[j];
-        System.out.println("\n");
-        System.out.println(max);
-
-        for (int i = 0; i <= 5; i++) {
-            System.out.println(a[i]);
-        }
-        int b = 0;
-        for (int i = 0; i <= 5; i++) {
-            b += a[i];
-        }
-        b /= 6;
-        System.out.println(b);
-
-        double o;
-
-        for (double i = 1; i <= 10; i++) {
-            o = 1 / i;
-            System.out.println(o);
-        }
-
-        System.out.println(abs(-7));
-
-        System.out.println(mod(3));
     }
 }

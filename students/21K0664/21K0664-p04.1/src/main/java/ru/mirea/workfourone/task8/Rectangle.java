@@ -5,19 +5,11 @@ public abstract class Rectangle extends Shape {
     private double length;
     private double width;
 
-    Rectangle() {
-    }
-
-    Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-    }
 
     Rectangle(double length, double width, String color, boolean filled) {
+        super(color, filled);
         this.length = length;
         this.width = width;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getWidth() {
@@ -36,12 +28,10 @@ public abstract class Rectangle extends Shape {
         this.length = length;
     }
 
-    @Override
     public double getArea() {
         return length * width;
     }
 
-    @Override
     public double getPerimeter() {
         return 2 * length + 2 * width;
     }

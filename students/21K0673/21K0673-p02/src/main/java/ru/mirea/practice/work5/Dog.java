@@ -34,6 +34,7 @@ public class Dog {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return "{" + "Возраст = " + age + ", Кличка: " + name + "}";
     }

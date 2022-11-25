@@ -1,17 +1,27 @@
 package ru.mirea.workeleven.task3;
 
-import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class Student  {
+public class Student {
     private String name;
     public int idnumber;
     public int gpa;
+    private Date date;
 
-    public SimpleDateFormat s;
+    Student(String name, int idnumber, int gpa, Date date) {
+        this.date = date;
+        this.idnumber = idnumber;
+        this.name = name;
+        this.gpa = gpa;
+    }
 
+    public Date getDate() {
+        return date;
+    }
 
-
-    Student() {}
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
     public int getIdnumber() {
         return idnumber;
@@ -37,14 +47,8 @@ public class Student  {
         return gpa;
     }
 
-    Student(String name, int idnumber, int gpa) {
-        this.idnumber = idnumber;
-        this.name = name;
-        this.gpa = gpa;
-    }
-
     @Override
     public String toString() {
-        return "task1.Student{" + "name='" + name + '\'' + ", iDNumber=" + idnumber + ", GPA=" + gpa + '}';
+        return "Student{" + "name='" + name + '\'' + ", idnumber=" + idnumber + ", gpa=" + gpa + ", date=" + date + '}';
     }
 }

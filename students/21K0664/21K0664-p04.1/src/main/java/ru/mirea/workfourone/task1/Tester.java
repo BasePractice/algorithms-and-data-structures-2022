@@ -1,6 +1,6 @@
 package ru.mirea.workfourone.task1;
 
-public class Tester {
+abstract class Tester {
     public static void main(String[] args) {
         Circle a = new Circle(14.25);
         Rectangle b = new Rectangle(53.48, 28.239);

@@ -2,7 +2,7 @@ package ru.mirea.worknine.task2;
 
 import java.util.ArrayList;
 
-public class Test {
+abstract class Test {
     public static void main(String[] args) {
         Student a = new Student("asa", 57464, 77);
         Student b = new Student("jqj", 12433, 100);

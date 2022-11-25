@@ -1,6 +1,6 @@
 package ru.mirea.workthree.mathrandom.task3;
 
-public class Arr {
+abstract class Arr {
     private static int arr(int min, int max) {
         max -= min;
         return (int) (Math.random() * ++max) + min;

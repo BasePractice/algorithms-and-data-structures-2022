@@ -1,6 +1,6 @@
 package ru.mirea.worktwo.task5;
 
-public class KennelDog {
+abstract class KennelDog {
     public static void main(String[] args) {
         Dog[] a = new Dog[10];
         Dog c = new Dog("спайк",6);

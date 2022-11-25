@@ -1,6 +1,6 @@
 package ru.mirea.practice.mathandrandom.work1;
 
-public class GenRand {
+abstract class GenRand {
     public static void main(String[] args) {
         double[] a = new double[5];
         for (int i = 0; i < 5; i++) {

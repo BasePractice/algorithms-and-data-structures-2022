@@ -4,8 +4,6 @@ public class Tie extends Clothes {
     InterfaceMenClothing menClothing;
 
     public Tie(EnumAtelier clothingSize, double cost, String colour) {
-        this.clothingSize = clothingSize;
-        this.colour = colour;
-        this.cost = cost;
+        super(clothingSize, cost, colour);
     }
 }

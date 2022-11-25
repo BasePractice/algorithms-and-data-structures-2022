@@ -1,5 +1,7 @@
 package ru.mirea.workthirteen.task3;
 
+import java.util.StringTokenizer;
+
 public class Adress {
     private String country;
     private String region;
@@ -9,17 +11,15 @@ public class Adress {
     private String housing;
     private String flat;
 
-    Adress() {
-    }
-
-    Adress(String country, String region, String city, String street, String house, String housing, String flat) {
-        this.country = country;
-        this.region = region;
-        this.city = city;
-        this.street = street;
-        this.house = house;
-        this.housing = housing;
-        this.flat = flat;
+    Adress(String stroke) {
+        String[] split = stroke.split(" ");
+        this.country = split[0];
+        this.region = split[1];
+        this.city = split[2];
+        this.street = split[3];
+        this.house = split[4];
+        this.housing = split[5];
+        this.flat = split[6];
     }
 
     public String getCity() {
@@ -78,11 +78,15 @@ public class Adress {
         this.street = street;
     }
 
+    @Override
+    public String toString() {
+        return "Adress {" + country + ',' + region + ',' + city + ',' + street + ',' + house + ',' + flat + '}';
+    }
 
-    public void set(String v) {
-        String[] split = v.split(" ");
-        for (int i = 0; i < v.length() - 1; i++) {
-            System.out.println(split[i]);
+    public void print(String stroke) {
+        StringTokenizer st = new StringTokenizer(stroke, " \t\n\r,.");
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
         }
     }
 }

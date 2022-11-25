@@ -1,6 +1,6 @@
 package ru.mirea.workseven.task78;
 
-public class TestPrintable {
+abstract class TestPrintable {
     public static void main(String[] args) {
         Printable[] a = new Printable[4];
         a[0] = new Books("qwe");

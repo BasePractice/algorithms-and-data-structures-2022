@@ -1,19 +1,18 @@
 package ru.mirea.workfourone.task9;
 
 public class Chair extends Furniture {
-    private double price;
 
-    Chair() {
-    }
 
     Chair(double price) {
-        this.price = price;
+        super(price);
     }
 
+    @Override
     public void setPrice(double price) {
         this.price = price;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }

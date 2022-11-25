@@ -1,8 +1,8 @@
 package ru.mirea.worktwo.task2;
 
 public class Ball {
-    public double x = 0.0;
-    public double y = 0.0;
+    public double x;
+    public double y;
 
     public Ball(double x, double y) {
         this.x = x;
@@ -35,6 +35,7 @@ public class Ball {
         y += ydisp;
     }
 
+    @Override
     public String toString() {
         return this.x + " " + " " + this.y + "";
     }

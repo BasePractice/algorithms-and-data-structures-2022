@@ -3,7 +3,6 @@ package ru.mirea.workseven.task78;
 public class Books implements Printable {
     private String name;
 
-    Books() {}
 
     public Books(String name) {
         this.name = name;
@@ -17,10 +16,12 @@ public class Books implements Printable {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return "Books{" + "name='" + name + '\'' + '}';
     }
 
+    @Override
     public void print() {
         System.out.println(this.name);
     }

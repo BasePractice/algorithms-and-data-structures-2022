@@ -4,17 +4,9 @@ package ru.mirea.workfourone.task8;
 public abstract class Circle extends Shape {
     private double r;
 
-    Circle() {
-    }
-
-    Circle(double r) {
-        this.r = r;
-    }
-
     Circle(double r, String color, boolean filled) {
+        super(color, filled);
         this.r = r;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getRadius() {
@@ -25,12 +17,10 @@ public abstract class Circle extends Shape {
         this.r = r;
     }
 
-    @Override
     public double getArea() {
         return 3.14 * r * r;
     }
 
-    @Override
     public double getPerimeter() {
         return 2 * 3.14 * r;
     }

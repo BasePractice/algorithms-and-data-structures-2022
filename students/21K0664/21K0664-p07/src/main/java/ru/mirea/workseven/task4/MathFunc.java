@@ -25,14 +25,17 @@ class MathFunc implements MathCalculable {
         this.valid = valid;
     }
 
+    @Override
     public double exponentiation(int n) {
         return n;
     }
 
+    @Override
     public double module() {
-        return Math.pow(this.valid ^ 2 + this.imaginary ^ 2,0.5);
+        return Math.pow(this.valid ^ 2 + this.imaginary ^ 2, 0.5);
     }
 
+    @Override
     public String toString() {
         return imaginary + " " + valid + 'i';
     }

@@ -9,8 +9,6 @@ public class Employer {
         return this.income;
     }
 
-    Employer() {
-    }
 
     Employer(String firstName, String lastName, double income) {
         this.firstName = firstName;
