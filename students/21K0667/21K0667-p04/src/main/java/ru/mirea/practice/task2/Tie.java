@@ -10,4 +10,5 @@ public class Tie extends Clothes implements MenClothing, WomenClothing  {
     public void dressMan() {
         System.out.println("Одеть галстук на мужчину");
     }
+
 }

@@ -25,5 +25,4 @@ abstract class Clothes {
     public String toString() {
         return "Размер: " + getSize().name() + " Цена: " + getPrice() + " Цвет: " + color;
     }
-
 }
