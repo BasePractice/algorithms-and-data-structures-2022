@@ -15,5 +15,8 @@
     <modules>
         <module>21K0618-p01</module>
         <module>21K0618-p02</module>
+        <module>21K0618-p03</module>
+        <module>21K0618-Obolochki</module>
+        <module>21K0618-Formatirovanie</module>
     </modules>
 </project>
