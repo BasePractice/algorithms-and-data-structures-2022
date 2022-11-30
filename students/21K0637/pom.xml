@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>algorithms-and-data-structures</artifactId>
-        <groupId>ru.mirea.practice</groupId>
+        <groupId>cp</groupId>
         <version>2022.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
