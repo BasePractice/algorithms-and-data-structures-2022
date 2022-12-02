@@ -3,11 +3,15 @@ package ru.mirea.practice.task4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Input {
+public final class Input {
+    private Input() {
+    }
+
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         int n;
         System.out.println("Введите число");
-        Scanner sc = new Scanner(System.in);
         while (true) {
             if (sc.hasNextInt()) {
                 n = sc.nextInt();
@@ -25,9 +29,9 @@ public class Input {
             System.out.print(arr[i] + " ");
         }
         System.out.println("\n" + "Четн: ");
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            if (j % 2 == 0) {
+                System.out.print(j + " ");
             }
         }
     }

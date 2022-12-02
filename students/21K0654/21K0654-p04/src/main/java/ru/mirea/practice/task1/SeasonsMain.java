@@ -1,6 +1,9 @@
 package ru.mirea.practice.task1;
 
-public class SeasonsMain {
+public final class SeasonsMain {
+    private SeasonsMain() {
+    }
+
     public static void print(Seasons s) {
         switch (s) {
             case WHINTER:
@@ -14,6 +17,8 @@ public class SeasonsMain {
                 break;
             case AUTUMN:
                 System.out.println("Я люблю осень");
+                break;
+            default:
                 break;
         }
     }

@@ -2,7 +2,7 @@ package ru.mirea.practice;
 
 import java.util.Scanner;
 
-public class Task2 {
+public final class Task2 {
     private Task2() {
     }
 

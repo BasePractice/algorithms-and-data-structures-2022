@@ -7,7 +7,7 @@ public class Author {
 
     private char gender;
 
-    Author(String n,String gm,char gn) {
+    Author(String n, String gm, char gn) {
         this.name = n;
 
         this.gender = gn;

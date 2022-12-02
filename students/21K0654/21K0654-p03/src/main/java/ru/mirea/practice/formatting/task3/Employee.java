@@ -18,12 +18,12 @@ public class Employee {
 
     DecimalFormat format = new DecimalFormat("1500.05");
 
-    public void out(Employee e) {
-        System.out.println("Fullname: " + fullname + " Salary: " + salary);
+    public void out() {
+        System.out.println("Fullname: " + this.fullname + " Salary: " + this.salary);
     }
 
-    public void outSalary(Employee e) {
-        System.out.println(" Salary: " + format.format(salary));
+    public void outSalary() {
+        System.out.println(" Salary: " + format.format(this.salary));
     }
 
 }

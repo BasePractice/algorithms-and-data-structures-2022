@@ -9,6 +9,10 @@ public class Circle {
         this.center = new Point(x, y);
     }
 
+    public Circle(Point c) {
+        this.center = c;
+    }
+
     public Circle(double x, double y, double r) {
         this.center = new Point(x, y);
         this.radius = r;
@@ -28,6 +32,10 @@ public class Circle {
 
     public void setCenter(Point center) {
         this.center = center;
+    }
+
+    public Point getCenter() {
+        return center;
     }
 
     @Override

@@ -3,6 +3,8 @@ package ru.mirea.practice.task2;
 import java.util.Scanner;
 
 public class TestCircle {
+    public static Scanner sc = new Scanner(System.in);
+
     private Circle[] arr;
 
     private int num;
@@ -83,10 +85,12 @@ public class TestCircle {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         TestCircle testCircle = new TestCircle(sc.nextInt());
         System.out.println(testCircle.toString());
         System.out.println("Max, Min: " + testCircle.max() + "        " + testCircle.min());
+        for (Circle c : testCircle.arr) {
+            System.out.println(c.getCenter().toString());
+        }
         testCircle.toSort();
         System.out.println(testCircle.toString());
     }

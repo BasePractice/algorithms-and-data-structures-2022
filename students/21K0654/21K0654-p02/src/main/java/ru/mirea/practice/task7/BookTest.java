@@ -1,6 +1,9 @@
 package ru.mirea.practice.task7;
 
-public class BookTest {
+public final class BookTest {
+    private BookTest() {
+    }
+
     public static void main(String[] args) {
         Book[] books = new Book[10];
         for (int i = 0; i < 10; i++) {

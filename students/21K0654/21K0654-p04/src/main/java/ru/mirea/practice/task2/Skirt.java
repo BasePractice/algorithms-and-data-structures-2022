@@ -15,12 +15,13 @@ public class Skirt extends Clothes implements WomenClothing {
 
     @Override
     public void dressWoman(Clothes[] arr) {
-        System.out.println("This woman is dressed with skirt." + " Color: " + this.getColour() + " Cost: " + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
+        System.out.println("This woman is dressed with skirt." + " Color: " + this.getColour() + " Cost: "
+                + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
 
     }
 
     @Override
     public void dressMan(Clothes[] arr) {
-
+        System.out.println("Мужчинам юбки не положены (как правило)");
     }
 }

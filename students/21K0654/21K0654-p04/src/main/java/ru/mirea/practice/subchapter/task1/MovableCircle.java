@@ -1,12 +1,13 @@
 package ru.mirea.practice.subchapter.task1;
 
-public class Movable_Circle extends Movable_point implements Movable{
+public class MovableCircle extends MovablePoint implements Movable {
     private int r;
-    private Movable_point c;
-    public Movable_Circle(int r,int x,int y,int xSpeed,int ySpeed){
-        super(x, y, xSpeed, ySpeed);
-        this.c=new Movable_point(  x, y, xSpeed, ySpeed);
-        this.r=r;
+    private MovablePoint c;
+
+    public MovableCircle(int r, int x, int y, int xspeed, int yspeed) {
+        super(x, y, xspeed, yspeed);
+        this.c = new MovablePoint(x, y, xspeed, yspeed);
+        this.r = r;
     }
 
     @Override
@@ -28,8 +29,9 @@ public class Movable_Circle extends Movable_point implements Movable{
     public void moveRight() {
         c.moveRight();
     }
+
     @Override
-    public String toString(){
-        return c.toString()+" Radius:"+this.r;
+    public String toString() {
+        return c.toString() + " Radius:" + this.r;
     }
 }

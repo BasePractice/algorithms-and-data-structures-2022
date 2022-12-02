@@ -8,7 +8,7 @@ public class Matrix {
     private int width;
     private double[][] mat;
 
-    Matrix(int a, int width) {
+    Matrix(int height, int width) {
         this.height = height;
         this.width = width;
         this.mat = new double[height][width];
@@ -26,19 +26,20 @@ public class Matrix {
 
     public double[][] plus(Matrix m1, Matrix m2) {
         Matrix res = new Matrix(m1.height, m1.width);
-        if (m1.height == m2.height && m1.width == m2.width) {
-            res = new Matrix(m1.height, m1.width);
-            for (int i = 0; i < height; i++) {
-                for (int j = 0; j < width; j++) {
-                    res.getMat()[i][j] = m1.getMat()[i][j] + m2.getMat()[i][j];
+        while (true) {
+            if (m1.height == m2.height && m1.width == m2.width) {
+                res = new Matrix(m1.height, m1.width);
+                for (int i = 0; i < height; i++) {
+                    for (int j = 0; j < width; j++) {
+                        res.getMat()[i][j] = m1.getMat()[i][j] + m2.getMat()[i][j];
+                    }
                 }
+                return res.getMat();
+            } else {
+                System.out.println("Размерности матриц не равны");
+                sc = new Scanner(System.in);
             }
-            return res.getMat();
-        } else {
-            System.out.println("Размерности матриц не равны");
-            return null;
         }
-        // прописать исключение
     }
 
     public double[][] multNum(Matrix m, double num) {
@@ -51,10 +52,10 @@ public class Matrix {
         return m.getMat();
     }
 
-    public void printMatrix(Matrix m){
+    public void printMatrix(Matrix m) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.print(m.getMat()[i][j]+" ");
+                System.out.print(m.getMat()[i][j] + " ");
             }
             System.out.println('\n');
         }
@@ -62,21 +63,22 @@ public class Matrix {
 
     public double[][] multMat(Matrix m1, Matrix m2) {
         Matrix res = new Matrix(m1.height, m1.width);
-        if ((m1.height == m1.width) == (m2.height == m2.width)) {
-            res = new Matrix(m1.height, m1.width);
-            for (int i = 0; i < height; i++) {
-                for (int j = 0; j < width; j++) {
-                    for(int c=0; c < height;c++) {
-                        res.getMat()[i][j] += m1.getMat()[i][c] * m2.getMat()[c][j];
+        while (true) {
+            if ((m1.height == m1.width) == (m2.height == m2.width)) {
+                res = new Matrix(m1.height, m1.width);
+                for (int i = 0; i < height; i++) {
+                    for (int j = 0; j < width; j++) {
+                        for (int c = 0; c < height; c++) {
+                            res.getMat()[i][j] += m1.getMat()[i][c] * m2.getMat()[c][j];
+                        }
                     }
                 }
+                return res.getMat();
+            } else {
+                System.out.println("Матрицы не квадратны");
+                sc = new Scanner(System.in);
             }
-            return res.getMat();
-        } else {
-            System.out.println("Матрицы не квадратны");
-            return null;
         }
-        // прописать исключение
     }
 
 }

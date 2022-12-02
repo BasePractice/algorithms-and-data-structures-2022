@@ -2,20 +2,23 @@ package ru.mirea.practice.subchapter.task2;
 
 import java.util.Scanner;
 
-public class TestPhone {
+public final class TestPhone {
+    private TestPhone() {
+    }
+
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Phone p = new Phone("guyPhone", 800555353, 100);
         System.out.println("Введите кол-во адресов, а затем сами адреса");
         int n = sc.nextInt();
-        int[] Arr = new int[n];
-        for (int a = 0; a < Arr.length; a++) {
-            Arr[a] = sc.nextInt();
+        int[] arr = new int[n];
+        for (int a = 0; a < arr.length; a++) {
+            arr[a] = sc.nextInt();
         }
-        for (int a : Arr) {
+        for (int a : arr) {
             System.out.println(a);
         }
-
-        p.sendMessage(Arr);
+        Phone p = new Phone("guyPhone", 800555353, 100);
+        p.sendMessage(arr);
     }
 }

@@ -5,6 +5,11 @@ public class Phone {
     private int number;
     private double weight;
 
+    @Override
+    public String toString() {
+        return this.model + " " + this.number + " " + this.weight;
+    }
+
     public String receiveCall(String name, int n) {
         return "Звонит " + name + " (" + n + ")";
     }
@@ -26,12 +31,12 @@ public class Phone {
     }
 
     public Phone() {
-        this.number = 00000000000;
+        this.number = 1000000000;
     }
 
     public void sendMessage(int[] arr) {
         for (int a = 0; a < arr.length; a++) {
-            System.out.println(a+1 + ": " + arr[a]);
+            System.out.println(a + 1 + ": " + arr[a]);
         }
     }
 

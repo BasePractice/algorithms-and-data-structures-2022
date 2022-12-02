@@ -3,30 +3,33 @@ package ru.mirea.practice.task1;
 import java.util.Arrays;
 import java.util.Random;
 
-public class RandArr {
+public final class RandArr {
+    private RandArr() {
+    }
+
     public static void main(String[] args) {
         double[] arr = new double[20];
 
         Random random = new Random();
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = Math.random() * 100;
-            System.out.println(arr[i]);
+        for (double d : arr) {
+            d = Math.random() * 100;
+            System.out.println(d);
         }
         Arrays.sort(arr);
         System.out.println("---------------------------------");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for (double d : arr) {
+            System.out.println(d);
         }
         System.out.println("||||||||||||||||||||||||||||||||");
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100);
-            System.out.println(arr[i]);
+        for (double d : arr) {
+            d = random.nextInt(100);
+            System.out.println(d);
         }
         Arrays.sort(arr);
         System.out.println("-------------------------------");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for (double d : arr) {
+            System.out.println(d);
         }
     }
 }

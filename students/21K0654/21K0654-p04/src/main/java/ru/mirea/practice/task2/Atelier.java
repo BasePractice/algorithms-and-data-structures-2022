@@ -6,15 +6,15 @@ public class Atelier implements WomenClothing, MenClothing {
 
     @Override
     public void dressMan(Clothes[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i].dressMan(arr);
+        for (Clothes clothes : arr) {
+            clothes.dressMan(arr);
         }
     }
 
     @Override
     public void dressWoman(Clothes[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i].dressWoman(arr);
+        for (Clothes clothes : arr) {
+            clothes.dressWoman(arr);
         }
     }
 
@@ -27,7 +27,7 @@ public class Atelier implements WomenClothing, MenClothing {
         System.out.println("Выберите тип одежды(1-футболка, 2-штаны, 3- юбка, 4-галстук) а затем ее размер(XXS,XS,S,M,L):");
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println((i+1)+"-й товар");
+            System.out.println((i + 1) + "-й товар");
             switch (sc.nextInt()) {
                 case 1: {
                     sc = new Scanner(System.in);
@@ -49,11 +49,13 @@ public class Atelier implements WomenClothing, MenClothing {
                     arr[i] = new Tie(Size.valueOf(sc.nextLine()), 15, "yellow");
                     break;
                 }
+                default:
+                    break;
             }
-            System.out.println('\n'+"...");
+            System.out.println('\n' + "...");
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i].toString());
+        for (Clothes clothes : arr) {
+            System.out.println(clothes.toString());
         }
         Atelier a = new Atelier();
         a.dressMan(arr);

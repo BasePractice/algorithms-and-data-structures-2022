@@ -1,7 +1,5 @@
 package ru.mirea.practice;
 
-import java.util.Scanner;
-
 public final class Task3 {
     private Task3() {
     }

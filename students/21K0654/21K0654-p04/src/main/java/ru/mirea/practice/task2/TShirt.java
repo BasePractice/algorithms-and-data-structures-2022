@@ -15,11 +15,13 @@ public class TShirt extends Clothes implements WomenClothing, MenClothing {
 
     @Override
     public void dressMan(Clothes[] arr) {
-        System.out.println("This man is dressed with T-shirt." + " Color: " + this.getColour() + " Cost: " + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
+        System.out.println("This man is dressed with T-shirt." + " Color: " + this.getColour() + " Cost: "
+                + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
     }
 
     @Override
     public void dressWoman(Clothes[] arr) {
-        System.out.println("This woman is dressed with T-shirt." + " Color: " + this.getColour() + " Cost: " + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
+        System.out.println("This woman is dressed with T-shirt." + " Color: " + this.getColour() + " Cost: "
+                + this.getCost() + " Size: " + this.size.getEuroSize() + this.size.getDescription());
     }
 }

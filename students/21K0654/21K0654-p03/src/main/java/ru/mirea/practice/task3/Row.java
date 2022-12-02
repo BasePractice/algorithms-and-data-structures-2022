@@ -2,7 +2,10 @@ package ru.mirea.practice.task3;
 
 import java.util.Random;
 
-public class Row {
+public final class Row {
+    private Row() {
+    }
+
     public static void main(String[] args) {
         Random random = new Random();
         int[] arr = new int[4];

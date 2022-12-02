@@ -2,27 +2,31 @@ package ru.mirea.practice.formatting.task3;
 
 import java.util.Scanner;
 
-public class Report {
+public final class Report {
+    private Report() {
+    }
+
+    public static Scanner sc = new Scanner(System.in);
+
     private static Employee[] Baza;
 
     public static void generateReport() {
-        for (int i = 0; i < Baza.length; i++) {
-            Baza[i].outSalary(Baza[i]);
+        for (Employee employee : Baza) {
+            employee.outSalary();
         }
     }
 
     public static void setBaza() {
-        Scanner sc = new Scanner(System.in);
         Employee[] arr = new Employee[3];
         double s;
-        for (int i = 0; i < arr.length; i++) {
+        for (Employee employee : Baza) {
             s = sc.nextDouble();
-            arr[i] = new Employee(s);
-            arr[i].out(arr[i]);
+            employee = new Employee(s);
+            employee.out();
         }
         Baza = arr;
-        for (int i = 0; i < Baza.length; i++) {
-            Baza[i].out(Baza[i]);
+        for (Employee employee : Baza) {
+            employee.out();
         }
     }
 

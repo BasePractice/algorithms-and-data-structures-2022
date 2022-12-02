@@ -11,14 +11,16 @@ public enum Seasons {
     },
     AUTUMN(15);
     private double tmp;
-    public  double getTmp(){
+
+    public double getTmp() {
         return this.tmp;
     }
+
     Seasons(double tmp) {
         this.tmp = tmp;
     }
 
     public String getDiscription() {
-        return ("Холодное время года, сред. температура:" + String.valueOf(this.tmp));
+        return "Холодное время года, сред. температура:" + String.valueOf(this.tmp);
     }
 }

@@ -19,6 +19,6 @@ public class Person {
     }
 
     public void talk() {
-        System.out.println("Этот " + this.fullName + " говорит");
+        System.out.println("Этот " + this.fullName + " говорит" + " ему " + this.age + " лет");
     }
 }
