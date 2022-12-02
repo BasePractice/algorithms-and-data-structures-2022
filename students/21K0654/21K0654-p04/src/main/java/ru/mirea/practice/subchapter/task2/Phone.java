@@ -5,8 +5,8 @@ public class Phone {
     private int number;
     private double weight;
 
-    public String receiveCall(String name, int numberC) {
-        return name + " calls";
+    public String receiveCall(String name, int n) {
+        return "Звонит " + name + " (" + n + ")";
     }
 
     public int getNumber() {
@@ -20,17 +20,20 @@ public class Phone {
         new Phone(m, n);
     }
 
-    public void sendMessage(int[] arr) {
-        int n = 1;
-        for (int a : arr) {
-            System.out.println(n + ": " + a);
-            n++;
-        }
-    }
-
     public Phone(String m, int n) {
         this.number = n;
         this.model = m;
     }
+
+    public Phone() {
+        this.number = 00000000000;
+    }
+
+    public void sendMessage(int[] arr) {
+        for (int a = 0; a < arr.length; a++) {
+            System.out.println(a+1 + ": " + arr[a]);
+        }
+    }
+
 
 }

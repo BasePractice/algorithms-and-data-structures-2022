@@ -17,7 +17,7 @@ public class Square extends Rectangle {
     public double getPerimeter(){return 2*(side+side);}
 @Override
     public String  toString(){
-        return "Side: "+side + " Colour: "+ color+" filled? "+isFilled;
+        return "Side: "+side + " Colour: "+ this.getColor()+" filled? "+this.isFilled();
     }
 
 }
