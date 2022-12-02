@@ -3,7 +3,7 @@ package ru.mirea.practice.task3;
 public class Circle {
     private Point centre = new Point(0, 0);
 
-    public Circle(double x, double y, double radius) {
+    public Circle(double x, double y) {
         centre.setX(x);
         centre.setY(y);
     }

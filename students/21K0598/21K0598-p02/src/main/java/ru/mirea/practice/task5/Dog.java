@@ -25,15 +25,15 @@ public class Dog {
         this.age = age;
     }
 
-    public int ConvertToHumanAge() {
+    public int convertToHumanAge() {
         return this.age * 7;
     }
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Dog{"
+                + "name='" + name + '\''
+                + ", age=" + age
+                + '}';
     }
 }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 abstract class Shop {
     public static void main(String[] main) {
         try (Scanner sc = new Scanner(System.in)) {
-            ArrayList<Computer> Computers = new ArrayList<>();
+            ArrayList<Computer> computers = new ArrayList<>();
             System.out.println("Добро пожаловать в магазин.");
             while (true) {
                 System.out.print("Выберите комманду:" + '\n'
@@ -14,35 +14,37 @@ abstract class Shop {
                         + "2: показать список компьютеров" + '\n'
                         + "3: купить компьютер" + '\n'
                         + "4-0: выйти из магазина" + '\n');
-                switch (sc.nextInt()){
+                switch (sc.nextInt()) {
                     case 1:
                         System.out.print("ведите имя компьютера: ");
-                        String name = sc.next();
+                        final String name = sc.next();
                         System.out.print("Введите имя процессора: ");
-                        String Proccesor = sc.next();
+                        final String proccesor = sc.next();
                         System.out.print("ведите название видеокарты: ");
-                        String VideoCardName = sc.next();
+                        final String videoCardName = sc.next();
                         System.out.print("Введите объём памяти (целым числом): ");
-                        int Memory = sc.nextInt();
+                        int memory = sc.nextInt();
                         System.out.print("Введите объём оперативной памяти (целым числом): ");
-                        int RAM = sc.nextInt();
-                        Computers.add(new Computer(name, VideoCardName, Proccesor, Memory, RAM));
+                        int ram = sc.nextInt();
+                        computers.add(new Computer(name, videoCardName, proccesor, memory, ram));
                         break;
                     case 2:
-                        for (int i = 0; i < Computers.size(); i++){
-                            System.out.println("Компьютер №" + (i+1) + Computers.get(i).toString());
+                        for (int i = 0; i < computers.size(); i++) {
+                            System.out.println("Компьютер №" + (i + 1) + computers.get(i).toString());
                         }
                         break;
                     case 3:
                         System.out.print("Выберете номер компьютера, который вы хотите приобрести: ");
-                        int ComputerIndex = sc.nextInt() - 1;
-                        if (ComputerIndex <= Computers.size()){
-                            System.out.print("Успешно куплен компьютер под номером " + (ComputerIndex+1) + " с параметрами:" + '\n' + Computers.get(ComputerIndex).toString());
-                            Computers.remove(ComputerIndex);
+                        int computerIndex = sc.nextInt() - 1;
+                        if (computerIndex <= computers.size()) {
+                            System.out.print("Успешно куплен компьютер под номером " + (computerIndex + 1) + " с параметрами:" + '\n'
+                                             + computers.get(computerIndex).toString());
+                            computers.remove(computerIndex);
                         }
                         break;
                     default:
                         System.exit(0);
+                        break;
                 }
             }
         }

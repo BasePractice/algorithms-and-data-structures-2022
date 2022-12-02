@@ -3,7 +3,7 @@ package ru.mirea.practice.task5;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class kennel {
+abstract class Kennel {
     public static void main(String[] args) {
         ArrayList<Dog> dogs = new ArrayList<Dog>();
         try (Scanner sc = new Scanner(System.in)) {
@@ -17,12 +17,12 @@ public class kennel {
                         + "Другое число - выйти" + '\n');
                 switch (sc.nextInt()) {
                     case 1:
-                        if (dogs.size() == 0) {
+                        if (dogs.isEmpty()) {
                             System.out.print("Нет собак в питомнике.");
-                        }
-                        else {
+                        } else {
                             for (int i = 0; i < dogs.size(); i++) {
-                                System.out.print("Собака №" + (i+1) + '\n' + " Имя: " + dogs.get(i).getName() + '\n' + "возраст: " + dogs.get(i).getAge() + '\n');
+                                System.out.print("Собака №" + (i + 1) + '\n' + " Имя: " + dogs.get(i).getName() + '\n' + "возраст: "
+                                                 + dogs.get(i).getAge() + '\n');
                             }
                         }
                         continue command;
@@ -40,7 +40,8 @@ public class kennel {
                             System.out.print("Не собаки с таким номером");
                             continue command;
                         } else {
-                            System.out.print("Возраст собаки с именем " + dogs.get(dogindex).getName() + " по человеческим меркам - " + dogs.get(dogindex).ConvertToHumanAge() + '\n');
+                            System.out.print("Возраст собаки с именем " + dogs.get(dogindex).getName()
+                                    + " по человеческим меркам - " + dogs.get(dogindex).convertToHumanAge() + '\n');
                         }
                         continue command;
                     default:
