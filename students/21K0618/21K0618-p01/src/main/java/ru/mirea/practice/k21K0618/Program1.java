@@ -1,8 +1,10 @@
 package ru.mirea.practice.k21K0618;
 
 import java.util.Scanner;
-public class Program1 {
-    public static void main(String[] args) {
+public class Program1
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         int[] A = new int[6];
         int S = 0;
