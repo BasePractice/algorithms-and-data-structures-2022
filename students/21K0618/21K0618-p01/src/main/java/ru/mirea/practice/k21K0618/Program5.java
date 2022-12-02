@@ -1,5 +1,5 @@
 package ru.mirea.practice.k21K0618;
-/*
+
 import java.util.Scanner;
 
 public class Program5
@@ -20,4 +20,4 @@ public class Program5
         int x = sc.nextInt();
         System.out.println("x! = " + fkt(x));
     }
-}*/
+}

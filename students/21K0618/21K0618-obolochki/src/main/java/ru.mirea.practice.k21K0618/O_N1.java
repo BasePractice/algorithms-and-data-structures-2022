@@ -1,4 +1,4 @@
-package Obolochka;
+package ru.mirea.practice.k21K0618;
 
 public class O_N1 {
     public static void main(String[] args) {

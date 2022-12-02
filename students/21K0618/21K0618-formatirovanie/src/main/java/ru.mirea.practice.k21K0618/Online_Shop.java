@@ -1,4 +1,4 @@
-package Formarts;
+package ru.mirea.practice.k21K0618;
 
 import java.text.NumberFormat;
 import java.util.Locale;

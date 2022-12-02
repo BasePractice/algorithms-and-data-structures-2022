@@ -1,4 +1,4 @@
-package Practice2;
+package ru.mirea.practice.k21K0618;
 
 class Tester8 {
     public static void main(String[] args) {

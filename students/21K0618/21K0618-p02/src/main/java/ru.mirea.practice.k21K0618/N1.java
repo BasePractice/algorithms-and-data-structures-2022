@@ -1,4 +1,4 @@
-package Practice2;
+package ru.mirea.practice.k21K0618;
 
 import java.lang.*;
 

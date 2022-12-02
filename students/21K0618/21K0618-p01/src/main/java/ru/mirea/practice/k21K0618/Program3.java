@@ -1,5 +1,5 @@
 package ru.mirea.practice.k21K0618;
-/*
+
 public class Program3
 {
     public static void main (String[] args)
@@ -11,4 +11,3 @@ public class Program3
         }
     }
 }
-*/

@@ -1,4 +1,4 @@
-package Practice3;
+package ru.mirea.practice.k21K0618;
 
 import java.util.Random;
 
@@ -29,7 +29,7 @@ public class P3_N1 {
         double[] mr = new double[10];
         for (int i = 0; i < mr.length; i++)
         {
-            mr[i] = randDouble.nextDouble(1, 10);
+            mr[i] = randDouble.nextDouble(1.0,10.0);
             System.out.print(mr[i] + " ");
         }
         System.out.println();

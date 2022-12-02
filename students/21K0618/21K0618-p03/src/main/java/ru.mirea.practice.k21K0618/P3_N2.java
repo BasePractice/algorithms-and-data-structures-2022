@@ -1,4 +1,4 @@
-package Practice3;
+package ru.mirea.practice.k21K0618;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -11,7 +11,7 @@ public class P3_N2 {
 
         Point p = new Point(random.nextInt(0, 10), random.nextInt(0, 10));
 
-        Circle krug = new Circle(p, (random.nextDouble(1, 10)));
+        Circle krug = new Circle(p, (random.nextDouble(1.0, 10.0)));
 
         Circle shar = new Circle(new Point(666, 667), (random.nextDouble(1, 10)));
 

@@ -1,5 +1,5 @@
 package ru.mirea.practice.k21K0618;
-/*
+
 import java.util.Scanner;
 public class Program1
 {
@@ -17,4 +17,3 @@ public class Program1
         System.out.println("Cреднее арифмитеское значение всех элементов массива S = " + ((float) S / A.length));
     }
 }
-*/

@@ -1,4 +1,4 @@
-package Practice2;
+package ru.mirea.practice.k21K0618;
 
 import java.util.Scanner;
 import java.util.ArrayList;

@@ -1,5 +1,5 @@
 package ru.mirea.practice.k21K0618;
-/*
+
 import java.util.Scanner;
 public class Program2
 {
@@ -33,4 +33,4 @@ public class Program2
         } while (i < 4);
         System.out.println("Сумма всех элементов массива - " + s + "\nНаименьший элемент массива - " +  min_A + "\nНаибольший - " + max_A);
     }
-}*/
+}
