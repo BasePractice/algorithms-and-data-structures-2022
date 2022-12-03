@@ -1,8 +1,8 @@
-package ru.mirea.practice;
+package ru.mirea.practice.n7;
 
 import java.util.Arrays;
 
-class BookTest {
+abstract class BookTest {
     public static void main(String[] args) {
 
         Book knigga0 = new Book("Василий Петров", "Сборник задач по физике 7-9 класс", "Учебная литература", 343, 1968);
@@ -34,7 +34,13 @@ class BookTest {
             this.year = year;
         }
 
-        public Book() {}
+        public Book() {
+            writer = "writer";
+            this.name = "name";
+            this.genre = "genre";
+            this.nop = 1;
+            this.year = -1;
+        }
 
         public String getWriter() {
             return writer;
@@ -78,98 +84,100 @@ class BookTest {
 
         @Override
         public String toString() {
-            return "\nКнига: " +
-                    "Автор " + writer +
-                    ", Название '" + name + '\'' +
-                    ", Жанр " + genre +
-                    ", Количество страниц " + nop +
-                    ", Год написания " + year;
+            return "\nКнига: " + "Автор " + writer + ", Название '" + name + '\'' + ", Жанр " + genre
+                    + ", Количество страниц " + nop + ", Год написания " + year;
         }
     }
+
     static class ShelfOfBooks {
-        private Book[] Books;
+        private Book[] books;
 
         public ShelfOfBooks(Book[] books) {
-            Books = books;
-        }
-
-        public ShelfOfBooks() {
+            this.books = books;
         }
 
         public Book[] getBooks() {
-            return Books;
+            return books;
         }
 
         public void setBooks(Book[] books) {
-            Books = books;
+            this.books = books;
         }
 
         public Book[] eldest() {
             int count = 0;
-            Book Not_Book = new Book();
-            int max_age = -32000;
-            Book[] Knigi = this.Books.clone();
-            if (Knigi.length > 0) {
-                for (int i = 0; i < Knigi.length; i++) {
-                    if (max_age < Knigi[i].year) {
+            Book notBook = new Book();
+            int maxAge = -32000;
+            Book[] knigi = this.books.clone();
+            if (knigi.length > 0) {
+                for (int i = 0; i < knigi.length; i++) {
+                    if (maxAge < knigi[i].year) {
                         count = 1;
-                        max_age = Knigi[i].year;
+                        maxAge = knigi[i].year;
                         for (int k = 0; k < i - 1; k++) {
-                            Knigi[k] = Not_Book;
+                            knigi[k] = notBook;
                         }
-                    } else if (max_age > Knigi[i].year){
-                        Knigi[i] = Not_Book;
+                    } else if (maxAge > knigi[i].year) {
+                        knigi[i] = notBook;
+                    } else {
+                        count += 1;
                     }
-                    else count += 1;
                 }
                 if (count > 0) {
-                    Book[] ReturnBooks = new Book[count];
+                    Book[] returnBooks = new Book[count];
                     count = 0;
-                    for (int i = 0; i < Knigi.length; i++) {
-                        if (Knigi[i] != Not_Book) {
-                            ReturnBooks[count] = Knigi[i];
-                            Knigi[i] = Not_Book;
+                    for (int i = 0; i < knigi.length; i++) {
+                        if (knigi[i] != notBook) {
+                            returnBooks[count] = knigi[i];
+                            knigi[i] = notBook;
                             count += 1;
-                            if (count == ReturnBooks.length) break;
+                            if (count == returnBooks.length) {
+                                break;
+                            }
                         }
                     }
-                    return ReturnBooks;
-                }
-                else {
+                    return returnBooks;
+                } else {
                     System.out.println("Ничего себе! Какие старые книги! Наша система не распознаёт настолько старые писания!");
-                    Knigi = new Book[1];
-                    Knigi[0] = Not_Book;
-                    return Knigi;
+                    knigi = new Book[1];
+                    knigi[0] = notBook;
+                    return knigi;
                 }
             }
             System.out.println("Нет книг! Сортировать нечего!");
-            Knigi = new Book[1];
-            Knigi[0] = Not_Book;
-            return Knigi;
+            knigi = new Book[1];
+            knigi[0] = notBook;
+            return knigi;
         }
 
         public void sort() {
-            Sort_Book(Books, 0, Books.length-1);
+            sortBook(books, 0, books.length - 1);
         }
-        void Sort_Book(Book[] array, int left, int right) {
-            if (right <= left) return;
-            int mid = (left+right)/2;
-            Sort_Book(array, left, mid);
-            Sort_Book(array, mid+1, right);
+
+        void sortBook(Book[] array, int left, int right) {
+            if (right <= left) {
+                return;
+            }
+            int mid = (left + right) / 2;
+            sortBook(array, left, mid);
+            sortBook(array, mid + 1, right);
             merge(array, left, mid, right);
         }
+
         void merge(Book[] array, int left, int mid, int right) {
 
             int lengthLeft = mid - left + 1;
             int lengthRight = right - mid;
 
-            Book[] leftArray = new Book [lengthLeft];
-            Book[] rightArray = new Book [lengthRight];
+            Book[] leftArray = new Book[lengthLeft];
+            Book[] rightArray = new Book[lengthRight];
 
-            for (int i = 0; i < lengthLeft; i++)
-                leftArray[i] = array[left+i];
-            for (int i = 0; i < lengthRight; i++)
-                rightArray[i] = array[mid+i+1];
+            for (int i = 0; i < lengthLeft; i++) {
+                leftArray[i] = array[left + i];
+            }
+            for (int i = 0; i < lengthRight; i++) {
+                rightArray[i] = array[mid + i + 1];
+            }
 
             int leftIndex = 0;
             int rightIndex = 0;
@@ -180,17 +188,14 @@ class BookTest {
                     if (leftArray[leftIndex].year < rightArray[rightIndex].year) {
                         array[i] = leftArray[leftIndex];
                         leftIndex++;
-                    }
-                    else {
+                    } else {
                         array[i] = rightArray[rightIndex];
                         rightIndex++;
                     }
-                }
-                else if (leftIndex < lengthLeft) {
+                } else if (leftIndex < lengthLeft) {
                     array[i] = leftArray[leftIndex];
                     leftIndex++;
-                }
-                else if (rightIndex < lengthRight) {
+                } else if (rightIndex < lengthRight) {
                     array[i] = rightArray[rightIndex];
                     rightIndex++;
                 }
@@ -199,7 +204,7 @@ class BookTest {
 
         @Override
         public String toString() {
-            return "Книжная полка " + Arrays.toString(Books);
+            return "Книжная полка " + Arrays.toString(books);
         }
 
 

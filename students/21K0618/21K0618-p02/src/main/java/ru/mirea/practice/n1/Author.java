@@ -1,15 +1,6 @@
-package ru.mirea.practice;
+package ru.mirea.practice.n1;
 
-import java.lang.*;
-
-class TestAuthor {
-    public static void main (String[] args) {
-        Author fred = new Author("Fred", "fred@email.dot", 'M');
-        System.out.println("Hahaha, LOL, so funny\n" + fred);
-    }
-}
-
-class Author {
+public class Author {
 
     private String name;
     private String email;
@@ -39,10 +30,10 @@ class Author {
 
     @Override
     public String toString() {
-        return "Author: " +
-                name +
-                ", " + email +
-                ", " + gender +
-                '.';
+        return "Author: "
+                + name
+                + ", " + email
+                + ", " + gender
+                + '.';
     }
 }
