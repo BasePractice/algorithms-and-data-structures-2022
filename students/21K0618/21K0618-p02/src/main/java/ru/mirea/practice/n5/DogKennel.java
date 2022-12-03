@@ -9,6 +9,7 @@ public class DogKennel {
     }
 
     public DogKennel() {
+        dogs = new Dog[0];
     }
 
     public Dog[] getDogs() {

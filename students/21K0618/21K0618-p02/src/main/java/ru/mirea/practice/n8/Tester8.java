@@ -9,8 +9,8 @@ abstract class Tester8 {
             strings[i] = strings[strings.length - i - 1];
             strings[strings.length - i - 1] = bufer;
         }
-        for (int i = 0; i < strings.length; i++) {
-            System.out.println(strings[i]);
+        for (String string : strings) {
+            System.out.println(string);
         }
     }
 }

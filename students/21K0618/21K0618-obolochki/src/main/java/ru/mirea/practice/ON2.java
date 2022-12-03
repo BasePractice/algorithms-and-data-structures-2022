@@ -1,8 +1,9 @@
 package ru.mirea.practice;
 
-public class O_N2 {
+abstract class ON2 {
     public static void main(String[] args) {
         String s = "777.024323";
         double d = Double.parseDouble(s);
+        System.out.println(d);
     }
 }

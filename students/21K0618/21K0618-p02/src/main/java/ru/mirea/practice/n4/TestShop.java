@@ -2,7 +2,6 @@ package ru.mirea.practice.n4;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 abstract class TestShop {
     public static void main(String[] args) {
@@ -57,7 +56,7 @@ abstract class TestShop {
                             System.out.println(eldorado.katalog.get(i) + 'р');
                         }
                     }
-                } else if (poisk.equals("1")) {
+                } else if ("1".equals(poisk)) {
                     eldorado.autput();
                 }
             }

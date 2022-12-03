@@ -1,6 +1,6 @@
 package ru.mirea.practice;
 
-public class O_N3 {
+abstract class ON3 {
     public static void main(String[] args) {
         Double a = 10.0;
         byte b = a.byteValue();
@@ -11,5 +11,12 @@ public class O_N3 {
         double g = a.doubleValue();
         //boolean -
         char i = (char) a.doubleValue(); //Только так
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println(i);
     }
 }

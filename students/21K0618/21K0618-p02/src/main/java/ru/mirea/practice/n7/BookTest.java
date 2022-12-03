@@ -127,7 +127,7 @@ abstract class BookTest {
                     Book[] returnBooks = new Book[count];
                     count = 0;
                     for (int i = 0; i < knigi.length; i++) {
-                        if (knigi[i] != notBook) {
+                        if (!knigi[i].equals(notBook)) {
                             returnBooks[count] = knigi[i];
                             knigi[i] = notBook;
                             count += 1;

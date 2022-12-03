@@ -1,27 +1,26 @@
 package ru.mirea.practice.n4;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Shop {
 
 
-    public ArrayList<String> katalog;
+    public List<String> katalog;
 
-    public Shop(ArrayList<String> katalog) {
+    public Shop(List<String> katalog) {
         this.katalog = katalog;
         this.katalog.add(0, "Список товаров:\n");
     }
 
     public Shop() {
-        katalog = new ArrayList<String>();
         katalog.add(0, "Список товаров:\n");
     }
 
-    public ArrayList<String> getKatalog() {
+    public List<String> getKatalog() {
         return katalog;
     }
 
-    public void setKatalog(ArrayList<String> katalog) {
+    public void setKatalog(List<String> katalog) {
         this.katalog = katalog;
     }
 

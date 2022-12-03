@@ -1,6 +1,6 @@
 package ru.mirea.practice.n5;
 
-public class TestDogKennel {
+abstract class TestDogKennel {
     public static void main(String[] args) {
 
         Dog gu4Ka = new Dog("Жучка", 5);
