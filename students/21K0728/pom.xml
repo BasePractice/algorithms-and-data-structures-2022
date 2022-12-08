@@ -10,7 +10,7 @@
     </parent>
     <artifactId>21K0728</artifactId>
     <packaging>pom</packaging>
-    <description>Практическая работа Лев Щекочихин</description>
+    <description>Практическая работа Льва Щекочихина</description>
 
     <modules>
         <module>21K0728-p01</module>

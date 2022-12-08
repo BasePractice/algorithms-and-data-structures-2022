@@ -1,4 +1,4 @@
-package ru.mirea.practice.taskFourth;
+package ru.mirea.practice.task4;
 
 abstract class Program4 {
     public static void main(String[] arguments) {

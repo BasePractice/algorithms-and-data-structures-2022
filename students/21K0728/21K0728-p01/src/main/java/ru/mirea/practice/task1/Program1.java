@@ -1,4 +1,4 @@
-package ru.mirea.practice.taskFirst;
+package ru.mirea.practice.task1;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ abstract class Program1 {
                     sum = sum + arr[i];
 
                 } else {
-                    System.out.println("Ошибка! Вы ввели не целое число...");
+                    System.out.println("Ошибка! Вы ввели не целое число.");
                     errorCode = true;
                     break;
                 }
