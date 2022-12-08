@@ -1,6 +1,4 @@
-package ru.mirea.practice.n2to4;
-
-import ru.mirea.practice.MovablePoint;
+package ru.mirea.practice;
 
 public class MovableRectangle extends MovablePoint {
     private MovablePoint topLeft;
