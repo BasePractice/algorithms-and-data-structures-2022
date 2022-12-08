@@ -1,3 +1,5 @@
+package ru.mirea.practice;
+
 import java.util.Scanner;
 
 public class Ex2 {

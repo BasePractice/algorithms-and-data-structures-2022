@@ -1,3 +1,5 @@
+package ru.mirea.practice;
+
 public class Ex5 {
     public static long factorial(long n) {
         long result = 1;
