@@ -1,4 +1,4 @@
-package ru.mirea.worktwentyfive.task1;
+package ru.mirea.worktwentyfiv.task1;
 
 
 import java.util.StringTokenizer;
