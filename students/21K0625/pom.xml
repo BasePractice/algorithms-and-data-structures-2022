@@ -15,5 +15,7 @@
     <modules>
         <module>21K0625-p01</module>
         <module>21K0625-p02</module>
+        <module>21K0625-p03</module>
+        <module>21K0625-p04</module>
     </modules>
 </project>
