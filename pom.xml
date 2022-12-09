@@ -32,6 +32,7 @@
         <module>students/21K0576</module>
         <module>students/21K0598</module>
         <module>students/21K0602</module>
+        <module>students/21K0607</module>
         <module>students/21K0647</module>
         <module>students/21K0688</module>
         <module>students/21K0667</module>
@@ -56,6 +57,7 @@
         <module>students/21K0712</module>
         <module>students/21K0586</module>
         <module>students/21K0703</module>
+        <module>students/21K0589</module>
         <module>p01</module>
     </modules>
 
@@ -115,31 +117,6 @@
                     <target>${maven.compiler.target}</target>
                     <source>${maven.compiler.source}</source>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.13.0</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <configuration>
-                            <configLocation>checkstyle.xml</configLocation>
-                            <failsOnError>true</failsOnError>
-                            <consoleOutput>true</consoleOutput>
-                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                        </configuration>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
