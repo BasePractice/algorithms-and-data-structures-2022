@@ -7,7 +7,8 @@ public class Punkt10 {
     class Node {
         Node next;
         String data;
-        public Node(String data) {
+
+        Node(String data) {
             this.data = data;
             this.next = null;
         }
@@ -15,6 +16,7 @@ public class Punkt10 {
 
     public void addobject(String data) {
         Node newNode = new Node(data);
+
 
         if (head == null) {
             head = newNode;
@@ -26,7 +28,8 @@ public class Punkt10 {
     }
 
     public void sortList() {
-        Node current = head, index = null;
+        Node current = head;
+        Node index = null;
         String temp;
         if (head == null) {
             return;
