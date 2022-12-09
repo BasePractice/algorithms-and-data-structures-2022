@@ -1,29 +1,31 @@
 package ru.mirea.practice.task3;
 
+import ru.mirea.practice.task2.Student;
+
 public abstract class MergeSort {
     public static void mergeSort(Student[] mass, int length) {
         if (length < 2) {
             return;
         }
-        int mid = length / 2;
-        Student[] left = new Student[mid];
-        Student[] right = new Student[length - mid];
-        for (int i = 0; i < mid; i++) {
+        int middle = length / 2;
+        Student[] left = new Student[middle];
+        Student[] right = new Student[length - middle];
+        for (int i = 0; i < middle; i++) {
             left[i] = mass[i];
         }
-        for (int i = mid; i < length; i++) {
-            right[i - mid] = mass[i];
+        for (int i = middle; i < length; i++) {
+            right[i - middle] = mass[i];
         }
-        mergeSort(left, mid);
-        mergeSort(right, length - mid);
-        merge(mass, left, right, mid, length - mid);
+        mergeSort(left, middle);
+        mergeSort(right, length - middle);
+        merge(mass, left, right, middle, length - middle);
     }
 
-    public static void merge(Student[] mass, Student[] left, Student[] right, int left2, int right1) {
+    public static void merge(Student[] mass, Student[] left, Student[] right, int left2, int right2) {
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i < left2 && j < right1) {
+        while (i < left2 && j < right2) {
             if (compare(left[i], right[j]) <= 0) {
                 mass[k++] = left[i++];
             } else {
@@ -33,8 +35,8 @@ public abstract class MergeSort {
         while (i < left2) {
             mass[k++] = left[i++];
         }
-        while (j < right1) {
-            mass[k++] = left[j++];
+        while (j < right2) {
+            mass[k++] = right[j++];
         }
     }
 
