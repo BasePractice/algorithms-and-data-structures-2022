@@ -4,7 +4,7 @@ public class Ball {
     private double x;
     private double y;
 
-    public Ball(double x, double y) {
+    public Ball(final double x, final double y) {
         this.x = x;
         this.y = y;
     }
@@ -18,7 +18,7 @@ public class Ball {
         return x;
     }
 
-    public void setX(double x) {
+    public void setX(final double x) {
         this.x = x;
     }
 
@@ -26,25 +26,25 @@ public class Ball {
         return y;
     }
 
-    public void setY(double y) {
+    public void setY(final double y) {
         this.y = y;
     }
 
-    public void setXY(double x, double y) {
+    public void setXY(final double x, final double y) {
         this.x = x;
         this.y = y;
     }
 
-    public void move(double xDisp, double yDisp) {
+    public void move(final double xDisp, final double yDisp) {
         this.x += xDisp;
         this.y += yDisp;
     }
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Ball{"
+                + "x=" + x
+                + ", y=" + y
+                + '}';
     }
 }

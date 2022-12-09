@@ -5,7 +5,7 @@ public class Author {
     private String email;
     private final char gender;
 
-    public Author(String name, String email, char gender) {
+    public Author(final String name, final String email, final char gender) {
         this.name = name;
         this.email = email;
         this.gender = gender;
@@ -19,7 +19,7 @@ public class Author {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -29,10 +29,10 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", gender=" + gender +
-                '}';
+        return "Author{"
+                + "name='" + name + '\''
+                + ", email='" + email + '\''
+                + ", gender=" + gender
+                + '}';
     }
 }

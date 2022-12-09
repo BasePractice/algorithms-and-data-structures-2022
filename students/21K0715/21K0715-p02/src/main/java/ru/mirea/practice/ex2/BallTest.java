@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex2;
 
-class BallTest {
-    public static void main(String[] args) {
+final class BallTest {
+    private BallTest() {
+
+    }
+
+    public static void main(final String[] args) {
         double x2 = 3.14;
         double y2 = 54.44;
         Ball ball1 = new Ball();

@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex10;
 
-public class HowMany {
-    public static void main(String[] args) {
+public final class HowMany {
+    private HowMany() {
+
+    }
+
+    public static void main(final String[] args) {
         System.out.println("typed words: " + args.length);
     }
 }
