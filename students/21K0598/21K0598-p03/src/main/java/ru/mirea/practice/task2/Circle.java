@@ -1,7 +1,7 @@
 package ru.mirea.practice.task2;
 
 public class Circle {
-    private Point point = new Point(0.0, 0.0);
+    private final Point point;
     private double rad;
 
     public Circle(Point point, double rad) {
@@ -16,7 +16,6 @@ public class Circle {
     public void setRad(double rad) {
         this.rad = rad;
     }
-
     @Override
     public String toString() {
         return "Circle{"
