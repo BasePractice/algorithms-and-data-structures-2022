@@ -57,6 +57,7 @@ public class Student {
         return gba;
     }
 
+    @Override
     public String toString() {
         return "ФИО\t" + name + "\tID: " + numbegroup + "\tGBA: " + gba;
     }

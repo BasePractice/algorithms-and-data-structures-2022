@@ -13,7 +13,7 @@
     <description>Практическая работа Лаврентьевой Карины</description>
 
     <modules>
-        <module>21K0647-p01</module>
+        <!--<module>21K0647-p01</module>
         <module>21K0647-p02</module>
         <module>21K0647-p03</module>
         <module>21K0647-p04</module>
@@ -21,8 +21,9 @@
         <module>21K0647-p06</module>
         <module>21K0647-p07</module>
         <module>21K0647-p08</module>
-        <module>21K0647-p09</module>
+        <module>21K0647-p09</module>-->
         <module>21K0647-p10</module>
+        <module>21K0647-p11</module>
 
     </modules>
 </project>
