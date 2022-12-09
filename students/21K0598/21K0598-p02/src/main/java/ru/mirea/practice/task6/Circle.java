@@ -1,7 +1,5 @@
 package ru.mirea.practice.task6;
 
-import java.lang.Math;
-
 public class Circle {
     double rad = 0.0;
 
