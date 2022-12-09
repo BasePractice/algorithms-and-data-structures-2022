@@ -5,10 +5,12 @@ public class Square extends Rectangle {
     public String getType() {
         return "Square";
     }
+
     @Override
     public float getArea() {
         return a * a;
     }
+
     @Override
     public float getPerimeter() {
         return 4 * a;

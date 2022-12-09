@@ -10,6 +10,7 @@ public class Atelier {
             }
         }
     }
+
     public void dressWomen(List<Clothes> cl) {
         for (Clothes i : cl) {
             if (i instanceof WomenClothing) {

@@ -1,15 +1,15 @@
 package ru.mirea.practice.task1;
 
 public class Client {
-    String[] ItnDatabase = {
-            "12345",
-            "17171"
+    String[] itnDatabase = {
+        "12345",
+        "17171"
     };
 
     void requestNameAndItn(String s) {
         Boolean correct = false;
-        for (String i : ItnDatabase) {
-            if (i == s) {
+        for (String i : itnDatabase) {
+            if (i.equals(s)) {
                 correct = true;
                 break;
             }
