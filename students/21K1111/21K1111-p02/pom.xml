@@ -6,19 +6,13 @@
 
     <parent>
         <groupId>ru.mirea.practice</groupId>
-        <artifactId>algorithms-and-data-structures</artifactId>
+        <artifactId>21K1111</artifactId>
         <version>2022.1</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <groupId>ru.mirea.practice</groupId>
-    <artifactId>21K1111</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>21K1111-p02</artifactId>
     <version>2022.1</version>
-    <modules>
-        <module>21K1111-p01</module>
-        <module>21K1111-p02</module>
-    </modules>
 
     
 </project>

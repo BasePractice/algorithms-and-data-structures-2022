@@ -69,9 +69,9 @@ public abstract class Main {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] a) {
         System.out.println("Print args");
-        vivod(args);
+        vivod(a);
         System.out.println("Factorial");
         fact(2);
         System.out.println("Massive initialisation");
