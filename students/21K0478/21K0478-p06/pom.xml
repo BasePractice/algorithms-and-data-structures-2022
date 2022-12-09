@@ -6,13 +6,12 @@
 
     <parent>
         <groupId>ru.mirea.practice</groupId>
-        <artifactId>algorithms-and-data-structures</artifactId>
+        <artifactId>21K0478</artifactId>
         <version>2022.1</version>
-        <relativePath>../..</relativePath>
     </parent>
 
     <groupId>ru.mirea.practice</groupId>
-    <artifactId>21K0478</artifactId>
+    <artifactId>21K0478-p06</artifactId>
     <version>2022.1</version>
 
     
