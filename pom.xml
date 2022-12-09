@@ -59,6 +59,7 @@
         <module>students/21K0703</module>
         <module>students/21K0589</module>
         <module>p01</module>
+        <module>students/21K0715</module>
     </modules>
 
     <dependencies>
