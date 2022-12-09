@@ -3,6 +3,8 @@ package ru.mirea.practice.solutiontask1;
 import java.util.Objects;
 
 public class Node<K, V> {
+    private Node<K, V> next;
+    private Node<K, V> prev;
     public K key;
     public V value;
 
@@ -11,12 +13,36 @@ public class Node<K, V> {
         this.value = value;
     }
 
+    public Node<K, V> getNext() {
+        return next;
+    }
+
+    public Node<K, V> getPrev() {
+        return prev;
+    }
+
+    public void setNext(Node<K, V> next) {
+        this.next = next;
+    }
+
+    public void setPrev(Node<K, V> prev) {
+        this.prev = prev;
+    }
+
     public K getKey() {
         return key;
     }
 
     public V getValue() {
         return value;
+    }
+
+    public void setKey(K key) {
+        this.key = key;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
     }
 
     @Override
