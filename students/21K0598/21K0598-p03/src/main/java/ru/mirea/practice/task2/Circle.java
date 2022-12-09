@@ -16,6 +16,7 @@ public class Circle {
     public void setRad(double rad) {
         this.rad = rad;
     }
+
     @Override
     public String toString() {
         return "Circle{"

@@ -15,9 +15,9 @@ abstract class CircleTest {
         for (int i = 0; i < circlelist.length; i++) {
             circlelist[i] = new Circle(circlepoint, rand.nextDouble(10.0, 100.0));
         }
-        for (int i = 9; i >= 1; i--){
-            for (int j = 0; j < i; j++){
-                if(circlelist[j].getRad() > circlelist[j + 1].getRad()) {
+        for (int i = 9; i >= 1; i--) {
+            for (int j = 0; j < i; j++) {
+                if (circlelist[j].getRad() > circlelist[j + 1].getRad()) {
                     double rad = circlelist[j].getRad();
                     circlelist[j].setRad(circlelist[j + 1].getRad());
                     circlelist[j + 1].setRad(rad);
