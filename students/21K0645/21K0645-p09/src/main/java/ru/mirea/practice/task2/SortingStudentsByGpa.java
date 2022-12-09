@@ -1,5 +1,9 @@
 package ru.mirea.practice.task2;
 
+/*Написать тестовый класс, который создает массив класса Student и
+сортирует массив iDNumber и сортирует его вставками.*/
+
+
 import java.util.Arrays;
 
 public final class SortingStudentsByGpa {
@@ -49,10 +53,11 @@ public final class SortingStudentsByGpa {
 
     public static void main(String[] args) {
 
-        Integer[] list = new Integer[]{1, 5, 2, 4, 7, 4, 6};
-        System.out.println(Arrays.toString(list));
+        Student[] students = new Student[]{ new Student("Ivan", 24, 4),
+            new Student("Pavel", 37, 5), new Student("Maxim", 4, 3),};
+        System.out.println(Arrays.toString(students));
 
-        quickSort(list, -1);
-        System.out.println(Arrays.toString(list));
+        quickSort(students, -1);
+        System.out.println(Arrays.toString(students));
     }
 }

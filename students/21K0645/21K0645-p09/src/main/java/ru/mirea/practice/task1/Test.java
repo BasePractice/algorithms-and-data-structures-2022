@@ -1,5 +1,8 @@
 package ru.mirea.practice.task1;
 
+/*Написать тестовый класс, который создает массив класса Student и
+сортирует массив iDNumber и сортирует его вставками.*/
+
 import java.util.Arrays;
 
 public final class Test {
