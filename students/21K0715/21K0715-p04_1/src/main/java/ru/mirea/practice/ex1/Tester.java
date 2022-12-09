@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex1;
 
-public class Tester {
-    public static void main(String[] args) {
+public final class Tester {
+    private Tester() {
+
+    }
+
+    public static void main(final String[] args) {
         Shape circle = new Circle(3);
         Shape rect = new Rectangle(1,2);
         Shape square = new Square(2);

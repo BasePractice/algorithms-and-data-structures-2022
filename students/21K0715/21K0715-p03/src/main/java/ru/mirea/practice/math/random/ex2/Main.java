@@ -1,7 +1,11 @@
-package ru.mirea.practice.math_random.ex2;
+package ru.mirea.practice.math.random.ex2;
 
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    private Main() {
+
+    }
+
+    public static void main(final String[] args) {
         Tester tester = new Tester(5);
         for (int i = 0; i < 5; i++) {
             tester.insert(i, new Circle());

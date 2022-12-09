@@ -6,6 +6,7 @@ public class Tie extends Clothes implements MenClothing {
         cost = 500;
         color = Colors.VIOLET;
     }
+
     @Override
     public void dressMan() {
         System.out.println("size: " + size + " cost: " + cost + " color: " + color);

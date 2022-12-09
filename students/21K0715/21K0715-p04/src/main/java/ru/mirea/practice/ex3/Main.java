@@ -1,13 +1,19 @@
 package ru.mirea.practice.ex3;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public final class Main {
+    private Main() {
+
+    }
+
     static Map<String, User> users = Map.of("Alfred",new User("Alfred", "12345"));
     public static User currentUser;
-    public static boolean Authentication() {
+
+    public static boolean authentication() {
         System.out.println("Enter login: ");
         Scanner sc = new Scanner(System.in);
         String inputLogin = sc.next();
@@ -17,6 +23,7 @@ public class Main {
         } else {
             System.out.println("Enter password: ");
             int inputHashPassword = sc.next().hashCode();
+            sc.close();
             if (users.get(inputLogin).password == inputHashPassword) {
                 System.out.println("Authorization successful");
                 currentUser = users.get(inputLogin);
@@ -28,10 +35,10 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         boolean successful = false;
         while (!successful) {
-            successful = Authentication();
+            successful = authentication();
         }
         Scanner sc = new Scanner(System.in);
         String userInput = "";
@@ -45,8 +52,13 @@ public class Main {
             }
 
             while (true) {
-                userInput = sc.next().toUpperCase();
-                if (userInput.equals("E") || userInput.equals("EXIT")) {
+                if (type != null) {
+                    break;
+                }
+                userInput = sc.next().toUpperCase(new Locale("en",
+                    "EN"));
+
+                if ("E".equals(userInput) || "EXIT".equals(userInput)) {
                     toPayment = true;
                     break;
                 }
@@ -55,15 +67,14 @@ public class Main {
                 } catch (IllegalArgumentException e) {
                     System.out.println("Wrong catalog name");
                     System.out.println("Try again");
-                    continue;
+                    // continue;
                 }
-                break;
             }
             if (toPayment) {
                 break;
             }
             System.out.println("Goods in catalog: ");
-            ArrayList<Goods> catalogProducts = Goods.getProductsOfType(type);
+            List<Goods> catalogProducts = Goods.getProductsOfType(type);
             for (Goods product: catalogProducts) {
                 System.out.println(product + " " + product.getPrice());
             }
@@ -71,8 +82,11 @@ public class Main {
             System.out.println("or print exit to move to payment");
             Goods product = null;
             while (true) {
-                userInput = sc.next().toUpperCase();
-                if (userInput.equals("E") || userInput.equals("EXIT")) {
+                if (product != null) {
+                    break;
+                }
+                userInput = sc.next().toUpperCase(Locale.US);
+                if ("E".equals(userInput) || "EXIT".equals(userInput)) {
                     toPayment = true;
                     break;
                 }
@@ -81,9 +95,7 @@ public class Main {
                 } catch (IllegalArgumentException e) {
                     System.out.println("Wrong product name");
                     System.out.println("Try again");
-                    continue;
                 }
-                break;
             }
 
             currentUser.addToCart(product);
@@ -98,8 +110,10 @@ public class Main {
         System.out.println("Summary: " + currentUser.getCartSum());
         System.out.println();
         System.out.println("Confirm the purchase?");
-        userInput = sc.next().toLowerCase();
-        if (userInput.equals("yes") || userInput.equals("y")) {
+        userInput = sc.next();
+        sc.close();
+        userInput = userInput.toLowerCase(Locale.US);
+        if ("yes".equals(userInput) || "y".equals(userInput)) {
             System.out.println("Purchase successful");
         } else {
             System.out.println("Purchase cancelled");

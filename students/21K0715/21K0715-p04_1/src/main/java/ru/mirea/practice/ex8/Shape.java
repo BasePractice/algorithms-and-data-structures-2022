@@ -1,6 +1,6 @@
 package ru.mirea.practice.ex8;
 
-abstract public class Shape {
+public abstract class Shape {
     protected String color;
     protected boolean filled;
 
@@ -30,14 +30,15 @@ abstract public class Shape {
         this.filled = filled;
     }
 
-    abstract public double getArea();
-    abstract public double getPerimeter();
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 
     @Override
     public String toString() {
-        return "Shape{" +
-                "color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
+        return "Shape{"
+            + "color='" + color + '\''
+            + ", filled=" + filled
+            + '}';
     }
 }

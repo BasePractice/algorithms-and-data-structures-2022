@@ -1,4 +1,4 @@
-package ru.mirea.practice.ex1_2;
+package ru.mirea.practice.ex1n2;
 
 public class MovablePoint implements Movable {
     private int x;
@@ -6,21 +6,21 @@ public class MovablePoint implements Movable {
     private final int xSpeed;
     private final int ySpeed;
 
-    public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
+    public MovablePoint(int x, int y, int xspeed, int yspeed) {
         this.x = x;
         this.y = y;
-        this.xSpeed = xSpeed;
-        this.ySpeed = ySpeed;
+        this.xSpeed = xspeed;
+        this.ySpeed = yspeed;
     }
 
     @Override
     public String toString() {
-        return "MovablePoint{" +
-                "x=" + x +
-                ", y=" + y +
-                ", xSpeed=" + xSpeed +
-                ", ySpeed=" + ySpeed +
-                '}';
+        return "MovablePoint{"
+            + "x=" + x
+            + ", y=" + y
+            + ", xSpeed=" + xSpeed
+            + ", ySpeed=" + ySpeed
+            + '}';
     }
 
     @Override

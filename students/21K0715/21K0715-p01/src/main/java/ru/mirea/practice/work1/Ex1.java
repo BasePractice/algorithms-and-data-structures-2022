@@ -18,6 +18,7 @@ public final class Ex1 {
             array[i] = scanner.nextFloat();
             sum += array[i];
         }
+        scanner.close();
         average = sum / N;
         System.out.println("Sum = " + (int) sum + " Average = " + average);
     }

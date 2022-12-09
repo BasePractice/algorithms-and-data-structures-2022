@@ -1,7 +1,10 @@
 package ru.mirea.practice.ex2;
 
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    private Main() {
+    }
+
+    public static void main(final String[] args) {
         Phone p1 = new Phone("123", "Samsung Galaxy S20", 0.553);
         Phone p2 = new Phone("3232", "Samsung Galaxy A10", 0.534);
         Phone p3 = new Phone("87987", "LG G4", 0.444);

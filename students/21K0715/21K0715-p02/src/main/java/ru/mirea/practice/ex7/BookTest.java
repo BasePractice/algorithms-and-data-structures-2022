@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex7;
 
-public class BookTest {
-    public static void main(String[] args) {
+public final class BookTest {
+    private BookTest() {
+
+    }
+
+    public static void main(final String[] args) {
         Book book = new Book("Bulgakov", "Master and Margarita", 1928);
         System.out.println(book);
         System.out.println("author: " + book.getAuthor());

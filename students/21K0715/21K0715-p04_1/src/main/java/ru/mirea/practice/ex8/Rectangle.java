@@ -50,11 +50,11 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "width=" + width +
-                ", length=" + length +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
+        return "Rectangle{"
+            + "width=" + width
+            + ", length=" + length
+            + ", color='" + color + '\''
+            + ", filled=" + filled
+            + '}';
     }
 }

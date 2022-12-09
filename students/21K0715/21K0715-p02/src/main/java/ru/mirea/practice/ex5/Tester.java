@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex5;
 
-public class Tester {
-    public static void main(String[] args) {
+public final class Tester {
+    private Tester() {
+
+    }
+
+    public static void main(final String[] args) {
         DogKennel dk = new DogKennel();
         System.out.println(dk);
 

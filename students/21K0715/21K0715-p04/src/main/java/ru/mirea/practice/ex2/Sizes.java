@@ -15,6 +15,7 @@ public enum Sizes {
     Sizes(int euroSize) {
         this.euroSize = euroSize;
     }
+
     public String getDescription() {
         return "Adult size";
     }

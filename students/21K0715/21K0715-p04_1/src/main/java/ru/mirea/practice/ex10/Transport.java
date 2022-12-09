@@ -1,9 +1,12 @@
 package ru.mirea.practice.ex10;
 
-abstract public class Transport {
-    abstract public double shipTime();
-    abstract public double shipCost(int passengersQuantity);
-    abstract public double shipCost(double cargoWeight);
+public abstract class Transport {
+    public abstract double shipTime();
+
+    public abstract double shipCost(int passengersQuantity);
+
+    public abstract double shipCost(double cargoWeight);
+
     public double shipCost(int passengersQuantity, double cargoWeight) {
         return shipCost(passengersQuantity) + shipCost(cargoWeight);
     }

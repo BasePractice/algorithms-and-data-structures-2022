@@ -19,6 +19,7 @@ public final class Ex2 {
             summa += array[n - 1];
             n -= 1;
         }
+        scanner.close();
         int max = array[0];
         int min = array[0];
         for (int i = 1; i < array.length; i++) {

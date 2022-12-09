@@ -13,8 +13,8 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer{" +
-                "name='" + name + '\'' +
-                '}';
+        return "Computer{"
+                + "name='" + name + '\''
+                + '}';
     }
 }

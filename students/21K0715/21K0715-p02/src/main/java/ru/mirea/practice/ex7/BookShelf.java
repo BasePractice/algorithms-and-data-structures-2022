@@ -13,7 +13,7 @@ public class BookShelf {
 
     public Book newest() {
         Book newestBook = books[0];
-        for (int i=1;i<quantity;i++) {
+        for (int i = 1; i < quantity; i++) {
             if (books[i].getYear() > newestBook.getYear()) {
                 newestBook = books[i];
             }
@@ -23,7 +23,7 @@ public class BookShelf {
 
     public Book oldest() {
         Book oldestBook = books[0];
-        for (int i=1;i<quantity;i++) {
+        for (int i = 1; i < quantity; i++) {
             if (books[i].getYear() < oldestBook.getYear()) {
                 oldestBook = books[i];
             }
@@ -36,11 +36,11 @@ public class BookShelf {
         boolean changed = true;
         while (changed) {
             changed = false;
-            for (int i=0;i<quantity-1;i++) {
-                if (books[i].getYear() > books[i+1].getYear()) {
+            for (int i = 0; i < quantity - 1; i++) {
+                if (books[i].getYear() > books[i + 1].getYear()) {
                     tempBook = books[i];
-                    books[i] = books[i+1];
-                    books[i+1] = tempBook;
+                    books[i] = books[i + 1];
+                    books[i + 1] = tempBook;
                     changed = true;
                 }
             }
@@ -49,9 +49,9 @@ public class BookShelf {
 
     @Override
     public String toString() {
-        return "BookShelf{" +
-                "books=" + Arrays.toString(books) +
-                ", quantity=" + quantity +
-                '}';
+        return "BookShelf{"
+                + "books=" + Arrays.toString(books)
+                + ", quantity=" + quantity
+                + '}';
     }
 }

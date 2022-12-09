@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex4;
 
-class ComputerTest {
-    public static void main(String[] args) {
+final class ComputerTest {
+    private ComputerTest() {
+
+    }
+
+    public static void main(final String[] args) {
         String name = "ENIAC";
         Computer c = new Computer(name);
 

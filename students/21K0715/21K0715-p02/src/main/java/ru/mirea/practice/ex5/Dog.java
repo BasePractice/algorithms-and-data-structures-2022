@@ -26,14 +26,14 @@ public class Dog {
     }
 
     public int humanAge() {
-        return age*7;
+        return age * 7;
     }
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Dog{"
+                + "name='" + name + '\''
+                + ", age=" + age
+                + '}';
     }
 }

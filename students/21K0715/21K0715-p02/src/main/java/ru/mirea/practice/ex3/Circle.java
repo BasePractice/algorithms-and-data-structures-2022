@@ -44,10 +44,10 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Point{" +
-                "x=" + centerPoint.getX() +
-                ", y=" + centerPoint.getY() +
-                ", radius=" + radius +
-                '}';
+        return "Point{"
+                + "x=" + centerPoint.getX()
+                + ", y=" + centerPoint.getY()
+                + ", radius=" + radius
+                + '}';
     }
 }

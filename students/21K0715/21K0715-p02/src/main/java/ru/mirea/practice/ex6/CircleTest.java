@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex6;
 
-public class CircleTest {
-    public static void main(String[] args) {
+public final class CircleTest {
+    private CircleTest() {
+
+    }
+
+    public static void main(final String[] args) {
         Circle circle = new Circle(12,4,56.3);
 
         System.out.println("x: " + circle.getX());

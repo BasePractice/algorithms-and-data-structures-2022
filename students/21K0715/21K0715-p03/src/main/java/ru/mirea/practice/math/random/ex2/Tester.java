@@ -1,6 +1,7 @@
-package ru.mirea.practice.math_random.ex2;
+package ru.mirea.practice.math.random.ex2;
 
 import java.util.Arrays;
+
 public class Tester {
     private final Circle[] circles;
     private final int quantity;
@@ -25,7 +26,7 @@ public class Tester {
     public int min() {
         int minIndex = 0;
         double minValue = circles[0].getRadius();
-        for (int i=1;i<this.quantity;i++) {
+        for (int i = 1; i < this.quantity; i++) {
             if (circles[i].getRadius() < minValue) {
                 minIndex = i;
                 minValue = circles[i].getRadius();
@@ -37,7 +38,7 @@ public class Tester {
     public int max() {
         int maxIndex = 0;
         double minValue = circles[0].getRadius();
-        for (int i=1;i<this.quantity;i++) {
+        for (int i = 1; i < this.quantity; i++) {
             if (circles[i].getRadius() > minValue) {
                 maxIndex = i;
                 minValue = circles[i].getRadius();
@@ -51,11 +52,11 @@ public class Tester {
         Circle tempCircle;
         while (changed) {
             changed = false;
-            for (int i=0;i<quantity-1;i++) {
-                if (circles[i].getRadius() > circles[i+1].getRadius()) {
+            for (int i = 0; i < quantity - 1; i++) {
+                if (circles[i].getRadius() > circles[i + 1].getRadius()) {
                     tempCircle = circles[i];
-                    circles[i] = circles[i+1];
-                    circles[i+1] = tempCircle;
+                    circles[i] = circles[i + 1];
+                    circles[i + 1] = tempCircle;
                     changed = true;
                 }
             }
@@ -64,9 +65,9 @@ public class Tester {
 
     @Override
     public String toString() {
-        return "Tester{" +
-                "circles=" + Arrays.toString(circles) +
-                ", quantity=" + quantity +
-                '}';
+        return "Tester{"
+            + "circles=" + Arrays.toString(circles)
+            + ", quantity=" + quantity
+            + '}';
     }
 }

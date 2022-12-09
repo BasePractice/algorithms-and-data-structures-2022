@@ -1,4 +1,4 @@
-package ru.mirea.practice.math_random.ex2;
+package ru.mirea.practice.math.random.ex2;
 
 public class Circle {
     Point centerPoint;
@@ -44,11 +44,11 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Point{" +
-                "x=" + centerPoint.getX() +
-                ", y=" + centerPoint.getY() +
-                ", radius=" + radius +
-                '}';
+        return "Point{"
+            + "x=" + centerPoint.getX()
+            + ", y=" + centerPoint.getY()
+            + ", radius=" + radius
+            + '}';
     }
 
     public double square() {
@@ -61,9 +61,20 @@ public class Circle {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Circle circle = (Circle) o;
         return Double.compare(circle.radius, radius) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) radius * 3
+            + (int) this.getX() * 7
+            + (int) this.getY() * 11;
     }
 }

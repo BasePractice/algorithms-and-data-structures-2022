@@ -12,27 +12,28 @@ public class Shop {
         int computersQuantity = scanner.nextInt();
         this.computers = new Computer[computersQuantity];
         System.out.println("Enter computer names separated by a space:");
-        for (int i=0;i<computersQuantity;i++) {
+        for (int i = 0; i < computersQuantity; i++) {
             this.computers[i] = new Computer(scanner.next());
         }
+        scanner.close();
     }
 
     public void add(Computer computer) {
-        Computer[] newComputers = new Computer[computers.length+1];
+        Computer[] newComputers = new Computer[computers.length + 1];
         System.arraycopy(computers, 0, newComputers, 0, computers.length);
         newComputers[computers.length] = computer;
         computers = newComputers;
     }
 
     public void remove(int i) {
-        Computer[] newComputers = new Computer[computers.length-1];
+        Computer[] newComputers = new Computer[computers.length - 1];
         System.arraycopy(computers, 0, newComputers, 0, i);
-        System.arraycopy(computers, i+1, newComputers, i, computers.length-1-i);
+        System.arraycopy(computers, i + 1, newComputers, i, computers.length - 1 - i);
         computers = newComputers;
     }
 
     public int find(String name) {
-        for (int i=0;i<computers.length;i++) {
+        for (int i = 0; i < computers.length; i++) {
             if (name.equals(computers[i].getName())) {
                 return i;
             }
@@ -42,8 +43,8 @@ public class Shop {
 
     @Override
     public String toString() {
-        return "Shop{" +
-                "computers=" + Arrays.toString(computers) +
-                '}';
+        return "Shop{"
+                + "computers=" + Arrays.toString(computers)
+                + '}';
     }
 }

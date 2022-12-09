@@ -1,6 +1,7 @@
 package ru.mirea.practice.ex3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public enum Goods {
     SMARTPHONE(ProductType.TECHNIC,15000),
@@ -40,8 +41,8 @@ public enum Goods {
         return this.price;
     }
 
-    public static ArrayList<Goods> getProductsOfType(ProductType targetProductType) {
-        ArrayList<Goods> productsArray = new ArrayList<>();
+    public static List<Goods> getProductsOfType(ProductType targetProductType) {
+        List<Goods> productsArray = new ArrayList<Goods>();
         for (Goods product: Goods.values()) {
             if (product.getProductType().equals(targetProductType)) {
                 productsArray.add(product);

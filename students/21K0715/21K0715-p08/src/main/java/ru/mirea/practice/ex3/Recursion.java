@@ -1,15 +1,18 @@
 package ru.mirea.practice.ex3;
 
-public class Recursion {
-    public static void printNaturalRow(int A, int B) {
-        if (A == B) {
-            System.out.println(A);
-        } else if (A < B) {
-            System.out.print(A + " ");
-            printNaturalRow(A+1, B);
+public final class Recursion {
+    private Recursion() {
+    }
+
+    public static void printNaturalRow(int a, int b) {
+        if (a == b) {
+            System.out.println(a);
+        } else if (a < b) {
+            System.out.print(a + " ");
+            printNaturalRow(a + 1, b);
         } else {
-            System.out.print(A + " ");
-            printNaturalRow(A - 1, B);
+            System.out.print(a + " ");
+            printNaturalRow(a - 1, b);
         }
 
     }

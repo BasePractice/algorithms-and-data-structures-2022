@@ -6,10 +6,12 @@ public class TShirt extends Clothes implements MenClothing, WomenClothing {
         cost = 1500;
         color = Colors.ORANGE;
     }
+
     @Override
     public void dressMan() {
         System.out.println("size: " + size + " cost: " + cost + " color: " + color);
     }
+
     @Override
     public void dressWomen() {
         System.out.println("size: " + size + " cost: " + cost + " color: " + color);

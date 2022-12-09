@@ -6,6 +6,7 @@ public class Skirt  extends Clothes implements WomenClothing {
         cost = 750;
         color = Colors.RED;
     }
+
     @Override
     public void dressWomen() {
         System.out.println("size: " + size + " cost: " + cost + " color: " + color);

@@ -1,10 +1,14 @@
-package ru.mirea.practice.math_random.ex4;
+package ru.mirea.practice.math.random.ex4;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    private Main() {
+
+    }
+
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n;
         while (true) {
@@ -18,13 +22,14 @@ public class Main {
             } else {
                 break;
             }
+            sc.close();
         }
 
         int[] array = new int[n];
         boolean haveEven = false;
         for (int i = 0; i < n; i++) {
-            double f = Math.random()/Math.nextDown(1.0);
-            array[i] = (int) (0*(1.0 - f) + n*f);
+            double f = Math.random() / Math.nextDown(1.0);
+            array[i] = (int) (0 * (1.0 - f) + n * f);
             if (array[i] % 2 == 0) {
                 haveEven = true;
             }

@@ -1,7 +1,11 @@
 package ru.mirea.practice.ex7;
 
-public class Tester {
-    public static void main(String[] args) {
+public final class Tester {
+    private Tester() {
+
+    }
+
+    public static void main(final String[] args) {
         Book b1 = new Book("Bulgakov","Master and Margarita",1928);
         Book b2 = new Book("Dostoevsky","Crime and punishment",1866);
         BookShelf bs = new BookShelf(new Book[]{b1, b2});

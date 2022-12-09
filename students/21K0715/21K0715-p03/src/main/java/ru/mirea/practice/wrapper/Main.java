@@ -1,7 +1,11 @@
-package ru.mirea.practice.wrapper_class;
+package ru.mirea.practice.wrapper;
 
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    private Main() {
+
+    }
+
+    public static void main(final String[] args) {
         Double a1 = Double.valueOf(43.65d);
         double a2 = Double.parseDouble("45.09");
         int someInt = a1.intValue();
@@ -16,5 +20,15 @@ public class Main {
 
         String d = Double.toString(3.14);
 
+        System.out.println(a2);
+        System.out.println(someInt);
+        System.out.println(someFloat);
+        System.out.println(someBool);
+        System.out.println(someChar);
+        System.out.println(someByte);
+        System.out.println(someLong);
+        System.out.println(someShort);
+
+        System.out.println(d);
     }
 }

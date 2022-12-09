@@ -25,9 +25,9 @@ public class Tester {
 
     @Override
     public String toString() {
-        return "Tester{" +
-                "circles=" + Arrays.toString(circles) +
-                ", quantity=" + quantity +
-                '}';
+        return "Tester{"
+                + "circles=" + Arrays.toString(circles)
+                + ", quantity=" + quantity
+                + '}';
     }
 }

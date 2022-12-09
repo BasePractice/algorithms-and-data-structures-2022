@@ -14,7 +14,7 @@ public class DogKennel {
     }
 
     public void add(Dog dog) {
-        Dog[] newDogs = new Dog[dogs.length+1];
+        Dog[] newDogs = new Dog[dogs.length + 1];
         System.arraycopy(dogs, 0, newDogs, 0, dogs.length);
         newDogs[dogs.length] = dog;
         dogs = newDogs;
@@ -29,8 +29,8 @@ public class DogKennel {
 
     @Override
     public String toString() {
-        return "DogKennel{" +
-                "dogs=" + Arrays.toString(dogs) +
-                '}';
+        return "DogKennel{"
+                + "dogs=" + Arrays.toString(dogs)
+                + '}';
     }
 }

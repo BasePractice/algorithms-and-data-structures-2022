@@ -36,11 +36,11 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
-                "number='" + number + '\'' +
-                ", model='" + model + '\'' +
-                ", weight=" + weight +
-                '}';
+        return "Phone{"
+            + "number='" + number + '\''
+            + ", model='" + model + '\''
+            + ", weight=" + weight
+            + '}';
     }
 
     public void receiveCall(String name) {
