@@ -13,7 +13,7 @@ abstract class CircleTest {
         Circle[] circlelist = new Circle[10];
         Random rand = new Random();
         for (int i = 0; i < circlelist.length; i++) {
-            circlelist[i] = new Circle(circlepoint, rand.nextDouble(10.0, 100.0));
+            circlelist[i] = new Circle(circlepoint, rand.nextDouble());
         }
         for (int i = 9; i >= 1; i--) {
             for (int j = 0; j < i; j++) {

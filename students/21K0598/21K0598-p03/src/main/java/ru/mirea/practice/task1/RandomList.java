@@ -21,7 +21,7 @@ abstract class RandomList {
         }
         System.out.println("Класс Random");
         for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = rand.nextFloat(10);
+            randomNumbers[i] = rand.nextFloat();
         }
         for (float randomNumber : randomNumbers) {
             System.out.print(randomNumber + ", ");

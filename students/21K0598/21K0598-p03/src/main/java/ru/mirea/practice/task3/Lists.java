@@ -8,7 +8,7 @@ abstract class Lists {
         Random rand = new Random();
         int[] numberlist = new int[4];
         for (int i = 0; i < numberlist.length; i++) {
-            numberlist[i] = rand.nextInt(10,99);
+            numberlist[i] = rand.nextInt(10,100);
         }
         System.out.println(Arrays.toString(numberlist));
         boolean isUp = true;
