@@ -27,11 +27,12 @@
     </scm>
 
     <modules>
-        <!--<module>students/0000000</module>
+        <module>students/0000000</module>
         <module>students/0000001</module>
         <module>students/21K0576</module>
         <module>students/21K0598</module>
         <module>students/21K0602</module>
+        <module>students/21K0607</module>
         <module>students/21K0647</module>
         <module>students/21K0688</module>
         <module>students/21K0667</module>
@@ -45,7 +46,7 @@
         <module>students/21K0689</module>
         <module>students/21K0637</module>
         <module>students/21K0709</module>
-        <module>students/21K0673</module>-->
+        <module>students/21K0673</module>
         <!--        <module>students/21K0654</module>-->
         <!--        <module>students/21K0618</module>-->
         <module>students/21K0623</module>
@@ -189,3 +190,63 @@
          </plugins>
      </build>
  </project>
+=======
+    <build>
+        <finalName>${project.name}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <target>${maven.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.19.0</version>
+                <configuration>
+                    <analysisCache>true</analysisCache>
+                    <analysisCacheLocation>${project.build.directory}/pmd/pmd.cache</analysisCacheLocation>
+                    <printFailingErrors>true</printFailingErrors>
+                    <failOnViolation>true</failOnViolation>
+                    <targetJdk>${maven.compiler.target}</targetJdk>
+                    <linkXRef>false</linkXRef>
+                    <rulesets>
+                        <ruleset>rulesets/java/quickstart.xml</ruleset>
+                    </rulesets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>duplicate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>aggregate-cpd</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-core</artifactId>
+                        <version>${version.pmd}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-java</artifactId>
+                        <version>${version.pmd}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+</project>
