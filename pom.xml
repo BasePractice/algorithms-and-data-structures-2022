@@ -56,7 +56,11 @@
         <module>students/21K0712</module>
         <module>students/21K0586</module>
         <module>students/21K0703</module>
+        <module>students/21K0715</module>
         <module>p01</module>
+        <module>students/21K0654</module>
+        <module>students/21K0618</module>
+        <module>students/21K0715</module>
     </modules>
 
     <dependencies>
