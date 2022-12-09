@@ -2,7 +2,10 @@ package ru.mirea.practice.task1;
 
 import java.util.Arrays;
 
-public class Test {
+public final class Test {
+
+    private Test() {
+    }
 
     public static void insertionSort(Comparable[] sortArr) {
         int j;
@@ -17,8 +20,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Student[] students = new Student[]{ new Student("Ivan", 24),
-            new Student("Pavel", 37), new Student("Maxim", 4), };
+        Student[] students = new Student[]{new Student("Ivan", 24),
+            new Student("Pavel", 37), new Student("Maxim", 4),};
         System.out.println(Arrays.toString(students));
 
         insertionSort(students);

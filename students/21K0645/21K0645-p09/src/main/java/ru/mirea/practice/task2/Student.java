@@ -1,13 +1,19 @@
-package ru.mirea.practice.task1;
+package ru.mirea.practice.task2;
 
 public class Student implements Comparable<Student> {
 
     private String name;
     private int idNumber;
+    private double gpa;
 
-    public Student(String name, int idNumber) {
+    public Student(String name, int idNumber, double gpa) {
         this.name = name;
         this.idNumber = idNumber;
+        this.gpa = gpa;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
     }
 
     public void setName(String name) {
@@ -26,13 +32,17 @@ public class Student implements Comparable<Student> {
         return idNumber;
     }
 
+    public double getGpa() {
+        return gpa;
+    }
+
     @Override
     public int compareTo(Student o) {
-        return idNumber - o.idNumber;
+        return Double.compare(gpa, o.gpa);
     }
 
     @Override
     public String toString() {
-        return "Student{" + "name='" + name + '\'' + ",  idNumber=" + idNumber + '}';
+        return "Student{" + "name='" + name + '\'' + ",  idNumber=" + idNumber + ",  gpa=" + gpa + '}';
     }
 }
