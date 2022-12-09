@@ -1,4 +1,4 @@
-package ru.mirea.practice.MathRandom.Ex2;
+package ru.mirea.practice.math_random.ex2;
 
 public class Circle {
     Point centerPoint;

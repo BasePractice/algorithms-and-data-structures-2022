@@ -1,4 +1,4 @@
-package ru.mirea.practice.Ex6;
+package ru.mirea.practice.ex6;
 
 public class Point {
     private double x;

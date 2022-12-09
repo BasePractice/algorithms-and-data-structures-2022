@@ -1,4 +1,4 @@
-package ru.mirea.practice.WrapperClass;
+package ru.mirea.practice.wrapper_class;
 
 public class Main {
     public static void main(String[] args) {

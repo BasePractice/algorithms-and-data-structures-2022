@@ -1,4 +1,4 @@
-package ru.mirea.practice.MathRandom.Ex2;
+package ru.mirea.practice.math_random.ex2;
 
 import java.util.Arrays;
 public class Tester {

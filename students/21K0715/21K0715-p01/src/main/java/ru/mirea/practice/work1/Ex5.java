@@ -1,4 +1,4 @@
-package ru.mirea.practice;
+package ru.mirea.practice.work1;
 
 public class Ex5 {
     public static long factorial(long n) {

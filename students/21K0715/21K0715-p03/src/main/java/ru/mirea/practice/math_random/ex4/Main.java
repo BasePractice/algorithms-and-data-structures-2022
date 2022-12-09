@@ -1,4 +1,4 @@
-package ru.mirea.practice.MathRandom.Ex4;
+package ru.mirea.practice.math_random.ex4;
 
 import java.util.ArrayList;
 import java.util.Scanner;

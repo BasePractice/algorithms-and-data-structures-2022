@@ -1,4 +1,4 @@
-package ru.mirea.practice.MathRandom.Ex3;
+package ru.mirea.practice.math_random.ex3;
 
 public class Main {
     public static void main(String[] args) {
