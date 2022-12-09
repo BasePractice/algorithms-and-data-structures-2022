@@ -1,4 +1,4 @@
-package ru.mirea.worktwentyfiv.task5;
+package ru.mirea.worktwentyfive.task5;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

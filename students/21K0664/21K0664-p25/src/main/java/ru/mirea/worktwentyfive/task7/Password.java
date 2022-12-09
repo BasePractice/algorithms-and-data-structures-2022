@@ -1,4 +1,4 @@
-package ru.mirea.worktwentyfiv.task7;
+package ru.mirea.worktwentyfive.task7;
 
 abstract class Password {
     public static boolean checkPassword(String password) {
