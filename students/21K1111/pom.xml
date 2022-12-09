@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ru.mirea.practice</groupId>
+        <artifactId>algorithms-and-data-structures</artifactId>
+        <version>2022.1</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <groupId>ru.mirea.practice</groupId>
+    <artifactId>21K1111</artifactId>
+    <packaging>pom</packaging>
+    <version>2022.1</version>
+    <modules>
+        <module>21K1111-p01</module>
+    </modules>
+
+    
+</project>
