@@ -1,5 +1,7 @@
 package ru.mirea.practice.task1;
 
+import ru.mirea.practice.task2and3.Movable;
+
 public class MovablePoint implements Movable {
     protected int x;
     protected int y;
@@ -13,6 +15,12 @@ public class MovablePoint implements Movable {
         this.ySpeed = yspeed;
     }
 
+
+    @Override
+    public String toString() {
+        return "MovablePoint{" + "x=" + x + ", y=" + y + ", xSpeed=" + xSpeed + ", ySpeed=" + ySpeed + '}';
+    }
+
     @Override
     public void moveUp() {
         y += ySpeed;
@@ -24,17 +32,12 @@ public class MovablePoint implements Movable {
     }
 
     @Override
-    public void moveLeft() {
-        x -= xSpeed;
-    }
-
-    @Override
     public void moveRight() {
         x += xSpeed;
     }
 
     @Override
-    public String toString() {
-        return "MovablePoint{" + "x=" + x + ", y=" + y + ", xSpeed=" + xSpeed + ", ySpeed=" + ySpeed + '}';
+    public void moveLeft() {
+        x += xSpeed;
     }
 }

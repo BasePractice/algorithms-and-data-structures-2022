@@ -1,5 +1,7 @@
 package ru.mirea.practice.task1;
 
+import ru.mirea.practice.task2and3.Movable;
+
 public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
