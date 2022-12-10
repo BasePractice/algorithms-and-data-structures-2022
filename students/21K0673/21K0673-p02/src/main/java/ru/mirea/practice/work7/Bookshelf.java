@@ -76,6 +76,7 @@ public class Bookshelf {
         this.arr[number] = b;
     }
 
+    @Override
     public String toString() {
         for (int k = 0; k < this.amount; k++) {
             System.out.println(arr[k] + "\n");

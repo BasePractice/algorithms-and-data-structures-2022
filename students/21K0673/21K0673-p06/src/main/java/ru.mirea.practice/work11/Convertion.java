@@ -7,6 +7,10 @@ public class Convertion implements Convertable {
         this.value = value;
     }
 
+    public double getValue() {
+        return value;
+    }
+
     @Override
     public void convert(double value, boolean marker) {
         if (marker) {

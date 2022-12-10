@@ -1,6 +1,6 @@
 package ru.mirea.practice.work6;
 
-public class CircleTest {
+abstract class CircleTest {
     public static void main(String[] args) {
         Point c = new Point(5, 8);
         Circle a = new Circle(c, 8);

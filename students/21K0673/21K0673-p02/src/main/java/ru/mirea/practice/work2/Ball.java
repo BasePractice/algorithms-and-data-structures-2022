@@ -35,6 +35,7 @@ public class Ball {
         y += ydisp;
     }
 
+    @Override
     public String toString() {
         return "{" + "X: " + x + ", Y: " + y + "}";
     }

@@ -1,6 +1,6 @@
 package ru.mirea.practice.work3;
 
-public class Tester {
+abstract class Tester {
     private final int a;
     private final Circle[] arr;
 
@@ -9,6 +9,7 @@ public class Tester {
         this.arr = arr;
     }
 
+    @Override
     public String toString() {
         return "a:" + a + "arr:" + arr[0];
     }

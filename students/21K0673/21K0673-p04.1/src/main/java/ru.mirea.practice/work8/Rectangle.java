@@ -4,19 +4,16 @@ public abstract class Rectangle extends Shape {
     private double length;
     private double width;
 
-    Rectangle() {
-    }
-
-    Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-    }
-
     Rectangle(double length, double width, String color, boolean filled) {
+        super(color, filled);
         this.length = length;
         this.width = width;
-        this.color = color;
-        this.filled = filled;
+    }
+
+    Rectangle(double side, String color, boolean filled) {
+        super(color, filled);
+        this.length = side;
+        this.width = side;
     }
 
     public double getWidth() {

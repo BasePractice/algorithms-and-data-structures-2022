@@ -10,10 +10,21 @@
     </parent>
     <artifactId>21k0645</artifactId>
     <packaging>pom</packaging>
-    <description>Практические работы студента Васи</description>
-
+    <description>Практические работы Кулебякина Павла</description>
     <modules>
         <module>21K0645-p01</module>
         <module>21K0645-p02</module>
+        <module>21K0645-p03</module>
+        <module>21K0645-p04</module>
+        <module>21K0645-p04.1</module>
+        <module>21K0645-p06</module>
+        <module>21K0645-p07</module>
+        <module>21K0645-p08</module>
+        <module>21K0645-p09</module>
+        <module>21K0645-p10</module>
+        <module>21K0645-p11</module>
+        <module>21K0645-p13</module>
+        <module>21K0645-p14</module>
+        <module>21K0645-p18</module>
     </modules>
 </project>

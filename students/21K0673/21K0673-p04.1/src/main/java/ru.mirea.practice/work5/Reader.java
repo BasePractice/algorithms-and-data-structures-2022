@@ -9,15 +9,32 @@ public class Reader {
     private String dateBirth;
     private String telephoneNumber;
 
-    Reader() {
-    }
-
     Reader(String fullName, int readerTicketNumber, String faculty, String dateBirth, String telephoneNumber) {
         this.fullName = fullName;
         this.readerTicketNumber = readerTicketNumber;
         this.faculty = faculty;
         this.dateBirth = dateBirth;
         this.telephoneNumber = telephoneNumber;
+    }
+
+    public int getReaderTicketNumber() {
+        return readerTicketNumber;
+    }
+
+    public String getDateBirth() {
+        return dateBirth;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getTelephoneNumber() {
+        return telephoneNumber;
     }
 
     public void takeBook(int amountOfBooks) {

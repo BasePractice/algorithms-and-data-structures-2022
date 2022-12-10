@@ -10,6 +10,7 @@ public class MovableRectangle extends MovablePoint {
         this.topleft = topleft;
     }
 
+    @Override
     public String toString() {
         return "MovableRectangle: {topLeft" + topleft.toString() + "bottomRight" + bottomright.toString() + "}";
     }

@@ -27,6 +27,7 @@ public class Author {
         this.email = email;
     }
 
+    @Override
     public String toString() {
         return "{" + "Имя: " + name + ", Почта: " + email + ", Пол: " + gender + "}";
     }

@@ -1,6 +1,6 @@
 package ru.mirea.practice.work1;
 
-public class TestAuthor {
+abstract class TestAuthor {
     public static void main(String[] args) {
         Author andrew = new Author("Андрей", "andrew@9509529898.ru", 'м');
 
