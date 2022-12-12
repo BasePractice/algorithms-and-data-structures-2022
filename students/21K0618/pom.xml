@@ -10,10 +10,13 @@
     </parent>
     <artifactId>21K0618</artifactId>
     <packaging>pom</packaging>
-    <description>Пример оформления практических заданий</description>
+    <description>Практические работы Ильичева Георгия</description>
 
     <modules>
         <module>21K0618-p01</module>
         <module>21K0618-p02</module>
+        <module>21K0618-p03</module>
+        <module>21K0618-obolochki</module>
+        <module>21K0618-formatirovanie</module>
     </modules>
 </project>

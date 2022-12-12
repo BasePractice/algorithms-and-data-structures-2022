@@ -8,6 +8,6 @@
         <version>2022.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>21K0618-p02</artifactId>
-    <description>Вторая практика</description>
+    <artifactId>21K0618-obolochki</artifactId>
+    <description>Оболочки</description>
 </project>
